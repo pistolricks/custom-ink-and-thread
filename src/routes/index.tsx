@@ -1,11 +1,13 @@
 import { A } from "@solidjs/router";
+import Header from "~/components/layouts/partials/header";
 
 
 
 export default function Home() {
   return (
     <main class="text-center mx-auto text-gray-700 p-4">
-      <p class="mt-8">
+
+        <p class="mt-8">
         Visit{" "}
         <a href="https://solidjs.com" target="_blank" class="text-sky-600 hover:underline">
           solidjs.com

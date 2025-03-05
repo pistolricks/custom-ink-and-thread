@@ -5,108 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bddc89ca-a474-4ff4-a99a-c9fdc0360bc2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/ui/accordion/accordion.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/avatar/avatar-ui.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/avatar/avatar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/clipboard/clipboard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/collapsible/collapsible.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/date-picker/date-picker.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/date-picker/date-range-picker.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/factory/factory.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/field/editable.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/field/input.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/field/select.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/field/textarea.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/fieldset/fieldset.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/file/file-uploader.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/hover-card/hover-card.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/input/number.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/loading/progress-circular.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/loading/progress-linear.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/pagination/pagination.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/pin-pad/pin-pad.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/popover/popover.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/qrc/qrc.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/rating/rating.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/segment-group/segment-group.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/signature-pad/signature-pad.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/splitter/splitter.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/step/step.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/tags-input/tags-input.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/timer/timer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/toggle-group/toggle-group.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/toggle/toggle.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/tour/tour.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/tree/tree.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/components.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/keyframes.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/navigation-menu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/steps.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/providers/environment/collection/collection.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/providers/environment/environment-provider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/providers/environment/environment-stories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/providers/environment/focus/autofocus.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/providers/environment/focus/focus-trap.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/providers/environment/focus/initial-focus.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/providers/environment/format/bytes.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/providers/environment/format/number.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/providers/environment/frame/frame.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/providers/environment/frame/src-doc-frame.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/providers/environment/frame/sript-injecting-frame.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/providers/environment/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/providers/environment/layout/anatomy.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/providers/environment/layouts/basic.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/providers/environment/layouts/setup.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/providers/environment/layouts/usage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/providers/environment/presence/lazy-presence.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/providers/environment/presence/lazy-unmount-on-exit.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/providers/environment/presence/presence.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/providers/environment/presence/unmount-exit-presence.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/providers/environment/use-environment-context.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/providers/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/providers/locale/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/providers/locale/layouts/basic.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/providers/locale/layouts/setup.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/providers/locale/layouts/usage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/providers/locale/locale-provider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/providers/locale/locale.stories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/providers/locale/use-locale-context.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/types/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/utils/compose-refs.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/utils/create-context.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/utils/create-split-props.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/utils/render-strategy.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/utils/run-if-fn.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/internal/utils/use-controllable-state.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layouts/partials/header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/navigation/navigation-items.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/navigation/navigation-menu-content.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/navigation/navigation-menu-item.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/navigation/navigation-menu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/_metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server-fns/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/server-fns/deps/_metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/_metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/nav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/disabled.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/internal/button.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/internal/hooks/use-active-press.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/internal/hooks/use-disposables.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/internal/hooks/use-event.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/internal/hooks/use-focus-ring.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/internal/hooks/use-hover.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/internal/hooks/use-iso-morphic-effect.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/internal/hooks/use-latest-value.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/internal/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/internal/types.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/internal/utils/class-names.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/internal/utils/disposables.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/internal/utils/focus-ring.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/internal/utils/match.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/internal/utils/micro-task.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/internal/utils/owner.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/internal/utils/render.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/about.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/about.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/navigation-menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/navigation-menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,23 +39,23 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/eriksmith/projects/customInkAndThread/cit-app",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.dev.executor": "Run",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Users/eriksmith/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/eriksmith/projects/customInkAndThread/cit-app&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/eriksmith/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/web" />
@@ -196,6 +105,7 @@
       <workItem from="1741119253072" duration="587000" />
       <workItem from="1741119926227" duration="31837000" />
       <workItem from="1741151895563" duration="355000" />
+      <workItem from="1741165968154" duration="19183000" />
     </task>
     <servers />
   </component>
@@ -212,17 +122,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/layouts/partials/nav.tsx</url>
-          <line>29</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
