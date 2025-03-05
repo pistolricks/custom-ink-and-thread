@@ -1,10 +1,10 @@
 .navigation-menu__root {
-    display: flex;
+    display: grid;
+    place-items: center;
     justify-content: center;
     align-items: center;
     padding: 4px;
-    background-color: white;
-    width: max-content;
+  /*  background-color: white; */
     border-radius: 6px;
 }
 
@@ -20,8 +20,8 @@
     width: auto;
     outline: none;
     padding: 16px 16px;
-    background-color: white;
-    color: #0284c7;
+    /*  background-color: white; */
+    color: var(--color-slate-700);
     font-size: 16px;
     gap: 8px;
     line-height: 0;
@@ -113,7 +113,7 @@
 }
 
 .navigation-menu__item-callout:focus {
-    outline: 2px solid #0284c790;
+    outline: 2px solid white;
 }
 
 .navigation-menu__item-callout .navigation-menu__item-label {
@@ -172,8 +172,8 @@
     padding: 22px;
     margin: 0;
     column-gap: 10px;
-    grid-template-rows: repeat(3, 1fr);
-    grid-auto-flow: column;
+/*    grid-template-rows: repeat(3, 1fr);
+    grid-auto-flow: column; */
     animation-duration: 250ms;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
@@ -211,17 +211,18 @@
 }
 
 .navigation-menu__content.content-1 {
-    width: min(500px, 90dvw);
-    grid-template-columns: 0.75fr 1fr;
+    width: 100dvw;
+    /*  // width: min(500px, 90dvw);
+      grid-template-columns: 0.75fr 1fr; */
 }
 
 .navigation-menu__content.content-1 > li:first-child {
-    grid-row: span 3;
+  /*  grid-row: span 3; */
 }
 
 .navigation-menu__content.content-2 {
     width: min(600px, 90dvw);
-    grid-template-columns: 1fr 1fr;
+  /*  grid-template-columns: 1fr 1fr;*/
 }
 
 @media screen and (max-width: 650px) {
@@ -236,150 +237,4 @@
     }
 }
 
-.navigation-menu__arrow {
-    transition: transform 250ms;
-}
-
-@keyframes viewportShow {
-    from {
-        opacity: 0;
-        transform: rotateX(-20deg) scale(0.96);
-    }
-    to {
-        opacity: 1;
-        transform: rotateX(0deg) scale(1);
-    }
-}
-@keyframes viewportHide {
-    from {
-        opacity: 1;
-        transform: rotateX(0deg) scale(1);
-    }
-    to {
-        opacity: 0;
-        transform: rotateX(-10deg) scale(0.96);
-    }
-}
-
-@keyframes enterFromRight {
-    from {
-        opacity: 0;
-        transform: translateX(200px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes enterFromLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-200px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes exitToRight {
-    from {
-        opacity: 1;
-        transform: translateX(0);
-    }
-    to {
-        opacity: 0;
-        transform: translateX(200px);
-    }
-}
-
-@keyframes exitToLeft {
-    from {
-        opacity: 1;
-        transform: translateX(0);
-    }
-    to {
-        opacity: 0;
-        transform: translateX(-200px);
-    }
-}
-
-@keyframes enterFromBottom {
-    from {
-        opacity: 0;
-        transform: translateY(200px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes enterFromTop {
-    from {
-        opacity: 0;
-        transform: translateY(-200px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes exitToBottom {
-    from {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    to {
-        opacity: 0;
-        transform: translateY(200px);
-    }
-}
-
-@keyframes exitToTop {
-    from {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    to {
-        opacity: 0;
-        transform: translateY(-200px);
-    }
-}
-
-[data-kb-theme="dark"] .navigation-menu__trigger {
-    background-color: #27272a;
-    color: #0284c7;
-}
-
-[data-kb-theme="dark"] .navigation-menu__item-label,
-[data-kb-theme="dark"] .navigation-menu__item-description {
-    color: #e9e9ea;
-}
-
-[data-kb-theme="dark"] .navigation-menu__item:hover,
-[data-kb-theme="dark"] .navigation-menu__item:focus {
-    background-color: #0284c710;
-}
-
-[data-kb-theme="dark"] .navigation-menu__root {
-    background-color: #27272a;
-}
-
-[data-kb-theme="dark"] .navigation-menu__viewport {
-    background-color: #27272a;
-    border: 1px solid hsl(240 5% 26%);
-}
-
-[data-kb-theme="dark"] .navigation-menu__item-callout {
-    background: linear-gradient(135deg, #0284c7 0%, #00345e 100%);
-}
-
-.navigation-menu__content.content-empty {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-}
+/* It is below this */

@@ -10,7 +10,7 @@ const NavigationRootMenu: Component<PROPS> = props => {
 
     const children = () => props.children;
     return (
-        <NavigationMenu  class={style["navigation-menu__root"]}>
+        <NavigationMenu  class={style[""]}>
             {children()}
         </NavigationMenu>
     );

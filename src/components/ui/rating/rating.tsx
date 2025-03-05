@@ -1,6 +1,6 @@
 import { RatingGroup, useRatingGroup } from '@ark-ui/solid/rating-group'
-import { StarIcon } from 'lucide-solid'
-import { Index, Show } from 'solid-js'
+import {StarHalfIcon, StarIcon} from 'lucide-solid'
+import {createSignal, Index, Show} from 'solid-js'
 
 export const RootProvider = () => {
     const ratingGroup = useRatingGroup({ count: 5, value: 3 })
@@ -156,9 +156,7 @@ export const Disabled = () => (
     </RatingGroup.Root>
 )
 
-import { RatingGroup } from '@ark-ui/solid/rating-group'
-import { StarIcon } from 'lucide-solid'
-import { Index, Show, createSignal } from 'solid-js'
+
 
 export const Controlled = () => {
     const [value, setValue] = createSignal(0)
@@ -219,9 +217,7 @@ export const InitialValue = () => (
     </RatingGroup.Root>
 )
 
-import { RatingGroup } from '@ark-ui/solid/rating-group'
-import { StarHalfIcon, StarIcon } from 'lucide-solid'
-import { Index } from 'solid-js'
+
 
 export const HalfRatings = () => (
     <RatingGroup.Root count={5} value={3} allowHalf>

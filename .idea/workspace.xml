@@ -5,16 +5,100 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bddc89ca-a474-4ff4-a99a-c9fdc0360bc2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/layouts/partials/header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/navigation/navigation-items.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/navigation/navigation-menu-content.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/navigation/navigation-menu-item.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/navigation/navigation-menu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/ciat_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/ciat_advert.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/reverse_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/reverse_2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/contents/forms/upload-content.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/contents/list.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/contents/partials/desktop-dialog-content.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/contents/partials/grid-image.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/contents/partials/mobile-drawer-content.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/contents/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/forms/activate-user-form.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/forms/login-user-form.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/forms/logout-user-form.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/forms/partials/form-layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/forms/register-user-form.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/forms/resend-activate-email-form.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layouts/partials/nav-menu-ui.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/profiles/event-details.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/profiles/feature-details.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/profiles/friends-details.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/profiles/partials/event-card.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/profiles/partials/friend-card.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/profiles/partials/review-card.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/profiles/review-details.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/profiles/user-details.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/profiles/vendor-details.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/drawer/base-drawer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/drawer/drawer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/drawer/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/context/layout-provider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/contents.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/db.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/session.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/users.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/utils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/activate.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/contents.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/contents/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/login.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/profile/[id].tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/profile/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/register.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/resend.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/wholesale/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/clsx.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/clsx.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/clsx.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/clsx.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server-fns/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/server-fns/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@redocly/openapi-core/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@redocly/openapi-core/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@redocly/openapi-core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@redocly/openapi-core/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/acorn/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/acorn/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/acorn/dist/acorn.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/acorn/dist/acorn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/acorn/dist/acorn.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/acorn/dist/acorn.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/acorn/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/acorn/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/color-name/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/color-name/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/color-name/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/color-name/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/color-name/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/color-name/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/color-name/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/color-name/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/fsevents/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/fsevents/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/fsevents/fsevents.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/fsevents/fsevents.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/fsevents/fsevents.node" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/fsevents/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nitropack/dist/core/index.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nitropack/dist/core/index.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nitropack/dist/meta/index.d.mts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nitropack/dist/meta/index.d.mts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nitropack/dist/meta/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nitropack/dist/meta/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nitropack/dist/meta/index.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nitropack/dist/meta/index.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nitropack/dist/presets/_nitro/runtime/nitro-dev.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nitropack/dist/presets/_nitro/runtime/nitro-dev.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nitropack/dist/runtime/internal/app.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nitropack/dist/runtime/internal/app.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nitropack/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nitropack/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/solid-presence/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/solid-presence/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/solid-presence/dist/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/solid-presence/dist/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/solid-presence/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/solid-presence/dist/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/solid-presence/dist/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/solid-presence/dist/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/solid-presence/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/solid-presence/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/nav.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/nav.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/nav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/navigation-menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/navigation-menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/fieldset/fieldset.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/fieldset/fieldset.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/navigation/navigation-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/navigation/navigation-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/rating/rating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/rating/rating.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/navigation-menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/internal/providers/environment/layout/anatomy.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/internal/providers/environment/layout/anatomy.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,34 +123,37 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/eriksmith/projects/customInkAndThread/cit-app&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/eriksmith/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/eriksmith/projects/customInkAndThread/cit-app/src/lib",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/Users/eriksmith/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/web" />
+      <recent name="$PROJECT_DIR$/src/lib" />
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/routes" />
       <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/public/web" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/routes" />
       <recent name="$PROJECT_DIR$/src/components/ui/loading" />
       <recent name="$PROJECT_DIR$/src/components/ui" />
       <recent name="$PROJECT_DIR$/src/internal/providers/environment/focus" />
       <recent name="$PROJECT_DIR$/src/css" />
-      <recent name="$PROJECT_DIR$/src/internal" />
     </key>
   </component>
   <component name="RunManager">
@@ -106,6 +193,7 @@
       <workItem from="1741119926227" duration="31837000" />
       <workItem from="1741151895563" duration="355000" />
       <workItem from="1741165968154" duration="19183000" />
+      <workItem from="1741205986502" duration="6240000" />
     </task>
     <servers />
   </component>

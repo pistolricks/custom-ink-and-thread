@@ -2,7 +2,7 @@ import { Field } from '@ark-ui/solid/field'
 import { Fieldset } from '@ark-ui/solid/fieldset'
 import { Checkbox } from '@ark-ui/solid/checkbox'
 
-export const WithField = (props: Fieldset.RootProps) => {
+export const InputWithFieldSet = (props: Fieldset.RootProps) => {
     return (
         <Fieldset.Root {...props}>
             <Fieldset.Legend>Legend</Fieldset.Legend>

@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import "./css/navigation-menu.css";
 @import "./css/keyframes.css";
 
 :root {
@@ -15,8 +14,8 @@
 }
 
 body {
-  background: rgb(var(--background-rgb));
-  color: rgb(var(--foreground-rgb));
+    background: rgb(var(--background-rgb));
+    color: rgb(var(--foreground-rgb));
 }
 
 
