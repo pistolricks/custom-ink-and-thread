@@ -9,7 +9,7 @@ export default function App() {
     <Router
       root={props => (
         <>
-          <Nav menu={[]}/>
+          <Nav />
           <Suspense>{props.children}</Suspense>
         </>
       )}
