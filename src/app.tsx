@@ -1,22 +1,28 @@
-import { Router } from "@solidjs/router";
-import { FileRoutes } from "@solidjs/start/router";
-import { Suspense } from "solid-js";
+import {Router} from "@solidjs/router";
+import {FileRoutes} from "@solidjs/start/router";
+import {Suspense} from "solid-js";
 import "./app.css";
-import Nav from "~/components/layouts/partials/nav";
 import Header from "~/components/layouts/partials/header";
+import {Toaster} from "~/components/ui/toast";
+import AppLayout from "~/components/layouts/app-layout";
+import {LayoutProvider} from "~/context/layout-provider";
 
 export default function App() {
-  return (
-    <Router
-      root={props => (
-        <>
-            <Header/>
-
-          <Suspense>{props.children}</Suspense>
-        </>
-      )}
-    >
-      <FileRoutes />
-    </Router>
-  );
+    return (
+        <Router
+            root={props => (
+                <>
+                    <LayoutProvider>
+                        <AppLayout>
+                            <Header/>
+                            <Suspense>{props.children}</Suspense>
+                        </AppLayout>
+                    </LayoutProvider>
+                </>
+            )}
+        >
+            <Toaster/>
+            <FileRoutes/>
+        </Router>
+    );
 }

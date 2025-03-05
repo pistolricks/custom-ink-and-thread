@@ -31,8 +31,8 @@ const FormLayout: Component<PROPS> = props => {
                         </h2>
                     </div>
                     <div class="w-full space-y-6 text-gray-600">
-                        <div class="mx-auto max-w-7xl px-6 sm:px-6 lg:px-8">
-                            <div class="mx-auto max-w-3xl">
+                        <div class="mx-auto max-w-7xl px-8 sm:px-6 lg:px-8">
+                            <div class="mx-auto max-w-lg container">
                                 {props.children}
                             </div>
                         </div>
