@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bddc89ca-a474-4ff4-a99a-c9fdc0360bc2" name="Changes" comment="" />
+    <list default="true" id="bddc89ca-a474-4ff4-a99a-c9fdc0360bc2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server-fns/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/server-fns/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/_metadata.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,8 +36,8 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "created-a-button-component",
-    "last_opened_file_path": "/Users/eriksmith/projects/customInkAndThread/cit-app/public/web",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/eriksmith/projects/customInkAndThread/cit-app",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -91,7 +96,8 @@
       <updated>1741116562903</updated>
       <workItem from="1741116564124" duration="808000" />
       <workItem from="1741119253072" duration="587000" />
-      <workItem from="1741119926227" duration="31173000" />
+      <workItem from="1741119926227" duration="31837000" />
+      <workItem from="1741151895563" duration="355000" />
     </task>
     <servers />
   </component>
