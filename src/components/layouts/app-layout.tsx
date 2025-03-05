@@ -1,10 +1,8 @@
 import {Component, createEffect, createSignal, ParentProps, Show} from 'solid-js'
 import SideDrawer from '~/components/ui/drawer/side-drawer'
-import Nav from '~/components/layouts/partials/nav'
 import {createAsync, useLocation} from '@solidjs/router'
 import {getUser} from '~/lib/users'
 import {useLayoutContext} from '~/context/layout-provider'
-import {clientOnly} from '@solidjs/start'
 
 
 type PROPS = ParentProps
@@ -24,7 +22,7 @@ const AppLayout: Component<PROPS> = (props) => {
     console.log('name', user()?.name)
 
     createEffect(() => {
-        if (!user()?.name) {
+        if (!user()) {
             setCurrentUser({
                 id: undefined,
                 name: undefined,
@@ -58,7 +56,7 @@ const AppLayout: Component<PROPS> = (props) => {
         <SideDrawer contextId={'sd1'}>
             <Show when={getPath()}>
                 {/* <WsClient initialSocketUrl={'ws://localhost:4000'}/> */}
-                <Nav user={user()} path={getPath()}/>
+
                 <main
                     style={{
                         height: getHeight() + 'px',

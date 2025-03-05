@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bddc89ca-a474-4ff4-a99a-c9fdc0360bc2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/layouts/app-layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/drawer/side-drawer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/_metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/clsx.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/clsx.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/clsx.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/clsx.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/forms/partials/form-layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/partials/form-layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/app-layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/app-layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/nav-menu-ui.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/nav-menu-ui.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/drawer/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/drawer/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/layout-provider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/layout-provider.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,23 +34,23 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/eriksmith/projects/customInkAndThread/cit-app/src/components/ui/drawer",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.dev.executor": "Run",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Users/eriksmith/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/eriksmith/projects/customInkAndThread/cit-app/src/components/ui/drawer&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/eriksmith/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/ui/drawer" />
@@ -111,7 +104,8 @@
       <workItem from="1741119926227" duration="31837000" />
       <workItem from="1741151895563" duration="355000" />
       <workItem from="1741165968154" duration="19183000" />
-      <workItem from="1741205986502" duration="8917000" />
+      <workItem from="1741205986502" duration="9040000" />
+      <workItem from="1741215708254" duration="2455000" />
     </task>
     <servers />
   </component>

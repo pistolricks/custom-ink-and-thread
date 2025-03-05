@@ -1,4 +1,4 @@
-import {Component, createEffect} from "solid-js";
+import {Component, createEffect, Show} from "solid-js";
 import Nav from "~/components/layouts/partials/nav";
 import {A} from "@solidjs/router";
 import {useLayoutContext} from "~/context/layout-provider";
@@ -73,7 +73,7 @@ const Header: Component<PROPS> = props => {
                                     <div class="hidden h-full lg:flex">
 
 
-                                        <div class="flex h-full justify-center items-center space-x-8">
+                                        <div class="flex h-full justify-center items-center space-x-8 p-2">
                                             <Nav/>
                                         </div>
 
