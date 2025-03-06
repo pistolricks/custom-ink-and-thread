@@ -13,17 +13,15 @@ type CurrentContextType = {
 
 export const CurrentContext = createContext<CurrentContextType>();
 
-export function CurrentProvider(props: {
-    user: USER | SessionUser,
-    token: AUTHENTICATION_TOKEN,
-    folder: string,
-    location: Feature,
-    collection: FeatureCollection,
-    children: JSXElement;
-}) {
-
-
-
+export function CurrentProvider(
+    props: {
+        user: SessionUser | undefined,
+        token: {token: string | undefined, expiry: string | undefined}
+        folder: string | undefined,
+        location: Feature | undefined,
+        collection: FeatureCollection | undefined,
+        children: JSXElement;
+    }) {
 
     const [currentUser, storeCurrentUser] = createStore<SessionUser>()
     const [currentLocation, storeLocation] = createStore<Feature>({
@@ -33,11 +31,11 @@ export function CurrentProvider(props: {
         type: "FeatureCollection",
         features: []
     })
-    const user = () => props.user
-    const token = () => props.token
-    const folder = () => props.folder
-    const location = () => props.location
-    const collection = () => props.collection
+    const user = () => props.user ?? undefined;
+    const token = () => props.token ?? undefined;
+    const folder = () => props.folder ?? undefined;
+    const location = () => props.location ?? undefined;
+    const collection = () => props.collection ?? undefined;
 
 
     const current: [Store<SessionUser>, Store<Feature>, Store<FeatureCollection>, { handleUser: () => void }, { handleLocation: () => void }, { handleCollection: () => void }] = [
@@ -66,7 +64,9 @@ export function CurrentProvider(props: {
         },
         {
             handleCollection() {
-                storeCollection(collection());
+                let c = collection();
+                if(!c)return
+                storeCollection(c);
             }
         }
     ]
