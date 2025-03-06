@@ -1,7 +1,7 @@
 import {DrawerContent} from "~/components/ui/dialogs/base-drawer";
 import DrawerPrimitive from "@corvu/drawer";
 import {Button} from "~/components/ui/button";
-import {ChevronDown} from "~/components/svg";
+import {ChevronDown} from "lucide-solid";
 import {CONTENT} from "~/lib/store";
 import {Component} from "solid-js";
 

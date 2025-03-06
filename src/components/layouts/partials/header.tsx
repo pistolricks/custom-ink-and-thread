@@ -1,17 +1,19 @@
-import {Component, createEffect, Show} from "solid-js";
+import {Component, Show} from "solid-js";
 import Nav from "~/components/layouts/partials/nav";
 import {A} from "@solidjs/router";
 import {useLayoutContext} from "~/context/layout-provider";
 import Drawer from "@corvu/drawer";
-import { SideDrawerContent } from "~/components/ui/drawer/side-drawer";
 import {DrawerContent} from "~/components/ui/drawer";
+import {SessionUser} from "~/lib/session";
+import LogoutUserForm from "~/components/forms/logout-user-form";
 
-type PROPS = {}
+type PROPS = {
+    user?: SessionUser
+}
 
 const Header: Component<PROPS> = props => {
 
-    const {getIsDesktop, storedCurrentUser} = useLayoutContext();
-
+    const user = () => props.user;
 
 
     return (
@@ -40,7 +42,7 @@ const Header: Component<PROPS> = props => {
                             <div class="flex items-center space-x-6">
                                 <Show
                                     fallback={<div class={'h-[20px]'}/>}
-                                    when={!storedCurrentUser}>
+                                    when={!user()}>
                                     <A href={'/login'} class="text-sm font-medium text-text-700/50 hover:text-gray-100">
                                         Sign in
                                     </A>
@@ -130,6 +132,7 @@ const Header: Component<PROPS> = props => {
                                                           d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/>
                                                 </svg>
                                             </A>
+
                                             <A href="#"
                                                class="hidden text-sm font-medium text-secondary-foreground lg:block">Help</A>
 
@@ -142,7 +145,8 @@ const Header: Component<PROPS> = props => {
                                                         <path stroke-linecap="round" stroke-linejoin="round"
                                                               d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
                                                     </svg>
-                                                    <span class="ml-2 text-sm font-medium text-secondary-foreground">0</span>
+                                                    <span
+                                                        class="ml-2 text-sm font-medium text-secondary-foreground">0</span>
                                                     <span class="sr-only">items in cart, view bag</span>
                                                 </A>
                                             </div>
@@ -155,7 +159,9 @@ const Header: Component<PROPS> = props => {
                 </nav>
             </header>
             <DrawerContent side={"left"} contextId={'sd1'}>
-             <></>
+                <>
+                    <LogoutUserForm/>
+                </>
             </DrawerContent>
         </>
     )

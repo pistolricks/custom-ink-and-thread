@@ -9,6 +9,7 @@
   "dependencies": {
     "@ark-ui/solid": "^4.10.2",
     "@corvu/drawer": "^0.2.3",
+    "@corvu/popover": "^0.2.0",
     "@kobalte/core": "^0.13.9",
     "@solidjs/router": "^0.15.0",
     "@solidjs/start": "^1.1.0",

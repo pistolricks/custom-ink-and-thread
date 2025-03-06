@@ -1,5 +1,5 @@
 import {Component, createEffect, createSignal, ParentProps, Show} from 'solid-js'
-import SideDrawer from '~/components/ui/dialogs/side-drawer'
+import SideDrawer from '~/components/ui/drawer/side-drawer'
 import Nav from '~/components/layouts/partials/nav'
 
 import {createAsync, useLocation} from '@solidjs/router'
@@ -37,7 +37,7 @@ const AppLayout: Component<PROPS> = (props) => {
         <SideDrawer side={'left'} contextId={'sd1'}>
             <Show when={getPath()}>
                 {/* <WsClient initialSocketUrl={'ws://localhost:4000'}/> */}
-                <Header/>
+                <Header user={user()} />
                 <main
                     style={{
                         height: getHeight() + 'px',
