@@ -13,17 +13,15 @@ type CurrentContextType = {
 
 export const CurrentContext = createContext<CurrentContextType>();
 
-export function CurrentProvider(props: {
-    user: USER | SessionUser | undefined,
+export function CurrentProvider(
+    props: {
+    user: SessionUser | undefined,
     token: AUTHENTICATION_TOKEN | undefined,
     folder: string | undefined,
     location: Feature | undefined,
     collection: FeatureCollection | undefined,
     children: JSXElement;
 }) {
-
-
-
 
     const [currentUser, storeCurrentUser] = createStore<SessionUser>()
     const [currentLocation, storeLocation] = createStore<Feature>({

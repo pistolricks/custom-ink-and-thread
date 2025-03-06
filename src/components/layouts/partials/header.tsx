@@ -5,12 +5,15 @@ import {useLayoutContext} from "~/context/layout-provider";
 import Drawer from "@corvu/drawer";
 import { SideDrawerContent } from "~/components/ui/drawer/side-drawer";
 import {DrawerContent} from "~/components/ui/drawer";
+import {useCurrentContext} from "~/context/current-provider";
 
 type PROPS = {}
 
 const Header: Component<PROPS> = props => {
 
     const {getIsDesktop, storedCurrentUser} = useLayoutContext();
+
+
 
 
 
