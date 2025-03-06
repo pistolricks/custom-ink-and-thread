@@ -12,14 +12,14 @@ export const route = {
     },
 }
 const AppLayout: Component<PROPS> = (props) => {
-    const {getHeight, setCurrentUser, storedCurrentUser} = useLayoutContext()
+    const {getIsDesktop, getHeight, setCurrentUser, storedCurrentUser} = useLayoutContext()
     const user = createAsync(async () => getUser())
 
     const children = () => props.children
     const location = useLocation()
     const [getPath, setPath] = createSignal<string | undefined>()
 
-    console.log('name', user()?.name)
+
 
     createEffect(() => {
         if (!user()) {
@@ -35,7 +35,7 @@ const AppLayout: Component<PROPS> = (props) => {
             })
         }
 
-        if (!storedCurrentUser && user()?.name) {
+        if (!storedCurrentUser && user()) {
             let usr = user();
             if (!usr) return
             setCurrentUser(usr)
@@ -53,7 +53,7 @@ const AppLayout: Component<PROPS> = (props) => {
 
     return (
 
-        <SideDrawer contextId={'sd1'}>
+        <SideDrawer side={"left"} contextId={'sd1'}>
             <Show when={getPath()}>
                 {/* <WsClient initialSocketUrl={'ws://localhost:4000'}/> */}
 

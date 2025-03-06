@@ -5,12 +5,92 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bddc89ca-a474-4ff4-a99a-c9fdc0360bc2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/css/drawer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/icons/categories.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/icons/contents.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/icons/places.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/icons/profile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/icons/vendors.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-BUSYA2B4.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-BUSYA2B4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/clsx.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/clsx.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/solid-js.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/solid-js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/solid-js_web.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/solid-js_web.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server-fns/deps/@solidjs_start___error-stack-parser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server-fns/deps/@solidjs_start___error-stack-parser.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server-fns/deps/@solidjs_start___source-map-js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server-fns/deps/@solidjs_start___source-map-js.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server-fns/deps/_metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server-fns/deps/chunk-7M6BOV3C.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server-fns/deps/chunk-7M6BOV3C.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server-fns/deps/chunk-BUSYA2B4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server-fns/deps/chunk-BUSYA2B4.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server-fns/deps/chunk-S4QGKELK.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server-fns/deps/chunk-S4QGKELK.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server-fns/deps/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server-fns/deps/solid-js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server-fns/deps/solid-js.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server-fns/deps/solid-js_h.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server-fns/deps/solid-js_h.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server-fns/deps/solid-js_html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server-fns/deps/solid-js_html.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server-fns/deps/solid-js_store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server-fns/deps/solid-js_store.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server-fns/deps/solid-js_web.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server-fns/deps/solid-js_web.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/chunk-DC5AMYBS.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/chunk-DC5AMYBS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/chunk-LDGJBI5U.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/chunk-LDGJBI5U.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/class-variance-authority.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/class-variance-authority.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/clsx.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/clsx.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/clsx.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/clsx.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/solid-js.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/solid-js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/solid-js_web.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/solid-js_web.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/vinxi_http.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/vinxi_http.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/bin/vite.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/bin/vite.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/client.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/client.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/client/client.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/dist/client/client.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node-cjs/publicUtils.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/dist/node-cjs/publicUtils.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node/chunks/dep-3RmXg9uo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node/chunks/dep-ByPKlqZ5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node/chunks/dep-CvfTChi5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node/chunks/dep-F-Bfqht7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node/chunks/dep-zaPmCqbl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node/cli.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/dist/node/cli.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/dist/node/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/dist/node/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/dist/node/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node/module-runner.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node/module-runner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node/moduleRunnerTransport.d-CXw_Ws6P.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/index.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/index.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/misc/false.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/misc/true.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/node_modules/@esbuild/darwin-arm64/bin/esbuild" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/node_modules/@esbuild/darwin-arm64/bin/esbuild" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/node_modules/@esbuild/darwin-arm64/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/node_modules/@esbuild/darwin-arm64/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/node_modules/esbuild/bin/esbuild" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/node_modules/esbuild/bin/esbuild" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/node_modules/esbuild/install.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/node_modules/esbuild/install.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/node_modules/esbuild/lib/main.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/node_modules/esbuild/lib/main.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/node_modules/esbuild/lib/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/node_modules/esbuild/lib/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/node_modules/esbuild/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/node_modules/esbuild/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/types/hmrPayload.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/types/hmrPayload.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/types/internal/cssPreprocessorOptions.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/types/internal/lightningcssOptions.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layouts/app-layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/app-layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/nav.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/nav.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/drawer/side-drawer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/drawer/side-drawer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/layout-provider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/layout-provider.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +119,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/eriksmith/projects/customInkAndThread/cit-app/src/components/ui/drawer&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/eriksmith/projects/customInkAndThread/cit-app/public/icons&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -53,18 +133,18 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/icons" />
       <recent name="$PROJECT_DIR$/src/components/ui/drawer" />
       <recent name="$PROJECT_DIR$/src/lib" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/routes" />
-      <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/lib/svg" />
       <recent name="$PROJECT_DIR$/src/routes" />
       <recent name="$PROJECT_DIR$/src/components/ui/loading" />
       <recent name="$PROJECT_DIR$/src/components/ui" />
       <recent name="$PROJECT_DIR$/src/internal/providers/environment/focus" />
-      <recent name="$PROJECT_DIR$/src/css" />
     </key>
   </component>
   <component name="RunManager">
@@ -105,7 +185,9 @@
       <workItem from="1741151895563" duration="355000" />
       <workItem from="1741165968154" duration="19183000" />
       <workItem from="1741205986502" duration="9040000" />
-      <workItem from="1741215708254" duration="2455000" />
+      <workItem from="1741215708254" duration="7855000" />
+      <workItem from="1741241258773" duration="15000" />
+      <workItem from="1741241374208" duration="6654000" />
     </task>
     <servers />
   </component>

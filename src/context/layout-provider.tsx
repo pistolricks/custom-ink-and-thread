@@ -3,11 +3,11 @@ import {Feature, FeatureCollection} from "~/lib/store";
 
 import {createStore, SetStoreFunction, Store} from "solid-js/store";
 
-import {User} from 'lucide-solid'
-import {Shirt} from 'lucide-solid'
-import {MapPin} from 'lucide-solid'
-import {Image} from 'lucide-solid'
-import {Book} from 'lucide-solid'
+import ProfileIcon from '~/lib/icons/profile.svg'
+import VendorsIcon from '~/lib/icons/vendors.svg'
+import PlacesIcon from '~/lib/icons/places.svg'
+import ContentsIcon from '~/lib/icons/contents.svg'
+import CategoriesIcon from '~/lib/icons/categories.svg'
 import {SessionUser} from "~/lib/session";
 import {Extent} from "ol/extent";
 
@@ -74,11 +74,11 @@ export function LayoutProvider(props: { children: JSX.Element }) {
 
 
     const menu: MenuItem[] = [
-        {title: "profile", href: "/profile", icon: User},
-        {title: "vendors", href: "/vendors", icon: Shirt},
-        {title: "places", href: "/places", icon: MapPin},
-        {title: "contents", href: "/contents", icon: Image},
-        {title: "categories", href: "/categories", icon: Book}
+        {title: "profile", href: "/profile", icon: ProfileIcon},
+        {title: "vendors", href: "/vendors", icon: VendorsIcon},
+        {title: "places", href: "/places", icon: PlacesIcon},
+        {title: "contents", href: "/contents", icon: ContentsIcon},
+        {title: "categories", href: "/categories", icon: CategoriesIcon}
     ]
 
     const apps: MenuItem[] = [
