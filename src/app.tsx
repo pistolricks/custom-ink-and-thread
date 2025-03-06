@@ -6,7 +6,7 @@ import Header from "~/components/layouts/partials/header";
 import {Toaster} from "~/components/ui/toast";
 import AppLayout from "~/components/layouts/app-layout";
 import {LayoutProvider} from "~/context/layout-provider";
-import {SessionProvider} from "~/context/session-provider";
+import {SessionProvider} from "~/context/current-provider";
 
 
 export default function App() {

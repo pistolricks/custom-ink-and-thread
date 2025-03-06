@@ -14,11 +14,11 @@ type CurrentContextType = {
 export const CurrentContext = createContext<CurrentContextType>();
 
 export function CurrentProvider(props: {
-    user: USER | SessionUser,
-    token: AUTHENTICATION_TOKEN,
-    folder: string,
-    location: Feature,
-    collection: FeatureCollection,
+    user: USER | SessionUser | undefined,
+    token: AUTHENTICATION_TOKEN | undefined,
+    folder: string | undefined,
+    location: Feature | undefined,
+    collection: FeatureCollection | undefined,
     children: JSXElement;
 }) {
 
@@ -66,7 +66,9 @@ export function CurrentProvider(props: {
         },
         {
             handleCollection() {
-                storeCollection(collection());
+                let c = collection();
+                if(!c)return
+                storeCollection(c);
             }
         }
     ]

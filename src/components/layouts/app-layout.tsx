@@ -7,6 +7,7 @@ import {getUser} from '~/lib/users'
 import {useLayoutContext} from '~/context/layout-provider'
 import {SessionUser} from "~/lib/session";
 import Header from "~/components/layouts/partials/header";
+import {CurrentProvider} from "~/context/current-provider";
 
 
 // const WsClient = clientOnly(() => import('~/components/ws/ws-client'))
@@ -58,7 +59,7 @@ const AppLayout: Component<PROPS> = (props) => {
     })
 
     return (
-
+        <CurrentProvider user={user()} token={} folder={} location={} collection={}>
         <SideDrawer side={'left'} contextId={'sd1'}>
             <Show when={getPath()}>
                 {/* <WsClient initialSocketUrl={'ws://localhost:4000'}/> */}
@@ -73,7 +74,7 @@ const AppLayout: Component<PROPS> = (props) => {
                 </main>
             </Show>
         </SideDrawer>
-
+        </CurrentProvider>
     )
 }
 
