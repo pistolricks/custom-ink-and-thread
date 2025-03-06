@@ -1,7 +1,7 @@
 import {CONTENT} from "~/lib/store";
 import ImageContent from "~/components/ui/image";
-import {PhotoIcon} from "~/components/svg";
-import {ByteWithLocale} from "~/components/ui/format-byte";
+import {PhotoIcon} from "~/components/ui/svg";
+import {ByteWithLocale} from "~/internal/providers/environment/format/bytes";
 
 const GridImage = (props: {
     content: CONTENT

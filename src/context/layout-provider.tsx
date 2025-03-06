@@ -26,10 +26,10 @@ type LayoutType = {
     setCurrentUser: SetStoreFunction<SessionUser>
     getStoreCollection: Store<FeatureCollection>
     setStoreCollection: SetStoreFunction<FeatureCollection>
-    getViewbox: Accessor<Extent | undefined>
-    setViewbox: Setter<Extent | undefined>
     getMyLocation: Accessor<Feature | undefined>
     setMyLocation: Setter<Feature | undefined>
+    getViewbox: Accessor<Extent | undefined>
+    setViewbox: Setter<Extent | undefined>
     getPosition: Accessor<POSITION>
     setPosition: Setter<POSITION>
     getHeight: Accessor<number>
@@ -49,8 +49,7 @@ export const LayoutContext = createContext<LayoutType>();
 export function LayoutProvider(props: { children: JSX.Element }) {
 
     const [storedCurrentUser, setCurrentUser] = createStore<SessionUser>()
-
-
+    const [getMyLocation, setMyLocation] = createSignal<Feature | undefined>(undefined)
     const [getStoreCollection, setStoreCollection] = createStore<FeatureCollection>({
         type: "FeatureCollection",
         features: []
@@ -58,7 +57,7 @@ export function LayoutProvider(props: { children: JSX.Element }) {
 
 
     const [getPosition, setPosition] = createSignal<POSITION>(undefined)
-    const [getMyLocation, setMyLocation] = createSignal<Feature | undefined>(undefined)
+
     const [getViewbox, setViewbox] = createSignal<Extent | undefined>(undefined)
     const [getHeight, setHeight] = createSignal(0)
     const [getQuery, setQuery] = createSignal("")

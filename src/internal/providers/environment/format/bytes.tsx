@@ -27,16 +27,16 @@ export const ByteSizes = () => {
     )
 }
 
-export const ByteWithLocale = () => {
-    const locales = ['de-DE', 'zh-CN']
-    const value = 1450.45
+export const ByteWithLocale = (props: {value: number}) => {
+    const locales = ['en-US']
+    const v = props.value
 
     return (
         <div>
             <For each={locales}>
                 {(locale) => (
                     <LocaleProvider locale={locale}>
-                        <Format.Byte value={value} />
+                        <Format.Byte value={v} />
                     </LocaleProvider>
                 )}
             </For>

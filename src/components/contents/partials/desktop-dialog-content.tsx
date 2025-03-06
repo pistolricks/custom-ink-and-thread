@@ -1,10 +1,11 @@
 import {Component} from "solid-js";
 import {CONTENT} from "~/lib/store";
-import ImageContent from "~/components/ui/image";
-import {PhotoIcon, XMark} from "~/components/svg";
+
 import Dialog from "@corvu/dialog";
 import {Button} from "~/components/ui/button";
 import {DialogContent} from "~/components/ui/dialogs/base-dialog";
+import ImageContent from "~/components/ui/image";
+import {PhotoIcon, XMark} from "~/components/ui/svg";
 
 type PROPS = {
     content?: CONTENT

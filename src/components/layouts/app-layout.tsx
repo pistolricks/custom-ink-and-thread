@@ -1,8 +1,15 @@
 import {Component, createEffect, createSignal, ParentProps, Show} from 'solid-js'
 import SideDrawer from '~/components/ui/drawer/side-drawer'
-import {createAsync, useLocation} from '@solidjs/router'
-import {getUser} from '~/lib/users'
+import {createAsync, Submission, useLocation, useSubmission} from '@solidjs/router'
+import {getUser, loginUserHandler} from '~/lib/users'
 import {useLayoutContext} from '~/context/layout-provider'
+import Header from "~/components/layouts/partials/header";
+import { SessionProvider } from '~/context/session-provider'
+import {USER} from "~/lib/db";
+import {AUTHENTICATION_TOKEN} from "~/lib";
+import {getSession} from "~/lib/session";
+import {actionPositionHandler} from "~/lib/addresses";
+
 
 
 type PROPS = ParentProps
@@ -11,7 +18,16 @@ export const route = {
         getUser()
     },
 }
+
+type LoginResponseType = {
+    user: USER,
+    token: AUTHENTICATION_TOKEN,
+    folder: string
+}
 const AppLayout: Component<PROPS> = (props) => {
+    const lRes: any = useSubmission(loginUserHandler);
+    const currentPosition = useSubmission(actionPositionHandler);
+
     const {getIsDesktop, getHeight, setCurrentUser, storedCurrentUser} = useLayoutContext()
     const user = createAsync(async () => getUser())
 
@@ -21,7 +37,10 @@ const AppLayout: Component<PROPS> = (props) => {
 
 
 
-    createEffect(() => {
+
+
+
+    createEffect(async() => {
         if (!user()) {
             setCurrentUser({
                 id: undefined,
@@ -51,8 +70,10 @@ const AppLayout: Component<PROPS> = (props) => {
         setPath(() => location?.pathname)
     })
 
-    return (
 
+
+    return (
+        <SessionProvider user={lRes.user} token={lRes.token} folder={lRes.folder} session={getSession()}  location={currentPosition.result} >
         <SideDrawer side={"left"} contextId={'sd1'}>
             <Show when={getPath()}>
                 {/* <WsClient initialSocketUrl={'ws://localhost:4000'}/> */}
@@ -63,11 +84,12 @@ const AppLayout: Component<PROPS> = (props) => {
                         width: '100%'
                     }}
                 >
+                    <Header/>
                     {children()}
                 </main>
             </Show>
         </SideDrawer>
-
+        </SessionProvider>
     )
 }
 

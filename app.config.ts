@@ -3,6 +3,7 @@ import tailwindcss from "@tailwindcss/vite";
 import solidSvg from 'vite-plugin-solid-svg'
 export default defineConfig({
   vite: {
+
     plugins: [
         tailwindcss(),
       solidSvg()
