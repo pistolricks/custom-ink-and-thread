@@ -5,20 +5,21 @@ import "./app.css";
 import Header from "~/components/layouts/partials/header";
 import {Toaster} from "~/components/ui/toast";
 import AppLayout from "~/components/layouts/app-layout";
-import {LayoutProvider} from "~/context/layout-provider";
 
 
 export default function App() {
+
+
     return (
         <Router
             root={props => (
                 <>
-                    <LayoutProvider>
-                        <AppLayout>
-                            <Header/>
-                            <Suspense>{props.children}</Suspense>
-                        </AppLayout>
-                    </LayoutProvider>
+
+                    <AppLayout>
+                        <Header/>
+                        <Suspense>{props.children}</Suspense>
+                    </AppLayout>
+
                 </>
             )}
         >

@@ -1,20 +1,13 @@
-import {Component, createEffect, lazy, Match, Switch} from "solid-js";
+import {Component, createEffect, Match, Switch} from "solid-js";
 import ActivateUserForm from '~/components/users/forms/activate-user-form';
-import FormLayout from "~/components/layouts/form-layout";
-import {AccessorWithLatest, createAsync, RouteSectionProps, useNavigate} from "@solidjs/router";
-import {USER} from "~/lib/store";
-import {getUser} from "~/lib/users";
+import {RouteSectionProps, useNavigate} from "@solidjs/router";
 import {useLayoutContext} from "~/context/layout-provider";
+import FormLayout from "~/components/forms/partials/form-layout";
 
 const Activate: Component<RouteSectionProps> = props => {
-    const navigate = useNavigate();
     const {storedCurrentUser} = useLayoutContext();
 
-    createEffect(() => {
-        if (storedCurrentUser?.activated) {
-            navigate('/')
-        }
-    })
+
 
     return (
         <FormLayout>

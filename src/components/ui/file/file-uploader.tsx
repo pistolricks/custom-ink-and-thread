@@ -54,7 +54,7 @@ export const WithField = (props: Field.RootProps) => (
 
 
 
-export const Basic = () => (
+export const FileUploader = () => (
     <FileUpload.Root maxFiles={5}>
         <FileUpload.Label>File Upload</FileUpload.Label>
         <FileUpload.Dropzone>Drag your file(s) here</FileUpload.Dropzone>

@@ -1,8 +1,10 @@
 import {Component, For, Show} from "solid-js";
 import {ProfileDetailProps} from "~/lib/store";
 import {SessionUser} from "~/lib/session";
-import {Avatar, AvatarFallback, AvatarImage} from "~/components/ui/avatar";
+
 import {handleInitials} from "~/lib/utils";
+import {Avatar} from "~/components/ui/avatar/avatar-ui";
+import {AvatarFallback, AvatarImage} from "@ark-ui/solid";
 
 
 type PROPS = SessionUser

@@ -1,20 +1,15 @@
 import {Component, createEffect, createSelector, createSignal, For, Show} from "solid-js";
-import {CONTENT} from "~/lib/store";
-import {ByteWithLocale} from "~/components/ui/format-byte";
-import {ResponsiveDialog} from "~/components/ui/dialogs/responsive-dialog";
+import {CONTENT, Feature} from "~/lib/store";
+
 import DrawerPrimitive from "@corvu/drawer";
 import Dialog from "@corvu/dialog";
-import {Button} from "~/components/ui/button";
-import {ChevronDown, PhotoIcon, XMark} from "~/components/svg";
-import GridWrapper from "~/components/layouts/partials/grid-wrapper";
+
 import {useLayoutContext} from "~/context/layout-provider";
-import {Feature} from "geojson";
-import ImageContent from "~/components/ui/image";
-import {DialogContent} from "~/components/ui/dialogs/base-dialog";
-import {DrawerContent} from "~/components/ui/dialogs/base-drawer";
 import GridImage from "~/components/contents/partials/grid-image";
 import MobileDrawerContent from "~/components/contents/partials/mobile-drawer-content";
 import DesktopDialogContent from "~/components/contents/partials/desktop-dialog-content";
+import {ResponsiveDialog} from "~/components/dialogs/responsive-dialog";
+import GridWrapper from "~/components/layouts/partials/grid-wrapper";
 
 type PROPS = {
     feature: Feature | undefined;
@@ -44,8 +39,6 @@ const ContentsList: Component<PROPS> = props => {
         }
 
     };
-
-
 
 
     return (

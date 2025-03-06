@@ -1,4 +1,4 @@
-import {Accessor, Component, createContext, createSignal, JSX, onMount, Setter, useContext} from "solid-js";
+import {Accessor, createContext, createEffect, createSignal, JSX, onMount, Setter, useContext} from "solid-js";
 import {Feature, FeatureCollection} from "~/lib/store";
 
 import {createStore, SetStoreFunction, Store} from "solid-js/store";
@@ -10,7 +10,8 @@ import ContentsIcon from '~/lib/icons/contents.svg'
 import CategoriesIcon from '~/lib/icons/categories.svg'
 import {SessionUser} from "~/lib/session";
 import {Extent} from "ol/extent";
-
+import {AUTHENTICATION_TOKEN} from "~/lib";
+import {AccessorWithLatest} from "@solidjs/router";
 
 export type MenuItem = {
     title: string;
@@ -46,7 +47,25 @@ let footerHeight = import.meta.env.VITE_FOOTER_HEIGHT
 
 export const LayoutContext = createContext<LayoutType>();
 
-export function LayoutProvider(props: { children: JSX.Element }) {
+export function LayoutProvider(props: {
+    children: JSX.Element,
+    height?: number,
+    width?: number,
+    authentication_token?: AccessorWithLatest<AUTHENTICATION_TOKEN | undefined>
+    currentLocation?: Feature,
+    boundingBox?: Extent,
+    collection?: AccessorWithLatest<FeatureCollection | undefined>
+    query?: string
+}) {
+
+
+    const authentication_token = () => props.authentication_token;
+    const currentLocation = () => props.currentLocation;
+    const collection = () => props.collection;
+    const query  = () => props.query;
+
+    const height = () => props.height;
+    const width = () => props.width;
 
     const [storedCurrentUser, setCurrentUser] = createStore<SessionUser>()
 
@@ -56,16 +75,47 @@ export function LayoutProvider(props: { children: JSX.Element }) {
         features: []
     })
 
-
     const [getPosition, setPosition] = createSignal<POSITION>(undefined)
     const [getMyLocation, setMyLocation] = createSignal<Feature | undefined>(undefined)
     const [getViewbox, setViewbox] = createSignal<Extent | undefined>(undefined)
-    const [getHeight, setHeight] = createSignal(0)
+    const [getHeight, setHeight] = createSignal(height() ?? 0)
     const [getQuery, setQuery] = createSignal("")
 
+    createEffect(() => {
+        console.log("getHeight", getHeight())
+        /*
+
+         setCurrentUser(() => ({
+                 id: session.data.id,
+                 name: session.data.name,
+                 email: session.data.email,
+                 display_name: handleUserName(session.data.name),
+                 activated: session.data.activated,
+                 created_at: session.data.created_at,
+                 token: session.data.authentication_token?.token,
+                 expiry: session.data.authentication_token?.expiry,
+                 folder: session.data?.folder,
+                 current_location: session.data?.current_location
+             })
+         )
+
+         setMyLocation(() => session.data?.current_location)
+         setPosition(() => session.data?.position)
+         setQuery(() => session.data?.query)
+
+
+         */
+    })
+
+
     const handleHeight = () => {
-        setHeight(() => window.innerHeight - (headerHeight) - (footerHeight))
-        setIsDesktop(window.innerWidth >= 726)
+
+        let h = height();
+        if(!h) return;
+        setHeight(() => h - (headerHeight) - (footerHeight))
+        let w = width();
+        if(!w) return;
+        setIsDesktop(w >= 726)
 
         console.log('height', getHeight())
     }

@@ -53,7 +53,7 @@ const VendorAdvert: VoidComponent = () => {
 
                     </p>
                     <div class="mt-4 flex items-center justify-center gap-x-6">
-                        <Button type={"button"} variant={'information'}>Get Started</Button>
+                        <Button type={"button"} variant={'default'}>Get Started</Button>
                         <Button type={"button"} variant={'link'}>Learn more <span aria-hidden="true">→</span></Button>
                     </div>
                 </div>
