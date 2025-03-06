@@ -1,16 +1,15 @@
 import {Component, createEffect, createSignal, ParentProps, Show} from 'solid-js'
-import SideDrawer from '~/components/ui/drawer/side-drawer'
-import {createAsync, Submission, useLocation, useSubmission} from '@solidjs/router'
-import {getUser, loginUserHandler} from '~/lib/users'
+import SideDrawer from '~/components/ui/dialogs/side-drawer'
+import Nav from '~/components/layouts/partials/nav'
+
+import {createAsync, useLocation} from '@solidjs/router'
+import {getUser} from '~/lib/users'
 import {useLayoutContext} from '~/context/layout-provider'
+import {SessionUser} from "~/lib/session";
 import Header from "~/components/layouts/partials/header";
-import { SessionProvider } from '~/context/session-provider'
-import {USER} from "~/lib/db";
-import {AUTHENTICATION_TOKEN} from "~/lib";
-import {getSession} from "~/lib/session";
-import {actionPositionHandler} from "~/lib/addresses";
 
 
+// const WsClient = clientOnly(() => import('~/components/ws/ws-client'))
 
 type PROPS = ParentProps
 export const route = {
@@ -18,30 +17,18 @@ export const route = {
         getUser()
     },
 }
-
-type LoginResponseType = {
-    user: USER,
-    token: AUTHENTICATION_TOKEN,
-    folder: string
-}
 const AppLayout: Component<PROPS> = (props) => {
-    const lRes: any = useSubmission(loginUserHandler);
-    const currentPosition = useSubmission(actionPositionHandler);
-
-    const {getIsDesktop, getHeight, setCurrentUser, storedCurrentUser} = useLayoutContext()
+    const {getHeight, setCurrentUser, storedCurrentUser} = useLayoutContext()
     const user = createAsync(async () => getUser())
 
     const children = () => props.children
     const location = useLocation()
     const [getPath, setPath] = createSignal<string | undefined>()
 
+    console.log('name', user()?.name)
 
-
-
-
-
-    createEffect(async() => {
-        if (!user()) {
+    createEffect(() => {
+        if (!user()?.name) {
             setCurrentUser({
                 id: undefined,
                 name: undefined,
@@ -54,7 +41,7 @@ const AppLayout: Component<PROPS> = (props) => {
             })
         }
 
-        if (!storedCurrentUser && user()) {
+        if (!storedCurrentUser && user()?.name) {
             let usr = user();
             if (!usr) return
             setCurrentUser(usr)
@@ -70,26 +57,23 @@ const AppLayout: Component<PROPS> = (props) => {
         setPath(() => location?.pathname)
     })
 
-
-
     return (
-        <SessionProvider user={lRes.user} token={lRes.token} folder={lRes.folder} session={getSession()}  location={currentPosition.result} >
-        <SideDrawer side={"left"} contextId={'sd1'}>
+
+        <SideDrawer side={'left'} contextId={'sd1'}>
             <Show when={getPath()}>
                 {/* <WsClient initialSocketUrl={'ws://localhost:4000'}/> */}
-
+                <Header/>
                 <main
                     style={{
                         height: getHeight() + 'px',
                         width: '100%'
                     }}
                 >
-                    <Header/>
                     {children()}
                 </main>
             </Show>
         </SideDrawer>
-        </SessionProvider>
+
     )
 }
 

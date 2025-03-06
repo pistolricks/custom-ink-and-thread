@@ -6,15 +6,17 @@ import {cn} from "~/lib/utils";
 
 type PROPS = {
     children?: JSXElement
-    contextId: string
+    contextId: string,
+    side: 'top' | 'right' | 'bottom' | 'left'
 }
 
 function SideDrawer(props: PROPS) {
     const contextId = () => props.contextId;
     const children = () => props.children;
+    const side = () => props.side ?? "right";
 
     return (
-        <DrawerPrimitive contextId={contextId()} breakPoints={[0.75]} side={"right"}>
+        <DrawerPrimitive contextId={contextId()} breakPoints={[0.75]} side={side()}>
             {(props) => (
                 <>
 

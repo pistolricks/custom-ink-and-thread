@@ -4,7 +4,7 @@ import {LayoutContext} from "~/context/layout-provider";
 import {USER} from "~/lib/db";
 import {AUTHENTICATION_TOKEN} from "~/lib";
 import {handleUserName} from "~/lib/utils";
-import {SessionUser} from "~/lib/session";
+import {getSession, getSessionUser, SessionUser} from "~/lib/session";
 import {Feature, FeatureCollection, Point, Properties} from "~/lib/store";
 import {createStore, SetStoreFunction, Store} from "solid-js/store";
 
@@ -36,9 +36,12 @@ export function SessionProvider(props: {
     })
 
 
-    const setSession = (s: Record<string, any>, u?: USER, a?: AUTHENTICATION_TOKEN, f?: string, l?: Feature) => {
+    const setSession = async (s: Record<string, any>, u?: USER, a?: AUTHENTICATION_TOKEN, f?: string, l?: Feature) => {
 
-        let sess = s.update((su: SessionUser) => {
+
+        let session = await getSession();
+
+        await session.update((su: SessionUser) => {
             su.id = u?.id;
             su.name = u?.name;
             su.email = u?.email;
@@ -51,8 +54,10 @@ export function SessionProvider(props: {
             su.current_location = l
         })
 
-        storeCurrentUser(() => sess)
-        storeLocation(() => sess.current_location)
+
+        storeCurrentUser(() => s)
+        if (l)
+            storeLocation(() => l)
 
     }
 

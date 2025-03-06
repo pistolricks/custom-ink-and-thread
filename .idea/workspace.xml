@@ -5,31 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bddc89ca-a474-4ff4-a99a-c9fdc0360bc2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/ui/dialogs/base-dialog.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/dialogs/base-drawer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/dialogs/responsive-dialog.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/dialogs/responsive-drawer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/dialogs/responsive-nav.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/dialogs/side-drawer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/image.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/svg/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/users/forms/activate-user-form.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/users/forms/login-user-form.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/users/forms/logout-user-form.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/users/forms/register-user-form.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/users/forms/resend-activate-email-form.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/users/user-profile.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/session-provider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/addresses.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layouts/partials/app-sidebar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layouts/partials/breadcrumbs.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layouts/partials/footer-menu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layouts/partials/grid-wrapper.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layouts/partials/list-wrapper.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layouts/partials/side-nav-menu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/features.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/healthcheck.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/owners.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/vendors.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contents/partials/desktop-dialog-content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contents/partials/desktop-dialog-content.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contents/partials/grid-image.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contents/partials/grid-image.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contents/forms/upload-content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contents/forms/upload-content.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contents/list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contents/list.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layouts/app-layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/app-layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/layout-provider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/layout-provider.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/internal/providers/environment/format/bytes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/internal/providers/environment/format/bytes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/dialogs/side-drawer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/dialogs/side-drawer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/file/file-uploader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/file/file-uploader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/session-provider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/session-provider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/activate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/activate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/contents/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/contents/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/profile/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/profile/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,30 +48,30 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/eriksmith/projects/customInkAndThread/cit-app/src/components/ui",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.dev.executor": "Run",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Users/eriksmith/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/eriksmith/projects/customInkAndThread/cit-app/src/components/layouts/partials&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/eriksmith/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/layouts/partials" />
+      <recent name="$PROJECT_DIR$/src/lib" />
       <recent name="$PROJECT_DIR$/src/components/ui" />
       <recent name="$PROJECT_DIR$/src/components/users" />
-      <recent name="$PROJECT_DIR$/src/lib" />
       <recent name="$PROJECT_DIR$/public/icons" />
-      <recent name="$PROJECT_DIR$/src/components/ui/drawer" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/lib/svg" />
@@ -127,7 +122,8 @@
       <workItem from="1741215708254" duration="7855000" />
       <workItem from="1741241258773" duration="15000" />
       <workItem from="1741241374208" duration="6654000" />
-      <workItem from="1741268507773" duration="6950000" />
+      <workItem from="1741268507773" duration="8169000" />
+      <workItem from="1741277807254" duration="453000" />
     </task>
     <servers />
   </component>
