@@ -1,83 +1,89 @@
-import {Accessor, createContext, createEffect, createSignal, JSXElement, Setter, useContext} from "solid-js";
-import type {Session} from "vinxi/http";
-import {LayoutContext} from "~/context/layout-provider";
+import {createContext, createEffect, JSXElement, useContext} from "solid-js";
 import {USER} from "~/lib/db";
 import {AUTHENTICATION_TOKEN} from "~/lib";
 import {handleUserName} from "~/lib/utils";
-import {getSession, getSessionUser, SessionUser} from "~/lib/session";
-import {Feature, FeatureCollection, Point, Properties} from "~/lib/store";
-import {createStore, SetStoreFunction, Store} from "solid-js/store";
 
-type SessionContextType = {
-    currentUser: Store<SessionUser>
-    collection: Store<FeatureCollection>
-    currentLocation: Store<Feature>
+import {Feature, FeatureCollection} from "~/lib/store";
+import {createStore, Store} from "solid-js/store";
+import {SessionUser} from "~/lib/session";
+
+type CurrentContextType = {
+    current: [Store<SessionUser>, Store<Feature>,Store<FeatureCollection>, { handleUser: () => void },{ handleLocation: () => void }, { handleCollection: () => void }]
 }
 
-export const SessionContext = createContext<SessionContextType>();
+export const CurrentContext = createContext<CurrentContextType>();
 
-export function SessionProvider(props: {
-    user: USER | undefined,
-    token: AUTHENTICATION_TOKEN | undefined,
-    session: Record<string, any>;
-    folder: string | undefined,
-    location: Feature | undefined,
+export function CurrentProvider(props: {
+    user: USER | SessionUser,
+    token: AUTHENTICATION_TOKEN,
+    folder: string,
+    location: Feature,
+    collection: FeatureCollection,
     children: JSXElement;
 }) {
+
+
 
 
     const [currentUser, storeCurrentUser] = createStore<SessionUser>()
     const [currentLocation, storeLocation] = createStore<Feature>({
         type: "Feature",
     })
-    const [collection, storeCollection] = createStore<FeatureCollection>({
+    const [currentCollection, storeCollection] = createStore<FeatureCollection>({
         type: "FeatureCollection",
         features: []
     })
+    const user = () => props.user
+    const token = () => props.token
+    const folder = () => props.folder
+    const location = () => props.location
+    const collection = () => props.collection
 
 
-    const setSession = async (s: Record<string, any>, u?: USER, a?: AUTHENTICATION_TOKEN, f?: string, l?: Feature) => {
+    const current: [Store<SessionUser>, Store<Feature>, Store<FeatureCollection>, { handleUser: () => void }, { handleLocation: () => void }, { handleCollection: () => void }] = [
+        currentUser,
+        currentLocation,
+        currentCollection,
+        {
+            handleUser() {
+                storeCurrentUser({
+                    id: user()?.id,
+                    name: user()?.name,
+                    email: user()?.email,
+                    display_name: handleUserName(user()?.name),
+                    activated: user()?.activated,
+                    created_at: user()?.created_at,
+                    token: token()?.token,
+                    folder: folder(),
+                    current_location: location()
+                })
+            }
+        },
+        {
+            handleLocation() {
+                storeLocation(location()!);
+            }
+        },
+        {
+            handleCollection() {
+                storeCollection(collection());
+            }
+        }
+    ]
 
 
-        let session = await getSession();
 
-        await session.update((su: SessionUser) => {
-            su.id = u?.id;
-            su.name = u?.name;
-            su.email = u?.email;
-            su.display_name = handleUserName(u?.name)
-            su.activated = u?.activated;
-            su.created_at = u?.created_at;
-            su.token = a?.token;
-            su.expiry = s?.expiry;
-            su.folder = f;
-            su.current_location = l
-        })
-
-
-        storeCurrentUser(() => s)
-        if (l)
-            storeLocation(() => l)
-
-    }
-
-
-    createEffect(() => {
-        setSession(props.session, props.user, props.token, props.folder, props.location)
-    })
 
 
     return (
-        <SessionContext.Provider value={{
-            currentUser,
-            currentLocation,
-            collection
+        <CurrentContext.Provider value={{
+            current
         }}>
             {props.children}
-        </SessionContext.Provider>
+        </CurrentContext.Provider>
     );
 }
 
-export function useSessionContext() {
-    return useContext(SessionContext)!;
+export function useCurrentContext() {
+    return useContext(CurrentContext)!;
 }

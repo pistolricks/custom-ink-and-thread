@@ -5,26 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bddc89ca-a474-4ff4-a99a-c9fdc0360bc2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/layouts/partials/app-sidebar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layouts/partials/breadcrumbs.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layouts/partials/footer-menu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layouts/partials/grid-wrapper.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layouts/partials/list-wrapper.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layouts/partials/side-nav-menu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/features.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/healthcheck.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/owners.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/vendors.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contents/forms/upload-content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contents/forms/upload-content.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contents/list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contents/list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layouts/app-layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/app-layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/dialogs/side-drawer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/dialogs/side-drawer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/file/file-uploader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/file/file-uploader.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/context/session-provider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/session-provider.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/activate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/activate.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/contents/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/contents/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/profile/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/profile/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +105,8 @@
       <workItem from="1741241258773" duration="15000" />
       <workItem from="1741241374208" duration="6654000" />
       <workItem from="1741268507773" duration="8169000" />
-      <workItem from="1741277807254" duration="453000" />
+      <workItem from="1741277807254" duration="1152000" />
+      <workItem from="1741284695533" duration="2564000" />
     </task>
     <servers />
   </component>
