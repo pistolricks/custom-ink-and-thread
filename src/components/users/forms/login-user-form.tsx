@@ -4,7 +4,7 @@ import {loginUserHandler} from "~/lib/users";
 import {TextField, TextFieldErrorMessage, TextFieldInput} from "~/components/ui/text-field";
 import {Button} from "../../ui/button";
 import {showToast} from "~/components/ui/toast";
-import {ChevronLeft} from "~/components/svg";
+import {ChevronLeft} from "~/components/ui/svg";
 
 type PROPS = {}
 

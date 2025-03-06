@@ -27,9 +27,8 @@ export async function resendActivateEmail(resendInput: { email: string }) {
 
 export async function login(userInput: { email: string, password: string }) {
     const res = await db.user.login({where: {userInput}});
-    await updateSessionUser(res.user, res.authentication_token, res.folder)
     if (!res.user.activated) throw redirect("/activate");
-    if(res.user.activated) throw redirect("/");
+    if(res.user.activated) return res
     else return res;
 
 }

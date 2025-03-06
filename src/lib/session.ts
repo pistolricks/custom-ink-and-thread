@@ -26,6 +26,30 @@ export function getSession() {
     });
 }
 
+export async function updateSessionData(user: SessionUser) {
+    "use server";
+    try {
+        const session = await getSession();
+        await session.update((d: SessionUser) => {
+            d.id = user?.id;
+            d.name = user?.name;
+            d.email = user?.email;
+            d.display_name = handleUserName(user?.name)
+            d.activated = user?.activated;
+            d.created_at = user?.created_at;
+            d.token = user?.token;
+            d.expiry = user?.expiry;
+            d.folder = user?.folder;
+            d.current_location = user?.current_location
+        });
+
+        return session.data;
+    } catch (err) {
+        return err as Error;
+    }
+}
+
+
 export async function updateSessionUser(user: USER, authentication_token: AUTHENTICATION_TOKEN, folder: string) {
     "use server";
     try {
