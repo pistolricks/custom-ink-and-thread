@@ -83,7 +83,9 @@ const AppLayout: Component<PROPS> = (props) => {
         <SideDrawer side={'left'} contextId={'sd1'}>
             <Show when={getPath()}>
                 {/* <WsClient initialSocketUrl={'ws://localhost:4000'}/> */}
+               <div class={' h-[104px]'}>
                 <Header user={user()}/>
+               </div>
                 <main
                     style={{
                         height: getHeight() + 'px',

@@ -5,22 +5,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bddc89ca-a474-4ff4-a99a-c9fdc0360bc2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/layouts/dashboard/partials/header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layouts/dashboard/partials/logo.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/dropdown/dropdown-filter.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/dropdown/dropdown-full.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/dropdown/dropdown-help.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/dropdown/dropdown-notifications.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/dropdown/dropdown-profile.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/dropdown/dropdown-switch.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/notification/notification.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/sidebar/sidebar-link-group.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/sidebar/sidebar-link.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/sidebar/sidebar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/dashboard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/dashboard/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dashboard/partials/charts.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dashboard/partials/main-nav.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dashboard/partials/overview.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dashboard/partials/recent-sales.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/inbox/account-switcher.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/inbox/data.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/inbox/mail-display.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/inbox/mail-list.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/inbox/nav.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/inbox/use-mail.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/inbox.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/inbox/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/app-sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/app-sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/@solidjs_start___error-stack-parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/@solidjs_start___error-stack-parser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/@solidjs_start___source-map-js.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/@solidjs_start___source-map-js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-BUSYA2B4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-BUSYA2B4.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/class-variance-authority.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/class-variance-authority.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/clsx.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/clsx.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/solid-js.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/solid-js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/solid-js_h.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/solid-js_h.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/solid-js_html.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/solid-js_html.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/solid-js_store.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/solid-js_store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/solid-js_store.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/solid-js_store.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/solid-js_web.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/solid-js_web.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/tailwind-merge.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/tailwind-merge.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/@solidjs_start___error-stack-parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/@solidjs_start___error-stack-parser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/@solidjs_start___source-map-js.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/@solidjs_start___source-map-js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/chunk-BUSYA2B4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/chunk-BUSYA2B4.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/solid-js.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/solid-js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/solid-js_h.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/solid-js_h.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/solid-js_html.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/solid-js_html.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/solid-js_store.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/solid-js_store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/solid-js_web.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/solid-js_web.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/icons/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/icons/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/app-layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/app-layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/dashboard/partials/header.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/dashboard/partials/logo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/partials/logo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/side-nav-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/side-nav-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/dropdown/dropdown-full.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/dropdown/dropdown-full.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/dropdown/dropdown-help.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/dropdown/dropdown-help.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/dropdown/dropdown-notifications.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/dropdown/dropdown-notifications.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/dropdown/dropdown-profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/dropdown/dropdown-profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/dropdown/dropdown-switch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/dropdown/dropdown-switch.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/dashboard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/dashboard/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/dashboard/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +91,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "working-refactor",
-    "last_opened_file_path": "/Users/eriksmith/projects/customInkAndThread/cit-app/src/components/ui/dropdown",
+    "last_opened_file_path": "/Users/eriksmith/projects/customInkAndThread/cit-app/src/components/inbox",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -68,18 +105,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/inbox" />
       <recent name="$PROJECT_DIR$/src/components/ui/dropdown" />
       <recent name="$PROJECT_DIR$/src/components/ui/notification" />
       <recent name="$PROJECT_DIR$/src/components/layouts/dashboard/partials" />
       <recent name="$PROJECT_DIR$/src/components/ui" />
-      <recent name="$PROJECT_DIR$/src/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/components/layouts/dashboard/partials" />
       <recent name="$PROJECT_DIR$/src/components/ui/sidebar" />
       <recent name="$PROJECT_DIR$/src/lib/svg" />
       <recent name="$PROJECT_DIR$/src/routes" />
-      <recent name="$PROJECT_DIR$/src/components/ui/loading" />
     </key>
   </component>
   <component name="RunManager">
@@ -126,6 +163,7 @@
       <workItem from="1741268507773" duration="8169000" />
       <workItem from="1741277807254" duration="1152000" />
       <workItem from="1741284695533" duration="2564000" />
+      <workItem from="1741324804960" duration="5924000" />
     </task>
     <servers />
   </component>

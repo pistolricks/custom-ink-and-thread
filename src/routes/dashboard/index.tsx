@@ -1,41 +1,175 @@
-export const metadata = {
-    title: 'Dashboard - Mosaic',
-    description: 'Page description',
-}
+import { Button } from "~/components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "~/components/ui/card"
+import { Grid } from "~/components/ui/grid"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs"
+import {Overview} from "~/components/dashboard/partials/overview";
+import { RecentSales } from "~/components/dashboard/partials/recent-sales";
+import { IconDownload } from "~/components/ui/svg";
+import {MainNav} from "~/components/dashboard/partials/main-nav";
+import {Component} from "solid-js";
 
 
-export default function Dashboard() {
+const Dashboard: Component<{}> = props => {
+
+
     return (
-        <div class="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-[96rem] mx-auto">
-            {/* Dashboard actions */}
-            <div class="sm:flex sm:justify-between sm:items-center mb-8">
-                {/* Left: Title */}
-                <div class="mb-4 sm:mb-0">
-                    <h1 class="text-2xl md:text-3xl text-gray-800 dark:text-gray-100 font-bold">Dashboard</h1>
-                </div>
-                {/* Right: Actions */}
-                <div class="grid grid-flow-col sm:auto-cols-max justify-start sm:justify-end gap-2">
-                    {/* Filter button */}
+        <>
+            <div class="md:hidden">
+                <img
+                    src="/examples/dashboard-light.png"
+                    width={1280}
+                    height={866}
+                    alt="Dashboard"
+                    class="block dark:hidden"
+                />
+                <img
+                    src="/examples/dashboard-dark.png"
+                    width={1280}
+                    height={866}
+                    alt="Dashboard"
+                    class="hidden dark:block"
+                />
+            </div>
+            <div class="hidden flex-col md:flex">
 
-                    {/* Filter button */}
-
-                    {/* Datepicker built with React Day Picker */}
-                   {/* Need a date picker */}
-                    {/* Add view button */}
-                    <button class="btn bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white">
-                        <svg class="fill-current shrink-0 xs:hidden" width="16" height="16" viewBox="0 0 16 16">
-                            <path d="M15 7H9V1c0-.6-.4-1-1-1S7 .4 7 1v6H1c-.6 0-1 .4-1 1s.4 1 1 1h6v6c0 .6.4 1 1 1s1-.4 1-1V9h6c.6 0 1-.4 1-1s-.4-1-1-1z" />
-                        </svg>
-                        <span class="max-xs:sr-only">Add View</span>
-                    </button>
+                <div class="flex-1 space-y-4 p-8 pt-6">
+                    <div class="flex items-center justify-between space-y-2">
+                        <h2 class="text-3xl font-bold tracking-tight">Dashboard</h2>
+                        <div class="flex items-center space-x-2">
+                            <Button>
+                                <IconDownload class="mr-2 size-4" />
+                                Download
+                            </Button>
+                        </div>
+                    </div>
+                    <Tabs defaultValue="overview" class="space-y-4">
+                        <TabsList>
+                            <TabsTrigger value="overview">Overview</TabsTrigger>
+                            <TabsTrigger value="analytics" disabled>
+                                Analytics
+                            </TabsTrigger>
+                            <TabsTrigger value="reports" disabled>
+                                Reports
+                            </TabsTrigger>
+                            <TabsTrigger value="notifications" disabled>
+                                Notifications
+                            </TabsTrigger>
+                        </TabsList>
+                        <TabsContent value="overview" class="space-y-4">
+                            <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+                                <Card>
+                                    <CardHeader class="flex flex-row items-center justify-between space-y-0 pb-2">
+                                        <CardTitle class="text-sm font-medium">Total Revenue</CardTitle>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            class="size-4 text-muted-foreground"
+                                        >
+                                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                                        </svg>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <div class="text-2xl font-bold">$45,231.89</div>
+                                        <p class="text-xs text-muted-foreground">+20.1% from last month</p>
+                                    </CardContent>
+                                </Card>
+                                <Card>
+                                    <CardHeader class="flex flex-row items-center justify-between space-y-0 pb-2">
+                                        <CardTitle class="text-sm font-medium">Subscriptions</CardTitle>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            class="size-4 text-muted-foreground"
+                                        >
+                                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                            <circle cx="9" cy="7" r="4" />
+                                            <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+                                        </svg>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <div class="text-2xl font-bold">+2350</div>
+                                        <p class="text-xs text-muted-foreground">+180.1% from last month</p>
+                                    </CardContent>
+                                </Card>
+                                <Card>
+                                    <CardHeader class="flex flex-row items-center justify-between space-y-0 pb-2">
+                                        <CardTitle class="text-sm font-medium">Sales</CardTitle>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            class="size-4 text-muted-foreground"
+                                        >
+                                            <rect width="20" height="14" x="2" y="5" rx="2" />
+                                            <path d="M2 10h20" />
+                                        </svg>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <div class="text-2xl font-bold">+12,234</div>
+                                        <p class="text-xs text-muted-foreground">+19% from last month</p>
+                                    </CardContent>
+                                </Card>
+                                <Card>
+                                    <CardHeader class="flex flex-row items-center justify-between space-y-0 pb-2">
+                                        <CardTitle class="text-sm font-medium">Active Now</CardTitle>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            class="size-4 text-muted-foreground"
+                                        >
+                                            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                                        </svg>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <div class="text-2xl font-bold">+573</div>
+                                        <p class="text-xs text-muted-foreground">+201 since last hour</p>
+                                    </CardContent>
+                                </Card>
+                            </div>
+                            <Grid colsMd={2} colsLg={7} class="gap-4">
+                                <Card class="col-span-4">
+                                    <CardHeader>
+                                        <CardTitle>Overview</CardTitle>
+                                    </CardHeader>
+                                    <CardContent class="pl-2">
+                                        <Overview />
+                                    </CardContent>
+                                </Card>
+                                <Card class="col-span-3">
+                                    <CardHeader>
+                                        <CardTitle>Recent Sales</CardTitle>
+                                        <CardDescription>You made 265 sales this month.</CardDescription>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <RecentSales />
+                                    </CardContent>
+                                </Card>
+                            </Grid>
+                        </TabsContent>
+                    </Tabs>
                 </div>
             </div>
-
-            {/* Cards */}
-            <div class="grid grid-cols-12 gap-6">
-
-
-            </div>
-        </div>
+        </>
     )
 }
+
+export default Dashboard;

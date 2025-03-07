@@ -1,28 +1,25 @@
 import {Component, ParentProps} from "solid-js";
+import {MainNav} from "~/components/dashboard/partials/main-nav";
 
 const DashboardLayout: Component<ParentProps> = props => {
 
     const children = () => props.children;
 
     return (
-        <div class="flex h-[100dvh] overflow-hidden">
-
-            {/* Sidebar */}
-            <Sidebar />
-
-            {/* Content area */}
-            <div class="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
-
-                {/*  Site header */}
-                <Header />
-
-                <main class="grow [&>*:first-child]:scroll-mt-16">
-                    {children()}
-                </main>
+        <>
+            <div class={' w-full h-full relative'}>
+                {children()}
 
             </div>
+            <div class="fixed w-full inset-x-0 border-t">
+                <div class="flex h-16 items-center px-4">
+                    <MainNav class="mx-6"/>
+                    <div class="ml-auto flex items-center space-x-4">
 
-        </div>
+                    </div>
+                </div>
+            </div>
+        </>
     );
 };
 

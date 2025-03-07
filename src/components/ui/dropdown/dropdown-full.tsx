@@ -1,6 +1,6 @@
 import {createSignal, For} from "solid-js";
-import {Menu} from "@kobalte/core/menubar";
-import {MenuContent, MenuItem, MenuTrigger} from "@ark-ui/solid";
+
+import {Menu} from "@ark-ui/solid";
 
 export default function DropdownFull() {
 
@@ -26,16 +26,16 @@ export default function DropdownFull() {
   const [getSelected, setSelected] = createSignal<number>(0)
 
   return (
-    <Menu> {/* class="relative inline-flex w-full"  */}
-          <MenuTrigger class="btn w-full justify-between min-w-[11rem] bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 text-gray-600 hover:text-gray-800 dark:text-gray-300 dark:hover:text-gray-100" aria-label="Select option">
+    <Menu.Root> {/* class="relative inline-flex w-full"  */}
+          <Menu.Trigger class="btn w-full justify-between min-w-[11rem] bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 text-gray-600 hover:text-gray-800 dark:text-gray-300 dark:hover:text-gray-100" aria-label="Select option">
             <span class="flex items-center">
               <span>{options[getSelected()].value}</span>
             </span>
             <svg class="shrink-0 ml-1 fill-current text-gray-400 dark:text-gray-500" width="11" height="7" viewBox="0 0 11 7">
               <path d="M5.4 6.8L0 1.4 1.4 0l4 4 4-4 1.4 1.4z" />
             </svg>
-          </MenuTrigger>
-            <MenuContent class="font-medium text-sm text-gray-600 dark:text-gray-300 divide-y divide-gray-200 dark:divide-gray-700/60 focus:outline-hidden">
+          </Menu.Trigger>
+            <Menu.Content class="font-medium text-sm text-gray-600 dark:text-gray-300 divide-y divide-gray-200 dark:divide-gray-700/60 focus:outline-hidden">
 
                   <For each={options}>
                     {(option: {id: number, value: string}) => (
@@ -52,7 +52,7 @@ export default function DropdownFull() {
                   </For>
 
 
-            </MenuContent>
-    </Menu>
+            </Menu.Content>
+    </Menu.Root>
   )
 }
