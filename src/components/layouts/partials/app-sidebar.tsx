@@ -4,7 +4,7 @@ import {
     SidebarFooter,
     SidebarGroup,
     SidebarHeader, SidebarInput
-} from "~/components/ui/sidebar"
+} from "~/components/ui/sidebar/sidebar"
 import {Component} from "solid-js";
 
 type PROPS = {

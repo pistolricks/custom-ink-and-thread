@@ -5,8 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bddc89ca-a474-4ff4-a99a-c9fdc0360bc2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/layouts/dashboard/partials/header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layouts/dashboard/partials/logo.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/dropdown/dropdown-filter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/dropdown/dropdown-full.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/dropdown/dropdown-help.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/dropdown/dropdown-notifications.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/dropdown/dropdown-profile.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/dropdown/dropdown-switch.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/notification/notification.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/sidebar/sidebar-link-group.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/sidebar/sidebar-link.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/sidebar/sidebar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/dashboard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/dashboard/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/app-sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/app-sidebar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +54,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "working-refactor",
-    "last_opened_file_path": "/Users/eriksmith/projects/customInkAndThread/cit-app/src/components",
+    "last_opened_file_path": "/Users/eriksmith/projects/customInkAndThread/cit-app/src/components/ui/dropdown",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -54,18 +68,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components" />
-      <recent name="$PROJECT_DIR$/src/routes" />
-      <recent name="$PROJECT_DIR$/src/components/layouts/partials" />
-      <recent name="$PROJECT_DIR$/src/lib" />
+      <recent name="$PROJECT_DIR$/src/components/ui/dropdown" />
+      <recent name="$PROJECT_DIR$/src/components/ui/notification" />
+      <recent name="$PROJECT_DIR$/src/components/layouts/dashboard/partials" />
       <recent name="$PROJECT_DIR$/src/components/ui" />
+      <recent name="$PROJECT_DIR$/src/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/layouts/dashboard/partials" />
+      <recent name="$PROJECT_DIR$/src/components/ui/sidebar" />
       <recent name="$PROJECT_DIR$/src/lib/svg" />
       <recent name="$PROJECT_DIR$/src/routes" />
       <recent name="$PROJECT_DIR$/src/components/ui/loading" />
-      <recent name="$PROJECT_DIR$/src/components/ui" />
-      <recent name="$PROJECT_DIR$/src/internal/providers/environment/focus" />
     </key>
   </component>
   <component name="RunManager">
