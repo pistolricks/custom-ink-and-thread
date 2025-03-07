@@ -1,7 +1,7 @@
 import {Component, createEffect, createMemo, Show} from "solid-js";
 import {redirect, useNavigate, useSubmission} from "@solidjs/router";
 import {loginUserHandler} from "~/lib/users";
-import {TextField, TextFieldErrorMessage, TextFieldInput} from "~/components/ui/text-field";
+import {TextField, TextFieldErrorMessage, TextFieldInput} from "~/components/ui/field/text-field";
 
 import {showToast} from "~/components/ui/toast";
 import {Button} from "~/components/ui/button";

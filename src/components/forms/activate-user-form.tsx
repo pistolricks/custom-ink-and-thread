@@ -1,6 +1,6 @@
 import {Component, createMemo, createSignal, JSX} from "solid-js";
 import {activateUserHandler} from "~/lib/users";
-import {TextField, TextFieldInput} from "~/components/ui/text-field";
+import {TextField, TextFieldInput} from "~/components/ui/field/text-field";
 import {showToast} from "~/components/ui/toast";
 import {useNavigate} from "@solidjs/router";
 import {ChevronLeft} from "lucide-solid";

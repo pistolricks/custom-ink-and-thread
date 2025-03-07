@@ -1,6 +1,6 @@
 import {Component, createEffect, createMemo, JSX, Setter, Show} from "solid-js";
 import {useSubmission} from "@solidjs/router";
-import {TextField, TextFieldErrorMessage, TextFieldInput} from "~/components/ui/text-field";
+import {TextField, TextFieldErrorMessage, TextFieldInput} from "~/components/ui/field/text-field";
 import {Button} from "../../ui/button";
 import {showToast} from "~/components/ui/toast";
 import {BackspaceIcon, MagnifyingGlassCircle, MapPin, SpinnerIcon, XMark} from "~/components/ui/svg";

@@ -5,158 +5,75 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bddc89ca-a474-4ff4-a99a-c9fdc0360bc2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/profiles/general-details.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/field/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/profile.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/@solid-primitives_storage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/@solid-primitives_storage.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/@solidjs_start___error-stack-parser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/@solidjs_start___error-stack-parser.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/@solidjs_start___source-map-js.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/@solidjs_start___source-map-js.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/_metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-2AIT7EA4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-2AIT7EA4.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-3CX7KT3Z.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-3CX7KT3Z.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-46YLXM45.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-46YLXM45.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-4W6ZB6JT.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-4W6ZB6JT.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-5D5JWXWU.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-5D5JWXWU.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-6MXZSGIE.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-6MXZSGIE.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-7M6BOV3C.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-7M6BOV3C.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-7SOXRXVG.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-7SOXRXVG.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-AU42AAWU.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-AU42AAWU.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-BIQYRPB6.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-BIQYRPB6.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-FUY7JOLT.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-FUY7JOLT.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-G2LUGDAL.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-G2LUGDAL.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-G4LVO4ND.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-G4LVO4ND.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-GDS6JJSX.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-GDS6JJSX.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-GOO5HV2T.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-GOO5HV2T.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-HPLAWKZO.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-HPLAWKZO.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-HX2TGCJW.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-HX2TGCJW.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-JVWSFFO4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-JVWSFFO4.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-LAV4YVKM.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-LAV4YVKM.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-LDGJBI5U.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-LDGJBI5U.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-MDY5QAN7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-MDY5QAN7.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-MJNX7TIU.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-MJNX7TIU.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-NIISC3D3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-NIISC3D3.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-NL7KXU5I.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-NL7KXU5I.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-PTV5RZFS.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-PTV5RZFS.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-RIZWPR2O.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-RIZWPR2O.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-S4QGKELK.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-S4QGKELK.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-TUBTTPYK.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-TUBTTPYK.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-VPJLKAKK.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-VPJLKAKK.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-VS2KMOA4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-VS2KMOA4.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-W77CDIDQ.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-W77CDIDQ.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-YGYN4AF5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-YGYN4AF5.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-YTJKS6T7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-YTJKS6T7.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/class-variance-authority.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/class-variance-authority.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/clsx.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/clsx.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/ol.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/ol.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/ol_Feature__js.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/ol_Feature__js.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/ol_Geolocation__js.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/ol_Geolocation__js.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/ol_format_GeoJSON__js.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/ol_format_GeoJSON__js.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/ol_geom_Point__js.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/ol_geom_Point__js.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/ol_layer_Tile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/ol_layer_Tile.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/ol_layer_Vector__js.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/ol_layer_Vector__js.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/ol_source_OSM.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/ol_source_OSM.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/ol_source_Vector__js.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/ol_source_Vector__js.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/ol_style_Circle__js.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/ol_style_Circle__js.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/ol_style_Fill__js.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/ol_style_Fill__js.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/ol_style_Stroke__js.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/ol_style_Stroke__js.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/ol_style_Style__js.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/ol_style_Style__js.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/solid-js.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/solid-js.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/solid-js_h.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/solid-js_h.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/solid-js_html.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/solid-js_html.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/solid-js_store.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/solid-js_store.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/solid-js_web.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/solid-js_web.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/tailwind-merge.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/tailwind-merge.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/@solidjs_start___error-stack-parser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/@solidjs_start___error-stack-parser.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/@solidjs_start___source-map-js.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/@solidjs_start___source-map-js.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/_metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/chunk-7M6BOV3C.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/chunk-7M6BOV3C.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/chunk-DC5AMYBS.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/chunk-DC5AMYBS.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/chunk-LDGJBI5U.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/chunk-LDGJBI5U.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/chunk-S4QGKELK.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/chunk-S4QGKELK.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/class-variance-authority.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/class-variance-authority.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/clsx.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/clsx.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/solid-js.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/solid-js.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/solid-js_h.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/solid-js_h.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/solid-js_html.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/solid-js_html.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/solid-js_store.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/solid-js_store.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/solid-js_web.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/solid-js_web.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/tailwind-merge.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/tailwind-merge.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/vinxi_http.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/vinxi_http.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps_temp_35a75679/@solidjs_start___error-stack-parser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps_temp_35a75679/@solidjs_start___error-stack-parser.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps_temp_35a75679/@solidjs_start___source-map-js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps_temp_35a75679/@solidjs_start___source-map-js.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps_temp_35a75679/chunk-7M6BOV3C.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps_temp_35a75679/chunk-7M6BOV3C.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps_temp_35a75679/chunk-BUSYA2B4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps_temp_35a75679/chunk-BUSYA2B4.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps_temp_35a75679/chunk-S4QGKELK.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps_temp_35a75679/chunk-S4QGKELK.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps_temp_35a75679/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps_temp_35a75679/solid-js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps_temp_35a75679/solid-js.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps_temp_35a75679/solid-js_h.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps_temp_35a75679/solid-js_h.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps_temp_35a75679/solid-js_html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps_temp_35a75679/solid-js_html.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps_temp_35a75679/solid-js_store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps_temp_35a75679/solid-js_store.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps_temp_35a75679/solid-js_web.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps_temp_35a75679/solid-js_web.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps_temp_59a06029/@solidjs_start___error-stack-parser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps_temp_59a06029/@solidjs_start___error-stack-parser.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps_temp_59a06029/@solidjs_start___source-map-js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps_temp_59a06029/@solidjs_start___source-map-js.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps_temp_59a06029/chunk-7M6BOV3C.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps_temp_59a06029/chunk-7M6BOV3C.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps_temp_59a06029/chunk-BUSYA2B4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps_temp_59a06029/chunk-BUSYA2B4.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps_temp_59a06029/chunk-S4QGKELK.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps_temp_59a06029/chunk-S4QGKELK.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps_temp_59a06029/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps_temp_59a06029/solid-js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps_temp_59a06029/solid-js.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps_temp_59a06029/solid-js_h.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps_temp_59a06029/solid-js_h.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps_temp_59a06029/solid-js_html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps_temp_59a06029/solid-js_html.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps_temp_59a06029/solid-js_store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps_temp_59a06029/solid-js_store.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps_temp_59a06029/solid-js_web.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps_temp_59a06029/solid-js_web.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/addresses/forms/address-search-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/addresses/forms/address-search-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/addresses/forms/create-address-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/addresses/forms/create-address-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/activate-user-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/activate-user-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/login-user-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/login-user-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/register-user-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/register-user-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/resend-activate-email-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/resend-activate-email-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/inbox/mail-display.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inbox/mail-display.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/field/editable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/field/editable.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/text-field.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/field/text-field.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/users/forms/activate-user-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/forms/activate-user-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/users/forms/login-user-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/forms/login-user-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/users/forms/register-user-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/forms/register-user-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/users/forms/resend-activate-email-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/forms/resend-activate-email-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/vendors/forms/create-vendor-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/vendors/forms/create-vendor-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/dashboard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/inbox/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/inbox/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/profile/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/profile/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/resend.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/resend.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,11 +128,11 @@
       <recent name="$PROJECT_DIR$/src/components/ui" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/ui/field" />
       <recent name="$PROJECT_DIR$/src/components/ui-animated" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/components/layouts/dashboard/partials" />
       <recent name="$PROJECT_DIR$/src/components/ui/sidebar" />
-      <recent name="$PROJECT_DIR$/src/lib/svg" />
     </key>
   </component>
   <component name="RunManager">
@@ -262,7 +179,7 @@
       <workItem from="1741268507773" duration="8169000" />
       <workItem from="1741277807254" duration="1152000" />
       <workItem from="1741284695533" duration="2564000" />
-      <workItem from="1741324804960" duration="8235000" />
+      <workItem from="1741324804960" duration="15469000" />
     </task>
     <servers />
   </component>

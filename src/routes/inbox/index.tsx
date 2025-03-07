@@ -6,7 +6,7 @@ import { cn } from "~/lib/utils"
 import { Resizable, ResizableHandle, ResizablePanel } from "~/components/ui/resizable"
 import { Separator } from "~/components/ui/separator"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs"
-import { TextField, TextFieldInput } from "~/components/ui/text-field"
+import { TextField, TextFieldInput } from "~/components/ui/field/text-field"
 
 import {
     IconArchive,

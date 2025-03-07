@@ -10,7 +10,7 @@ import {
 } from "~/components/ui/dropdown-menu"
 import { Separator } from "~/components/ui/separator"
 import { Switch, SwitchControl, SwitchLabel, SwitchThumb } from "~/components/ui/switch"
-import { TextField, TextFieldTextArea } from "~/components/ui/text-field"
+import { TextField, TextFieldTextArea } from "~/components/ui/field/text-field"
 import { Tooltip, TooltipContent, TooltipTrigger } from "~/components/ui/tooltip"
 
 import {

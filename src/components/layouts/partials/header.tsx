@@ -57,7 +57,7 @@ const Header: Component<PROPS> = props => {
                     </div>
 
 
-                    <div class="bg-foreground backdrop-blur-md backdrop-filter">
+                    <div class="bg-muted backdrop-blur-md backdrop-filter">
                         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                             <div>
                                 <div class="flex h-16 items-center justify-between">

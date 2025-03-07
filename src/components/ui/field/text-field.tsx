@@ -7,6 +7,8 @@ import { cva } from "class-variance-authority"
 
 import { cn } from "~/lib/ui"
 
+import "./style.css"
+
 type TextFieldRootProps<T extends ValidComponent = "div"> =
   TextFieldPrimitive.TextFieldRootProps<T> & {
     class?: string | undefined
