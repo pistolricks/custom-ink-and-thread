@@ -1,14 +1,15 @@
 import {Component, createEffect, createMemo, createSignal, ParentProps, Show} from 'solid-js'
 import SideDrawer from '~/components/ui/drawer/side-drawer'
 
-import {createAsync, useLocation, useSubmission} from '@solidjs/router'
-import {getUser, loginUserHandler} from '~/lib/users'
+import {createAsync, useLocation, useNavigate, useSubmission} from '@solidjs/router'
+import {getUser, loginUserHandler, logoutUserHandler} from '~/lib/users'
 import {useLayoutContext} from '~/context/layout-provider'
 import Header from "~/components/layouts/partials/header";
 import {CurrentProvider} from "~/context/current-provider";
 import {USER} from "~/lib/db";
 import {AUTHENTICATION_TOKEN} from "~/lib";
 import {Feature, FeatureCollection} from "~/lib/store";
+import {SessionUser} from "~/lib/session";
 
 
 // const WsClient = clientOnly(() => import('~/components/ws/ws-client'))
@@ -21,35 +22,38 @@ export const route = {
 }
 const AppLayout: Component<PROPS> = (props) => {
     const {getHeight} = useLayoutContext()
+    const navigate = useNavigate();
     const user = createAsync(async () => getUser())
     const loggedIn = useSubmission(loginUserHandler);
+    const loggedOut = useSubmission(logoutUserHandler);
     const children = () => props.children
     const location = useLocation()
     const [getPath, setPath] = createSignal<string | undefined>()
 
 
+
     // await updateSessionUser(res.user, res.authentication_token, res.folder)
 
-    const handleUserData = (e: USER) => {
+    const handleUserData = (e: SessionUser|USER|undefined) => {
         return e;
     }
-    const handleTokenData = (e: AUTHENTICATION_TOKEN) => {
+    const handleTokenData = (e: AUTHENTICATION_TOKEN|undefined) => {
         return e;
     }
-    const handleFolderData = (e: string) => {
+    const handleFolderData = (e: string|undefined) => {
         return e;
     }
-    const handleLocationData = (e: Feature) => {
+    const handleLocationData = (e: Feature|undefined) => {
         return e;
     }
 
-    const handleCollectionData = (e: FeatureCollection) => {
+    const handleCollectionData = (e: FeatureCollection|undefined) => {
         return e;
     }
 
     const responseData = createMemo(() => {
         let res = loggedIn.result;
-        console.log(loggedIn.result)
+
         return {
             user: handleUserData(res?.user),
             token: handleTokenData(res?.authentication_token),
@@ -61,10 +65,22 @@ const AppLayout: Component<PROPS> = (props) => {
     })
 
 
+
+
     createEffect(() => {
+        let authenticated = loggedIn;
+
+        if (authenticated?.result?.user?.id) {
+            navigate('/', {replace: true});
+        }
 
 
-        console.log(loggedIn?.result, "submission")
+        console.log("authenticated", authenticated?.result)
+
+        let unauthenticated =  loggedOut;
+        console.log("unauthenticated", unauthenticated?.result)
+
+        console.log(responseData(), "submission")
         setPath(() => location?.pathname)
     })
 
@@ -86,8 +102,8 @@ const AppLayout: Component<PROPS> = (props) => {
                         location={responseData()?.location}
                         collection={responseData()?.collection}
                         token={{
-                            token: user()?.token,
-                            expiry: user()?.expiry
+                            token: responseData()?.token?.token,
+                            expiry: responseData()?.token?.expiry
                         }}>
                         {children()}
                     </CurrentProvider>

@@ -3,6 +3,7 @@ import {USER} from "~/lib/db";
 import {AUTHENTICATION_TOKEN} from "~/lib/index";
 import {handleUserName} from "~/lib/utils";
 import {Feature} from "~/lib/store";
+import {redirect} from "@solidjs/router";
 
 
 export type SessionUser = {
