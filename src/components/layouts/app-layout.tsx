@@ -53,7 +53,7 @@ const AppLayout: Component<PROPS> = (props) => {
 
     const responseData = createMemo(() => {
         let res = loggedIn.result;
-
+        if(!res?.user?.id)return;
         return {
             user: handleUserData(res?.user),
             token: handleTokenData(res?.authentication_token),
@@ -75,13 +75,6 @@ const AppLayout: Component<PROPS> = (props) => {
         }
 
 
-        console.log("authenticated", authenticated?.result)
-
-        let unauthenticated =  loggedOut;
-        console.log("unauthenticated", unauthenticated?.result)
-
-        console.log(responseData(), "submission")
-        setPath(() => location?.pathname)
     })
 
     return (
