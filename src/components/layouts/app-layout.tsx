@@ -69,12 +69,13 @@ const AppLayout: Component<PROPS> = (props) => {
 
     createEffect(() => {
         let authenticated = loggedIn;
-
         if (authenticated?.result?.user?.id) {
             navigate('/', {replace: true});
         }
 
 
+
+        setPath(() => location?.pathname)
     })
 
     return (
