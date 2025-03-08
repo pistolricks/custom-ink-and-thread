@@ -80,7 +80,7 @@ const AppLayout: Component<PROPS> = (props) => {
 
     return (
 
-        <SideDrawer side={'left'} contextId={'sd1'}>
+        <SideDrawer side={'right'} contextId={'sd1'}>
             <Show when={getPath()}>
                 {/* <WsClient initialSocketUrl={'ws://localhost:4000'}/> */}
                <div class={' h-[104px]'}>

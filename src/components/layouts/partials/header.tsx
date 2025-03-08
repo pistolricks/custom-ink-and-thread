@@ -62,7 +62,7 @@ const Header: Component<PROPS> = props => {
                             <div>
                                 <div class="flex h-16 items-center justify-between">
 
-                                    <div class="hidden lg:flex lg:flex-1 lg:items-center">
+                                    <div class="flex lg:flex-1 lg:items-center">
                                         <a href="#">
                                             <span class="sr-only"></span>
                                             <img
@@ -80,7 +80,7 @@ const Header: Component<PROPS> = props => {
 
                                         <div class="flex h-full justify-center items-center space-x-8 p-2">
 
-                                            <Nav/>
+
 
                                         </div>
 
@@ -89,14 +89,7 @@ const Header: Component<PROPS> = props => {
 
                                     <div class="flex flex-1 items-center lg:hidden">
 
-                                        <Drawer.Trigger contextId={'sd1'} type="button" class="-ml-2 p-2 text-white">
-                                            <span class="sr-only">Open menu</span>
-                                            <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                                 stroke="currentColor" aria-hidden="true" data-slot="icon">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
-                                            </svg>
-                                        </Drawer.Trigger>
+
 
 
                                         <a href="#" class="ml-2 p-2 text-white">
@@ -110,12 +103,7 @@ const Header: Component<PROPS> = props => {
                                     </div>
 
 
-                                    <A href="#" class="lg:hidden">
-                                        <span class="sr-only">Your Company</span>
-                                        <img
-                                            src={'./icons/icon180x180.png'}
-                                            alt="" class="h-8 w-auto"/>
-                                    </A>
+
 
                                     <div class="flex flex-1 items-center justify-end">
                                         <A href="#"
@@ -123,33 +111,15 @@ const Header: Component<PROPS> = props => {
 
                                         <div class="flex items-center lg:ml-8">
 
-                                            <A href="#" class="p-2 color-text lg:hidden">
-                                                <span class="sr-only">Help</span>
-                                                <svg class="size-6" fill="none" viewBox="0 0 24 24"
-                                                     stroke-width="1.5" stroke="currentColor" aria-hidden="true"
-                                                     data-slot="icon">
+                                            <Drawer.Trigger contextId={'sd1'} type="button" class="-ml-2 p-2 text-white">
+                                                <span class="sr-only">Open menu</span>
+                                                <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                                     stroke="currentColor" aria-hidden="true" data-slot="icon">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
-                                                          d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/>
+                                                          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
                                                 </svg>
-                                            </A>
+                                            </Drawer.Trigger>
 
-                                            <A href="#"
-                                               class="hidden text-sm font-medium text-secondary-foreground lg:block">Help</A>
-
-
-                                            <div class="ml-4 flow-root lg:ml-8">
-                                                <A href="#" class="group -m-2 flex items-center p-2">
-                                                    <svg class="size-6 shrink-0 text-secondary-foreground" fill="none"
-                                                         viewBox="0 0 24 24" stroke-width="1.5"
-                                                         stroke="currentColor" aria-hidden="true" data-slot="icon">
-                                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                                              d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
-                                                    </svg>
-                                                    <span
-                                                        class="ml-2 text-sm font-medium text-secondary-foreground">0</span>
-                                                    <span class="sr-only">items in cart, view bag</span>
-                                                </A>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -158,7 +128,7 @@ const Header: Component<PROPS> = props => {
                     </div>
                 </nav>
             </header>
-            <DrawerContent side={"left"} contextId={'sd1'}>
+            <DrawerContent side={"right"} contextId={'sd1'}>
                 <>
                     <LogoutUserForm/>
                 </>

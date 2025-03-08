@@ -12,6 +12,7 @@
     "@corvu/popover": "^0.2.0",
     "@corvu/resizable": "^0.2.4",
     "@kobalte/core": "^0.13.9",
+    "@slidy/solid": "^1.5.2",
     "@solid-primitives/storage": "^4.3.1",
     "@solidjs/router": "^0.15.0",
     "@solidjs/start": "^1.1.0",
