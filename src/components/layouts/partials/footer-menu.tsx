@@ -49,7 +49,7 @@ const FooterMenu: Component<PROPS> = props => {
                 <div class={sectionClass()}>
                     <Popover.Trigger
                         as={Button<"button">}
-                        class={titleClass()} variant={variant()} base={base()} size={size()}>
+                        class={titleClass()} variant={variant()} size={size()}>
                         {title()}
                         <span class="sr-only">{title()}</span>
                     </Popover.Trigger>

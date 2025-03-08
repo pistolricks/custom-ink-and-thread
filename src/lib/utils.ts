@@ -6,17 +6,9 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export type Bases = "default" | "custom"
-export type Variants =
-    "default"
-    | "secondary"
-    | "outline"
-    | "ghost"
-    | "information"
-    | "success"
-    | "destructive"
-    | "warning"
-    | "link"
-export type Sizes = "default" | "sm" | "lg" | "wd" | "icon"
+export type Variants = "default" | "secondary" | "outline" | "ghost" | "destructive" | "link" | null | undefined
+
+export type Sizes = "default" | "sm" | "lg" | "icon" | null | undefined
 
 export function handleInitials(string?: string) {
     if (!string) return;
