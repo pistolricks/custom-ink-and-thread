@@ -24,7 +24,7 @@ const CategoryFilters: Component<PROPS> = props => {
 
                             <div class="fixed inset-0  w-full bg-black/25" aria-hidden="true"></div>
 
-                            <div class="fixed inset-0 z-40 flex">
+                            <div class="fixed inset-0 bg-white z-40 flex">
 
                                 <div
                                     class="relative mx-auto flex size-full max-w-xs flex-col overflow-y-auto scrollbar-hide bg-white py-4 pb-12 shadow-xl">
@@ -39,7 +39,7 @@ const CategoryFilters: Component<PROPS> = props => {
 
 
                                     <form class="mt-4 border-t border-gray-200">
-                                        <h3 class="sr-only">Categories</h3>
+                                        <h3 class="sr-only">{name()}</h3>
                                         <div class="border-t border-gray-200 px-4 py-6">
                                             <h3 class="-mx-2 -my-3 flow-root">
 
@@ -585,7 +585,7 @@ const CategoryFilters: Component<PROPS> = props => {
                             <div class="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
 
                                 <form class="hidden lg:block">
-                                    <h3 class="sr-only">Categories</h3>
+                                    <h3 class="sr-only">{name()}</h3>
 
 
                                     <div class="border-b border-gray-200 py-6">

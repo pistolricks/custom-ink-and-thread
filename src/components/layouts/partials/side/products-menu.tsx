@@ -45,10 +45,13 @@ const ProductMenu: Component<PROPS> = props => {
                     </div>
 
                     <div>
-                        <p id="women-clothing-heading-mobile" class="font-medium text-gray-900">
-                            Apparel
-                        </p>
-                        <ul role="list" aria-labelledby="women-clothing-heading-mobile"
+                        <Drawer.Trigger contextId={contextId()} as={A} href={"/apparel"}>
+                            <p id="apparel" class="font-medium text-gray-900">
+                                Apparel
+                            </p>
+                        </Drawer.Trigger>
+
+                        <ul role="list" aria-labelledby="apparel"
                             class="mt-6 flex flex-col space-y-6">
 
                             <For each={apps}>

@@ -1,0 +1,368 @@
+[
+  {
+    "id": "AL6104",
+    "href": "/al6104",
+    "name": "Allmade® Unisex Long Sleeve Organic Cotton Tee",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$15.40"
+  },
+  {
+    "id": "LST441",
+    "href": "/lst441",
+    "name": "Sport-Tek® Women’s Club Sleeveless V-Neck",
+    "color": "black",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "price": "Call"
+  },
+  {
+    "id": "ST440",
+    "href": "/st440",
+    "name": "Sport-Tek® Club Short Sleeve Crew",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$11.98"
+  },
+  {
+    "id": "1301GD",
+    "href": "/1301gd",
+    "name": "American Apparel® Unisex Heavyweight Cotton Garment-Dyed Tee",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$10.98"
+  },
+  {
+    "id": "ST441",
+    "href": "/st441",
+    "name": "Sport-Tek® Club Sleeveless V-Neck",
+    "color": "black",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "price": "Call"
+  },
+  {
+    "id": "YST440",
+    "href": "/yst440",
+    "name": "Sport-Tek® Youth Club Short Sleeve Crew",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$10.98"
+  },
+  {
+    "id": "YST441",
+    "href": "/yst441",
+    "name": "Sport-Tek® Youth Club Sleeveless V-Neck",
+    "color": "black",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "price": "Call"
+  },
+  {
+    "id": "2001CVC",
+    "href": "/2001cvc",
+    "name": "American Apparel® Unisex CVC Tee",
+    "color": "black",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "price": "Call"
+  },
+  {
+    "id": "363LH",
+    "href": "/363lh",
+    "name": "Jerzees Classics™ Unisex Cotton Long Sleeve Hooded T-Shirt",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$12.98"
+  },
+  {
+    "id": "CT106020",
+    "href": "/Ct106020",
+    "name": "Carhartt® Short Sleeve T-Shirt",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$20.00"
+  },
+  {
+    "id": "CT106923",
+    "href": "/Ct106923",
+    "name": "Carhartt Force® Sun Defender™ Long Sleeve Hooded T-Shirt",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$40.00"
+  },
+  {
+    "id": "CT106921",
+    "href": "/Ct106921",
+    "name": "Carhartt® Long Sleeve T-Shirt",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$25.00"
+  },
+  {
+    "id": "CT106972",
+    "href": "/Ct106972",
+    "name": "Carhartt Force® Sun Defender™ Long Sleeve T-Shirt",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$35.00"
+  },
+  {
+    "id": "CT106868",
+    "href": "/Ct106868",
+    "name": "Carhartt Force® Sun Defender™ Short Sleeve T-Shirt",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$30.00"
+  },
+  {
+    "id": "3023CL",
+    "href": "/3023cl",
+    "name": "Comfort Colors® Women’s Heavyweight Boxy Tee",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$12.38"
+  },
+  {
+    "id": "SXU007",
+    "href": "/sxu007",
+    "name": "Stanley/Stella Unisex Crafter Tee",
+    "color": "black",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "price": "Call"
+  },
+  {
+    "id": "SXU018",
+    "href": "/sxu018",
+    "name": "Stanley/Stella Unisex Freestyler Heavyweight Tee",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$18.30"
+  },
+  {
+    "id": "SXU022",
+    "href": "/sxu022",
+    "name": "Stanley/Stella Unisex Creator 2.0 Long Sleeve Tee",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$15.50"
+  },
+  {
+    "id": "SXU023",
+    "href": "/sxu023",
+    "name": "Stanley/Stella Unisex Freestyler Heavyweight Long Sleeve Tee",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$22.50"
+  },
+  {
+    "id": "SXW032",
+    "href": "/sxw032",
+    "name": "Stanley/Stella Women’s Stella Isla V-Neck Tee",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$12.48"
+  },
+  {
+    "id": "SXW002",
+    "href": "/sxw002",
+    "name": "Stanley/Stella Women’s Stella Muser Tee",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$11.48"
+  },
+  {
+    "id": "SXW008",
+    "href": "/sxw008",
+    "name": "Stanley/Stella Women’s Stella Serena Scoop Neck Tee",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$10.88"
+  },
+  {
+    "id": "A4N3409",
+    "href": "/a4n3409",
+    "name": "A4 Cooling Performance Long Sleeve Hooded Tee",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$17.24"
+  },
+  {
+    "id": "A4N3165",
+    "href": "/a4n3165",
+    "name": "A4 Cooling Performance Long Sleeve Tee",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$10.76"
+  },
+  {
+    "id": "A4N3402",
+    "href": "/a4n3402",
+    "name": "A4 Sprint Performance Tee",
+    "color": "black",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "price": "Call"
+  },
+  {
+    "id": "A4N3142",
+    "href": "/a4n3142",
+    "name": "A4 Cooling Performance Short Sleeve Tee",
+    "color": "black",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "price": "Call"
+  },
+  {
+    "id": "A4N3531",
+    "href": "/a4n3531",
+    "name": "A4 AirFlex Short Sleeve Tee",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$10.88"
+  },
+  {
+    "id": "64220LCVC",
+    "href": "/64220lcvc",
+    "name": "Gildan® Softstyle® Women’s CVC Racerback Tank",
+    "color": "black",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "price": "Call"
+  },
+  {
+    "id": "ST900",
+    "href": "/st900",
+    "name": "Sport-Tek® Rival Basketball Rev Jersey",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$15.98"
+  },
+  {
+    "id": "YST900",
+    "href": "/yst900",
+    "name": "Sport-Tek® Youth Rival Basketball Rev Jersey",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$14.98"
+  },
+  {
+    "id": "SXU016",
+    "href": "/sxu016",
+    "name": "Stanley/Stella Unisex Rocker Tee",
+    "color": "black",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "price": "Call"
+  },
+  {
+    "id": "SXU001",
+    "href": "/sxu001",
+    "name": "Stanley/Stella Unisex Creator 2.0 Tee",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$11.00"
+  },
+  {
+    "id": "A4N4184",
+    "href": "/a4n4184",
+    "name": "A4 Short Sleeve Full-Button Baseball Top",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$42.64"
+  },
+  {
+    "id": "A4NB3142",
+    "href": "/A4nb3142",
+    "name": "A4 Youth Cooling Performance Short Sleeve Tee",
+    "color": "black",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "price": "Call"
+  },
+  {
+    "id": "A4NB3165",
+    "href": "/A4nb3165",
+    "name": "A4 Youth Cooling Performance Long Sleeve Tee",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$10.76"
+  },
+  {
+    "id": "A4NF1270",
+    "href": "/A4nf1270",
+    "name": "A4 Sprint Reversible Mesh Tank",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$11.50"
+  },
+  {
+    "id": "A4NW3002",
+    "href": "/A4nw3002",
+    "name": "A4 Women’s Cooling Performance Long Sleeve Tee",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$10.76"
+  },
+  {
+    "id": "A4NW3201",
+    "href": "/A4nw3201",
+    "name": "A4 Women’s Cooling Performance Short Sleeve Tee",
+    "color": "black",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "price": "Call"
+  },
+  {
+    "id": "A4N2306",
+    "href": "/a4n2306",
+    "name": "A4 Compression Muscle Tee",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$23.44"
+  },
+  {
+    "id": "A4N3130",
+    "href": "/a4n3130",
+    "name": "A4 Compression Short Sleeve Tee",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$24.60"
+  },
+  {
+    "id": "A4N3013",
+    "href": "/a4n3013",
+    "name": "A4 Softek Short Sleeve Tee",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$10.44"
+  },
+  {
+    "id": "TTCM4879",
+    "href": "/Ttcm4879",
+    "name": "tentree® TreeBlend Classic T-Shirt",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$40.00"
+  },
+  {
+    "id": "TTCW5646",
+    "href": "/Ttcw5646",
+    "name": "tentree® Women’s TreeBlend V-Neck T-Shirt",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$40.00"
+  },
+  {
+    "id": "A4N3528",
+    "href": "/a4n3528",
+    "name": "A4 Softek Long Sleeve Hooded Tee",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$24.70"
+  },
+  {
+    "id": "A4N3532",
+    "href": "/a4n3532",
+    "name": "A4 AirFlex Long Sleeve Tee",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+    "color": "black",
+    "price": "$14.82"
+  },
+  {
+    "id": "TST350",
+    "href": "/tst350",
+    "name": "Sport-Tek® Tall PosiCharge® Competitor™  Tee",
+    "src": "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg"
+  }
+]

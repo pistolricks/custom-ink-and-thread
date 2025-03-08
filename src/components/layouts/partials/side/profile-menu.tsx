@@ -62,9 +62,6 @@ const ProfileMenu: Component<PROPS> = props => {
                     <Drawer.Trigger contextId={'sd1'} as={"div"}>
                         <Button as={A} href={'/profile'} variant={"link"} size={"sm"} type={"button"}>PROFILE</Button>
                     </Drawer.Trigger>
-                    <Drawer.Trigger contextId={'sd1'} as={"div"}>
-                        <Button as={A} href={'/inbox'} variant={"link"} size={"sm"} type={"button"}>INBOX</Button>
-                    </Drawer.Trigger>
                     <LogoutUserForm/>
                 </Show>
             </div>
