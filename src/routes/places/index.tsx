@@ -7,7 +7,7 @@ import {
     getAddresses,
     getAddressFormFormats
 } from "~/lib/addresses";
-import FooterMenu from "~/components/layouts/partials/footer-menu";
+import FooterMenu from "~/components/layouts/partials/footer/footer-menu";
 
 import AddressSearchForm from "~/components/addresses/forms/address-search-form";
 import {CountryData, LookupResult, OsmOutput} from "~/lib/store";

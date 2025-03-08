@@ -1,6 +1,5 @@
 import {Component, For} from "solid-js";
 import {VendorsData} from "~/lib/store";
-import ListWrapper from "~/components/layouts/partials/list-wrapper";
 import VendorCard from "~/components/vendors/partials/vendor-card";
 
 type PROPS = {

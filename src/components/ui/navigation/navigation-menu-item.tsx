@@ -1,6 +1,6 @@
 import {Component, JSXElement} from "solid-js";
 import {NavigationMenu, type Orientation} from "@kobalte/core/navigation-menu";
-import style from "~/components/layouts/partials/nav.module.css";
+import style from "~/components/layouts/partials/header/nav.module.css";
 
 const NavigationMenuItem: Component<{
     href?: string;

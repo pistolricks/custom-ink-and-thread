@@ -1,7 +1,7 @@
 import {AccessorWithLatest, createAsync} from "@solidjs/router";
 import {lazy, onMount} from "solid-js";
 import {getVendors} from "~/lib/vendors";
-import FooterMenu from "~/components/layouts/partials/footer-menu";
+import FooterMenu from "~/components/layouts/partials/footer/footer-menu";
 import {Button} from "~/components/ui/button";
 import BaseDialog, {DialogContent} from "~/components/ui/dialogs/base-dialog";
 import {BuildingOffice2Icon, PlusIcon} from "~/components/ui/svg";
@@ -12,7 +12,6 @@ import {useLayoutContext} from "~/context/layout-provider";
 import {Feature} from "~/lib/store";
 import {updateCollection} from "~/lib/features";
 
-const CategoryLayout = lazy(() => import( "~/components/layouts/partials/category-layout"));
 const VendorsList = lazy(() => import( "~/components/vendors/list"));
 
 
@@ -39,9 +38,9 @@ export default function Vendors() {
     return (
         <>
 
-            <CategoryLayout {...features()}>
-                <VendorsList vendors={features()?.properties?.vendors}/>
-            </CategoryLayout>
+
+            <VendorsList vendors={features()?.properties?.vendors}/>
+
             <BaseDialog contextId={'albd1'}>
                 <DialogContent class={'min-h-[70dvh] md:w-1/2 lg:w-2/3'} contextId={'albd1'}>
                     <FormLayout hideLogo title="Add Vendor">

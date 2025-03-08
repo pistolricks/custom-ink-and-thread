@@ -3,7 +3,7 @@ import {CONTENT, Feature} from "~/lib/store";
 import {ResponsiveDialog} from "~/components/ui/dialogs/responsive-dialog";
 import DrawerPrimitive from "@corvu/drawer";
 import Dialog from "@corvu/dialog";
-import GridWrapper from "~/components/layouts/partials/grid-wrapper";
+import GridWrapper from "~/components/layouts/partials/wrappers/grid-wrapper";
 import {useLayoutContext} from "~/context/layout-provider";
 
 

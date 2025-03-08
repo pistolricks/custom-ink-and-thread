@@ -4,7 +4,7 @@ import SideDrawer from '~/components/ui/drawer/side-drawer'
 import {createAsync, useLocation, useNavigate, useSubmission} from '@solidjs/router'
 import {getUser, loginUserHandler, logoutUserHandler} from '~/lib/users'
 import {useLayoutContext} from '~/context/layout-provider'
-import Header from "~/components/layouts/partials/header";
+import Header from "~/components/layouts/partials/header/header";
 import {CurrentProvider} from "~/context/current-provider";
 import {USER} from "~/lib/db";
 import {AUTHENTICATION_TOKEN} from "~/lib";
@@ -22,9 +22,7 @@ export const route = {
     },
 }
 const AppLayout: Component<PROPS> = (props) => {
-    const {getHeight} = useLayoutContext()
     const navigate = useNavigate();
-    const user = createAsync(async () => getUser())
     const loggedIn = useSubmission(loginUserHandler);
     const loggedOut = useSubmission(logoutUserHandler);
     const children = () => props.children
@@ -82,31 +80,30 @@ const AppLayout: Component<PROPS> = (props) => {
                     <Show when={getPath()}>
                         {/* <WsClient initialSocketUrl={'ws://localhost:4000'}/> */}
 
-                        <Header user={user()}/>
-                        <div class={'flex-1 flex flex-row overflow-y-hidden'}>
-                            <main
-                                class={'flex-1 bg-background border-l border-r border-muted text-xs p-2 overflow-y-auto'}
-                            >
-                                <CurrentProvider
-                                    user={responseData()?.user}
-                                    folder={responseData()?.folder}
-                                    location={responseData()?.location}
-                                    collection={responseData()?.collection}
-                                    token={{
-                                        token: responseData()?.token?.token ?? "",
-                                        expiry: responseData()?.token?.expiry ?? ""
-                                    }}>
+
+                        <CurrentProvider
+                            user={responseData()?.user}
+                            folder={responseData()?.folder}
+                            location={responseData()?.location}
+                            collection={responseData()?.collection}
+                            token={{
+                                token: responseData()?.token?.token ?? "",
+                                expiry: responseData()?.token?.expiry ?? ""
+                            }}>
+                            <Header/>
+                            <div class={'flex-1 flex flex-row overflow-y-hidden'}>
+                                <main
+                                    class={'flex-1 bg-background border-l border-r border-muted text-xs p-2 overflow-y-auto'}
+                                >
                                     {children()}
-                                </CurrentProvider>
-                            </main>
-                        </div>
+                                </main>
+                            </div>
+                        </CurrentProvider>
+
                         <footer class={'p-1'}>
                             <div class="border-t">
                                 <div class="flex h-16 items-center px-4">
                                     <MainNav class="mx-6"/>
-                                    <div class="ml-auto flex items-center space-x-4">
-
-                                    </div>
                                 </div>
                             </div>
                         </footer>

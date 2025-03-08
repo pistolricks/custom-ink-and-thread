@@ -44,7 +44,7 @@ export async function updateSessionData(user: SessionUser) {
             d.current_location = user?.current_location
         });
 
-        return session.data;
+        return session;
     } catch (err) {
         return err as Error;
     }

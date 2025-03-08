@@ -6,11 +6,37 @@
   <component name="ChangeListManager">
     <list default="true" id="bddc89ca-a474-4ff4-a99a-c9fdc0360bc2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/category-layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/category-layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/footer-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/footer-menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/grid-wrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/grid-wrapper.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/@solid-primitives_storage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/@solid-primitives_storage.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-YTJKS6T7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/chunk-YTJKS6T7.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/solid-js_store.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/solid-js_store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/solid-js_store.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/client/deps/solid-js_store.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vinxi/server/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contents/list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contents/list.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/app-layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/app-layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/app-sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/side/app-sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/breadcrumbs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/header/breadcrumbs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/category-layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/footer-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/footer/footer-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/grid-wrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/wrappers/grid-wrapper.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/header/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/list-wrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/wrappers/list-wrapper.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/nav-menu-ui.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/nav.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/header/nav.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/header/navigation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/side-nav-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/side/profile-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/navigation/navigation-items.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/navigation/navigation-items.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/navigation/navigation-menu-content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/navigation/navigation-menu-content.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/navigation/navigation-menu-item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/navigation/navigation-menu-item.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/navigation/navigation-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/navigation/navigation-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/vendors/list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/vendors/list.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/current-provider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/current-provider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/session.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/session.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/contents/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/contents/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/places/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/places/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/vendors/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/vendors/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,37 +65,37 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/eriksmith/projects/customInkAndThread/cit-app/src/components/inbox&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/eriksmith/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/eriksmith/projects/customInkAndThread/cit-app/src/components/layouts/partials/header",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/Users/eriksmith/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/layouts/partials/header" />
       <recent name="$PROJECT_DIR$/src/components/inbox" />
       <recent name="$PROJECT_DIR$/src/components/ui/dropdown" />
       <recent name="$PROJECT_DIR$/src/components/ui/notification" />
       <recent name="$PROJECT_DIR$/src/components/layouts/dashboard/partials" />
-      <recent name="$PROJECT_DIR$/src/components/ui" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/ui/field" />
-      <recent name="$PROJECT_DIR$/src/components/ui-animated" />
-      <recent name="$PROJECT_DIR$/src/components" />
-      <recent name="$PROJECT_DIR$/src/components/layouts/dashboard/partials" />
-      <recent name="$PROJECT_DIR$/src/components/ui/sidebar" />
+      <recent name="$PROJECT_DIR$/src/components/layouts/partials/wrappers" />
+      <recent name="$PROJECT_DIR$/src/components/layouts/partials/side-right" />
+      <recent name="$PROJECT_DIR$/src/components/layouts/partials/header" />
+      <recent name="$PROJECT_DIR$/src/components/layouts/partials/footer" />
+      <recent name="$PROJECT_DIR$/src/components/layouts/partials/nav-2-right" />
     </key>
   </component>
   <component name="RunManager">
@@ -118,7 +144,7 @@
       <workItem from="1741284695533" duration="2564000" />
       <workItem from="1741324804960" duration="16216000" />
       <workItem from="1741399389259" duration="2247000" />
-      <workItem from="1741407645212" duration="2104000" />
+      <workItem from="1741407645212" duration="9241000" />
     </task>
     <servers />
   </component>
