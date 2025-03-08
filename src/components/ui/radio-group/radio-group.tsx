@@ -1,201 +1,73 @@
-import { RadioGroup } from "@kobalte/core/radio-group";
-import { For, createSignal } from "solid-js";
+import type { JSX, ValidComponent } from "solid-js"
+import { splitProps } from "solid-js"
 
-import style from "./radio-group.module.css";
+import type { PolymorphicProps } from "@kobalte/core/polymorphic"
+import * as RadioGroupPrimitive from "@kobalte/core/radio-group"
 
-export function RadioGroupUi() {
-    return (
-        <RadioGroup class={style["radio-group"]}>
-            <RadioGroup.Label class={style["radio-group__label"]}>
-                Favorite fruit
-            </RadioGroup.Label>
-            <div class={style["radio-group__items"]} role="presentation">
-                <For each={["Apple", "Orange", "Watermelon"]}>
-                    {(fruit) => (
-                        <RadioGroup.Item value={fruit} class={style.radio}>
-                            <RadioGroup.ItemInput class={style.radio__input} />
-                            <RadioGroup.ItemControl class={style.radio__control}>
-                                <RadioGroup.ItemIndicator class={style.radio__indicator} />
-                            </RadioGroup.ItemControl>
-                            <RadioGroup.ItemLabel class={style.radio__label}>
-                                {fruit}
-                            </RadioGroup.ItemLabel>
-                        </RadioGroup.Item>
-                    )}
-                </For>
-            </div>
-        </RadioGroup>
-    );
+import { cn } from "~/lib/ui"
+
+type RadioGroupRootProps<T extends ValidComponent = "div"> =
+    RadioGroupPrimitive.RadioGroupRootProps<T> & { class?: string | undefined }
+
+const RadioGroup = <T extends ValidComponent = "div">(
+    props: PolymorphicProps<T, RadioGroupRootProps<T>>
+) => {
+    const [local, others] = splitProps(props as RadioGroupRootProps, ["class"])
+    return <RadioGroupPrimitive.Root class={cn("grid gap-2", local.class)} {...others} />
 }
 
-export function DefaultValueExample() {
-    return (
-        <RadioGroup class={style["radio-group"]} defaultValue="Orange">
-            <RadioGroup.Label class={style["radio-group__label"]}>
-                Favorite fruit
-            </RadioGroup.Label>
-            <div class={style["radio-group__items"]} role="presentation">
-                <For each={["Apple", "Orange", "Watermelon"]}>
-                    {(fruit) => (
-                        <RadioGroup.Item value={fruit} class={style.radio}>
-                            <RadioGroup.ItemInput class={style.radio__input} />
-                            <RadioGroup.ItemControl class={style.radio__control}>
-                                <RadioGroup.ItemIndicator class={style.radio__indicator} />
-                            </RadioGroup.ItemControl>
-                            <RadioGroup.ItemLabel class={style.radio__label}>
-                                {fruit}
-                            </RadioGroup.ItemLabel>
-                        </RadioGroup.Item>
-                    )}
-                </For>
-            </div>
-        </RadioGroup>
-    );
+type RadioGroupItemProps<T extends ValidComponent = "div"> =
+    RadioGroupPrimitive.RadioGroupItemProps<T> & {
+    class?: string | undefined
+    children?: JSX.Element
 }
 
-export function ControlledExample() {
-    const [value, setValue] = createSignal("Orange");
-
+const RadioGroupItem = <T extends ValidComponent = "div">(
+    props: PolymorphicProps<T, RadioGroupItemProps<T>>
+) => {
+    const [local, others] = splitProps(props as RadioGroupItemProps, ["class", "children"])
     return (
-        <>
-            <RadioGroup
-                class={style["radio-group"]}
-                value={value()}
-                onChange={setValue}
-            >
-                <RadioGroup.Label class={style["radio-group__label"]}>
-                    Favorite fruit
-                </RadioGroup.Label>
-                <div class={style["radio-group__items"]} role="presentation">
-                    <For each={["Apple", "Orange", "Watermelon"]}>
-                        {(fruit) => (
-                            <RadioGroup.Item value={fruit} class={style.radio}>
-                                <RadioGroup.ItemInput class={style.radio__input} />
-                                <RadioGroup.ItemControl class={style.radio__control}>
-                                    <RadioGroup.ItemIndicator class={style.radio__indicator} />
-                                </RadioGroup.ItemControl>
-                                <RadioGroup.ItemLabel class={style.radio__label}>
-                                    {fruit}
-                                </RadioGroup.ItemLabel>
-                            </RadioGroup.Item>
-                        )}
-                    </For>
-                </div>
-            </RadioGroup>
-            <p class="not-prose text-sm mt-4">Your favorite fruit is: {value()}.</p>
-        </>
-    );
+        <RadioGroupPrimitive.Item class={cn("flex items-center space-x-2", local.class)} {...others}>
+            <RadioGroupPrimitive.ItemInput />
+            <RadioGroupPrimitive.ItemControl class="aspect-square size-4 rounded-full border border-primary text-primary outline-offset-background focus:outline-hidden focus-visible:outline-2 focus-visible:outline-ring focus-visible:outline-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                <RadioGroupPrimitive.ItemIndicator class="flex h-full items-center justify-center ">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="size-2.5 fill-current text-current"
+                    >
+                        <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                    </svg>
+                </RadioGroupPrimitive.ItemIndicator>
+            </RadioGroupPrimitive.ItemControl>
+            {local.children}
+        </RadioGroupPrimitive.Item>
+    )
 }
 
-export function DescriptionExample() {
-    return (
-        <RadioGroup class={style["radio-group"]}>
-            <RadioGroup.Label class={style["radio-group__label"]}>
-                Favorite fruit
-            </RadioGroup.Label>
-            <div class={style["radio-group__items"]} role="presentation">
-                <For each={["Apple", "Orange", "Watermelon"]}>
-                    {(fruit) => (
-                        <RadioGroup.Item value={fruit} class={style.radio}>
-                            <RadioGroup.ItemInput class={style.radio__input} />
-                            <RadioGroup.ItemControl class={style.radio__control}>
-                                <RadioGroup.ItemIndicator class={style.radio__indicator} />
-                            </RadioGroup.ItemControl>
-                            <RadioGroup.ItemLabel class={style.radio__label}>
-                                {fruit}
-                            </RadioGroup.ItemLabel>
-                        </RadioGroup.Item>
-                    )}
-                </For>
-            </div>
-            <RadioGroup.Description class={style["radio-group__description"]}>
-                Choose the fruit you like the most.
-            </RadioGroup.Description>
-        </RadioGroup>
-    );
+type RadioGroupLabelProps<T extends ValidComponent = "label"> =
+    RadioGroupPrimitive.RadioGroupLabelProps<T> & {
+    class?: string | undefined
 }
 
-export function ErrorMessageExample() {
-    const [value, setValue] = createSignal("Orange");
-
+const RadioGroupItemLabel = <T extends ValidComponent = "label">(
+    props: PolymorphicProps<T, RadioGroupLabelProps<T>>
+) => {
+    const [local, others] = splitProps(props as RadioGroupLabelProps, ["class"])
     return (
-        <RadioGroup
-            class={style["radio-group"]}
-            value={value()}
-            onChange={setValue}
-            validationState={value() !== "Apple" ? "invalid" : "valid"}
-        >
-            <RadioGroup.Label class={style["radio-group__label"]}>
-                Favorite fruit
-            </RadioGroup.Label>
-            <div class={style["radio-group__items"]} role="presentation">
-                <For each={["Apple", "Orange", "Watermelon"]}>
-                    {(fruit) => (
-                        <RadioGroup.Item value={fruit} class={style.radio}>
-                            <RadioGroup.ItemInput class={style.radio__input} />
-                            <RadioGroup.ItemControl class={style.radio__control}>
-                                <RadioGroup.ItemIndicator class={style.radio__indicator} />
-                            </RadioGroup.ItemControl>
-                            <RadioGroup.ItemLabel class={style.radio__label}>
-                                {fruit}
-                            </RadioGroup.ItemLabel>
-                        </RadioGroup.Item>
-                    )}
-                </For>
-            </div>
-            <RadioGroup.ErrorMessage class={style["radio-group__error-message"]}>
-                Hmm, I prefer apples.
-            </RadioGroup.ErrorMessage>
-        </RadioGroup>
-    );
+        <RadioGroupPrimitive.ItemLabel
+            class={cn(
+                "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70",
+                local.class
+            )}
+            {...others}
+        />
+    )
 }
 
-export function HTMLFormExample() {
-    let formRef: HTMLFormElement | undefined;
-
-    const onSubmit = (e: SubmitEvent) => {
-        e.preventDefault();
-        e.stopPropagation();
-
-        const formData = new FormData(formRef);
-
-        alert(JSON.stringify(Object.fromEntries(formData), null, 2));
-    };
-
-    return (
-        <form
-            ref={formRef}
-            onSubmit={onSubmit}
-            class="flex flex-col items-center space-y-6"
-        >
-            <RadioGroup class={style["radio-group"]} name="favorite-fruit">
-                <RadioGroup.Label class={style["radio-group__label"]}>
-                    Favorite fruit
-                </RadioGroup.Label>
-                <div class={style["radio-group__items"]} role="presentation">
-                    <For each={["Apple", "Orange", "Watermelon"]}>
-                        {(fruit) => (
-                            <RadioGroup.Item value={fruit} class={style.radio}>
-                                <RadioGroup.ItemInput class={style.radio__input} />
-                                <RadioGroup.ItemControl class={style.radio__control}>
-                                    <RadioGroup.ItemIndicator class={style.radio__indicator} />
-                                </RadioGroup.ItemControl>
-                                <RadioGroup.ItemLabel class={style.radio__label}>
-                                    {fruit}
-                                </RadioGroup.ItemLabel>
-                            </RadioGroup.Item>
-                        )}
-                    </For>
-                </div>
-            </RadioGroup>
-            <div class="flex space-x-2">
-                <button type="reset" class="kb-button">
-                    Reset
-                </button>
-                <button type="submit" class="kb-button-primary">
-                    Submit
-                </button>
-            </div>
-        </form>
-    );
-}
+export { RadioGroup, RadioGroupItem, RadioGroupItemLabel }

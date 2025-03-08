@@ -5,16 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bddc89ca-a474-4ff4-a99a-c9fdc0360bc2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lib/data/product.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/data/products.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/products.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/side/products-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/side/products-menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/side/profile-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/side/profile-menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/products/category-filters.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/products/category-filters.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/products/product-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/products/product-list.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/products/product-view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/products/product-view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/radio-group/radio-group.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/radio-group/radio-group.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/vendors/partials/vendor-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/vendors/partials/vendor-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/data/product.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/data/product.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/data/products.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/data/products.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/apparel/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/apparel/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/new-arrivals/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/new-arrivals/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/vendors/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/vendors/[id].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,29 +43,29 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/eriksmith/projects/customInkAndThread/cit-app/src/context",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.dev.executor": "Run",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Users/eriksmith/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/eriksmith/projects/customInkAndThread/cit-app/src/context&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/eriksmith/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "JSON",
-      "HTML"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JSON&quot;,
+      &quot;HTML&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/context" />
@@ -130,6 +130,7 @@
       <workItem from="1741399389259" duration="2247000" />
       <workItem from="1741407645212" duration="9357000" />
       <workItem from="1741417395292" duration="31468000" />
+      <workItem from="1741450202344" duration="3680000" />
     </task>
     <servers />
   </component>
