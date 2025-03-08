@@ -1,7 +1,7 @@
 import {NavigationMenu, type Orientation,} from "@kobalte/core/navigation-menu";
 import {Component, createSignal, JSXElement} from "solid-js";
 
-import {ChevronDownIcon} from "~/components/icons";
+import {ChevronDownIcon} from "~/components/ui/svg";
 import style from "~/components/layouts/partials/header/nav.module.css";
 import {A} from "@solidjs/router";
 

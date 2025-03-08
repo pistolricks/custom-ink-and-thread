@@ -5,7 +5,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs"
 import {Overview} from "~/components/dashboard/partials/overview";
 import { RecentSales } from "~/components/dashboard/partials/recent-sales";
 import { IconDownload } from "~/components/ui/svg";
-import {MainNav} from "~/components/dashboard/partials/main-nav";
 import {Component} from "solid-js";
 
 

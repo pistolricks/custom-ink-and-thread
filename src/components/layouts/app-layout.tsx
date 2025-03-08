@@ -1,12 +1,10 @@
 import {Component, createEffect, createSignal, ParentProps, Show} from 'solid-js'
 
-import {createAsync, useLocation} from '@solidjs/router'
+import {useLocation} from '@solidjs/router'
 import {getUser} from '~/lib/users'
 import {useLayoutContext} from '~/context/layout-provider'
 import SideDrawer from "~/components/ui/drawer/side-drawer";
 import Header from "~/components/layouts/partials/header/header";
-import {MainNav} from "~/components/dashboard/partials/main-nav";
-
 
 
 // const WsClient = clientOnly(() => import('~/components/ws/ws-client'))
@@ -18,11 +16,13 @@ export const route = {
     },
 }
 const AppLayout: Component<PROPS> = (props) => {
-    const {getHeight, setCurrentUser, currentUser} = useLayoutContext()
+    const {currentUser} = useLayoutContext()
 
     const children = () => props.children
     const location = useLocation()
     const [getPath, setPath] = createSignal<string | undefined>()
+
+
 
     createEffect(() => {
 
@@ -40,7 +40,7 @@ const AppLayout: Component<PROPS> = (props) => {
                     <Header user={currentUser}/>
                     <div class={'flex-1 flex flex-row overflow-y-hidden'}>
                         <main
-                            class={'flex-1 bg-background border-l border-r border-muted text-xs p-2 overflow-y-auto'}
+                            class={'flex-1 bg-background border-l border-r border-b border-muted text-xs p-2 overflow-y-auto'}
                         >
                             {children()}
                         </main>
@@ -49,7 +49,7 @@ const AppLayout: Component<PROPS> = (props) => {
                     <footer class={'p-1'}>
                         <div class="border-t">
                             <div class="flex h-16 items-center px-4">
-                                <MainNav class="mx-6"/>
+
                             </div>
                         </div>
                     </footer>

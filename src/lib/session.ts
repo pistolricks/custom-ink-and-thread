@@ -6,15 +6,15 @@ import {Feature} from "~/lib/store";
 
 
 export type SessionUser = {
-    id?: number
-    name?: string
-    email?: string
-    display_name?: string
-    activated?: boolean;
-    created_at?: string;
-    token?: string
-    expiry?: string
-    folder?: string,
+    id: number | undefined;
+    name: string | undefined;
+    email: string | undefined;
+    display_name: string | undefined;
+    activated: boolean | undefined;
+    created_at: string | undefined;
+    token: string | undefined;
+    expiry: string | undefined;
+    folder: string | undefined;
     current_location?: Feature | undefined
 }
 

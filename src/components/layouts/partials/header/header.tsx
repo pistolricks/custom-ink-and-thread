@@ -3,12 +3,15 @@ import {A} from "@solidjs/router";
 import Drawer from "@corvu/drawer";
 import {DrawerContent} from "~/components/ui/drawer";
 import {SessionUser} from "~/lib/session";
+import ProfileMenu from "~/components/layouts/partials/side/profile-menu";
 
 
 const Header: Component<{
     user: SessionUser;
-}> = () => {
+}> = props => {
 
+
+    const user = () => props.user;
 
     return (
         <>
@@ -103,7 +106,7 @@ const Header: Component<{
             </header>
             <DrawerContent side={"right"} contextId={'sd1'}>
                 <>
-
+                    <ProfileMenu user={user()}/>
                 </>
             </DrawerContent>
         </>

@@ -1,6 +1,6 @@
 import { Avatar as ArkAvatar } from '@ark-ui/solid/avatar'
-import { UserIcon } from 'lucide-solid'
 import { Show, splitProps } from 'solid-js'
+import {IconProfile} from "~/components/ui/svg";
 
 export interface AvatarProps extends ArkAvatar.RootProps {
     name?: string
@@ -13,7 +13,7 @@ export const Avatar = (props: AvatarProps) => {
     return (
         <ArkAvatar.Root {...rootProps}>
             <ArkAvatar.Fallback>
-                <Show when={localProps.name} fallback={<UserIcon />}>
+                <Show when={localProps.name} fallback={<IconProfile class={'size-10 stroke-1'} />}>
                     {getInitials(localProps.name)}
                 </Show>
             </ArkAvatar.Fallback>

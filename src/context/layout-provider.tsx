@@ -6,7 +6,7 @@ import {createStore, SetStoreFunction, Store} from "solid-js/store";
 
 import {SessionUser} from "~/lib/session";
 import {Extent} from "ol/extent";
-import {IconCategories, IconContents, IconPlaces, IconProfile, IconProps, IconVendors} from "~/components/ui/svg";
+import {IconCategories, IconContents, IconPlaces, IconProfile, IconVendors} from "~/components/ui/svg";
 
 
 
@@ -39,7 +39,18 @@ export const LayoutContext = createContext<LayoutType>();
 
 export function LayoutProvider(props: { children: JSX.Element }) {
 
-    const [currentUser, setCurrentUser] = createStore<SessionUser>()
+    const [currentUser, setCurrentUser] = createStore<SessionUser>({
+        id: undefined,
+        name: undefined,
+        email: undefined,
+        display_name: undefined,
+        activated: undefined,
+        created_at: undefined,
+        token: undefined,
+        expiry: undefined,
+        folder: undefined,
+        current_location: undefined,
+    })
     const [getMyLocation, setMyLocation] = createSignal<Feature | undefined>(undefined)
     const [getStoreCollection, setStoreCollection] = createStore<FeatureCollection>({
         type: "FeatureCollection",

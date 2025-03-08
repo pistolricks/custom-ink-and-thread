@@ -8,6 +8,11 @@ import { Separator } from "~/components/ui/separator"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs"
 import { TextField, TextFieldInput } from "~/components/ui/field/text-field"
 
+
+import { AccountSwitcher } from "~/components/inbox/account-switcher"
+import { MailDisplay } from "~/components/inbox/mail-display"
+import { MailList } from "~/components/inbox/mail-list"
+import { Nav } from "~/components/inbox/nav"
 import {
     IconArchive,
     IconFile,
@@ -18,13 +23,7 @@ import {
     IconTrash,
     IconUpdates,
     IconUsers
-} from "~/components/icons"
-import { AccountSwitcher } from "~/components/inbox/account-switcher"
-import { MailDisplay } from "~/components/inbox/mail-display"
-import { MailList } from "~/components/inbox/mail-list"
-import { Nav } from "~/components/inbox/nav"
-import {MainNav} from "~/components/dashboard/partials/main-nav";
-
+} from "~/components/ui/svg"
 const Inbox: Component<{}> = props => {
     const [sizes, setSizes] = makePersisted(createSignal<number[]>([]), {
         name: "resizable-sizes",
