@@ -2,13 +2,37 @@ import {action, query, redirect} from "@solidjs/router";
 import {activateUser, getUserDetails, getUserToken, login, logout, register, resendActivateEmail,} from "~/lib/server";
 import {getSessionUser, SessionUser} from "~/lib/session";
 import {capitalizeFirstLetter} from "~/lib/utils";
+import {SetStoreFunction} from "solid-js/store";
 
 export const getUser = query(async () => {
     "use server";
     let userData = (await getSessionUser()) as SessionUser | undefined;
     console.log("getUser", userData)
+    if(!userData) return;
+    return console.log("user", userData);
+}, "user")
+
+export const getCurrentUser = query(async (setCurrentUser: SetStoreFunction<SessionUser>) => {
+    let userData = (await getSessionUser()) as SessionUser;
+    if(!userData?.id) {
+        setCurrentUser({
+            id: undefined,
+            name: undefined,
+            email: undefined,
+            display_name: undefined,
+            activated: undefined,
+            created_at: undefined,
+            token: undefined,
+            expiry: undefined,
+            folder: undefined,
+            current_location: undefined,
+        })
+    } else {
+       setCurrentUser(userData)
+    }
     return userData;
 }, "user")
+
 
 export const getUserDetailsHandler = action(async (data: FormData) => {
     "use server";

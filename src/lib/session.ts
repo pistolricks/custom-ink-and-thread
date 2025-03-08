@@ -3,6 +3,7 @@ import {USER} from "~/lib/db";
 import {AUTHENTICATION_TOKEN} from "~/lib/index";
 import {handleUserName} from "~/lib/utils";
 import {Feature} from "~/lib/store";
+import {SetStoreFunction} from "solid-js/store";
 
 
 export type SessionUser = {
@@ -70,7 +71,7 @@ export async function updateSessionCurrentLocation(user: SessionUser, currentLoc
 }
 
 
-export async function getSessionUser(): Promise<USER | undefined> {
+export async function getSessionUser(): Promise<SessionUser | undefined> {
     "use server";
     const session = await getSession();
 
@@ -81,11 +82,11 @@ export async function getSessionUser(): Promise<USER | undefined> {
         display_name: session.data.display_name,
         activated: session.data.activated,
         created_at: session.data.created_at,
+        token: session.data.token,
+        expiry: session.data.expiry,
         folder: session.data.folder,
         current_location: session.data?.current_location
     }
-
-    if (user.email === "") return undefined;
 
     return user;
 }

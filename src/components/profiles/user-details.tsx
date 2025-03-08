@@ -1,8 +1,9 @@
 import {Component, For, Show} from "solid-js";
 import {ProfileDetailProps} from "~/lib/store";
 import {SessionUser} from "~/lib/session";
-import {Avatar, AvatarFallback, AvatarImage} from "~/components/ui/avatar";
+
 import {handleInitials} from "~/lib/utils";
+import {Avatar} from "~/components/ui/avatar/avatar-ui";
 
 
 type PROPS = SessionUser
@@ -26,10 +27,8 @@ const UserDetails: Component<PROPS> = (props) => {
                     <div class="-mt-26  sm:-mt-16 sm:flex sm:items-end sm:space-x-5">
                         <div class="flex">
 
-                            <Avatar class={'bg-gray-3 size-24 ring-2 ring-white lg:size-32'}>
-                                <AvatarImage src={imageSrc()}/>
-                                <AvatarFallback>{handleInitials(name())}</AvatarFallback>
-                            </Avatar>
+                            <Avatar name={name()} src={imageSrc()} class={'bg-gray-3 size-24 ring-2 ring-white lg:size-32'}/>
+
 
 
                         </div>

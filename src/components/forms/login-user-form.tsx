@@ -6,12 +6,13 @@ import {TextField, TextFieldErrorMessage, TextFieldInput} from "~/components/ui/
 import {showToast} from "~/components/ui/toast";
 import {Button} from "~/components/ui/button";
 import {IconChevronLeft} from "~/components/ui/svg";
+import {useLayoutContext} from "~/context/layout-provider";
 
 
 type PROPS = {}
 
 const LoginUserForm: Component<PROPS> = props => {
-
+    const {setCurrentUser} = useLayoutContext();
     const submission = useSubmission(loginUserHandler);
 
     const errors = createMemo(() => {

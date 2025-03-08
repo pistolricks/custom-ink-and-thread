@@ -7,7 +7,7 @@ import ProfileMenu from "~/components/layouts/partials/side/profile-menu";
 
 
 const Header: Component<{
-    user: SessionUser;
+    user: SessionUser|undefined;
 }> = props => {
 
 
@@ -39,7 +39,7 @@ const Header: Component<{
                             <div class="flex items-center space-x-6">
                                 <Show
                                     fallback={<div class={'h-[20px]'}/>}
-                                    when={true}>
+                                    when={!user()?.id}>
                                     <A href={'/login'} class="text-sm font-medium text-text-700/50 hover:text-gray-100">
                                         Sign in
                                     </A>

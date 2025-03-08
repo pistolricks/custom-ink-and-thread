@@ -12,20 +12,18 @@ const LogoutUserForm: Component<PROPS> = props => {
     const submission = useSubmission(logoutUserHandler);
     const {currentUser, setCurrentUser} = useLayoutContext();
     createEffect(() => {
-        if (submission.result) {
-            setCurrentUser({
-                id: undefined,
-                name: undefined,
-                email: undefined,
-                display_name: undefined,
-                activated: undefined,
-                created_at: undefined,
-                token: undefined,
-                expiry: undefined,
-                folder: undefined,
-                current_location: undefined,
-            })
-        }
+        setCurrentUser({
+            id: undefined,
+            name: undefined,
+            email: undefined,
+            display_name: undefined,
+            activated: undefined,
+            created_at: undefined,
+            token: undefined,
+            expiry: undefined,
+            folder: undefined,
+            current_location: undefined,
+        })
 
         console.log(currentUser)
 
