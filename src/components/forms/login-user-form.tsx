@@ -5,7 +5,7 @@ import {TextField, TextFieldErrorMessage, TextFieldInput} from "~/components/ui/
 
 import {showToast} from "~/components/ui/toast";
 import {Button} from "~/components/ui/button";
-import {ChevronLeft} from "lucide-solid";
+import {IconChevronLeft} from "~/components/ui/svg";
 
 
 type PROPS = {}
@@ -70,7 +70,7 @@ const LoginUserForm: Component<PROPS> = props => {
                         size={"icon"}
                         type={"button"}
                     >
-                        <ChevronLeft fill="current"/>
+                        <IconChevronLeft fill="current"/>
                     </Button>
                 </div>
             </form>

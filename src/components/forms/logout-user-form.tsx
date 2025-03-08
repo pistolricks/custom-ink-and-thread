@@ -5,30 +5,29 @@ import {logoutUserHandler} from "~/lib/users";
 import Drawer from "@corvu/drawer";
 import {useLayoutContext} from "~/context/layout-provider";
 import {Button} from "~/components/ui/button";
-import {Feature} from "~/lib/store";
 
 type PROPS = {}
 
 const LogoutUserForm: Component<PROPS> = props => {
     const submission = useSubmission(logoutUserHandler);
-    const {storedCurrentUser, setCurrentUser} = useLayoutContext();
+    const {currentUser, setCurrentUser} = useLayoutContext();
     createEffect(() => {
-        if(submission.result) {
-           setCurrentUser({
-               id: undefined,
-               name: undefined,
-               email: undefined,
-               display_name: undefined,
-               activated: undefined,
-               created_at: undefined,
-               token: undefined,
-               expiry: undefined,
-               folder: undefined,
-               current_location: undefined,
-           })
+        if (submission.result) {
+            setCurrentUser({
+                id: undefined,
+                name: undefined,
+                email: undefined,
+                display_name: undefined,
+                activated: undefined,
+                created_at: undefined,
+                token: undefined,
+                expiry: undefined,
+                folder: undefined,
+                current_location: undefined,
+            })
         }
 
-        console.log(storedCurrentUser)
+        console.log(currentUser)
 
     })
 

@@ -3,8 +3,8 @@ import {activateUserHandler} from "~/lib/users";
 import {TextField, TextFieldInput} from "~/components/ui/field/text-field";
 import {showToast} from "~/components/ui/toast";
 import {useNavigate} from "@solidjs/router";
-import {ChevronLeft} from "lucide-solid";
 import {Button} from "~/components/ui/button";
+import {IconChevronLeft} from "~/components/ui/svg";
 
 type PROPS = {}
 
@@ -71,7 +71,7 @@ const ActivateUserForm: Component<PROPS> = props => {
                             size={"icon"}
                             type={"button"}
                         >
-                            <ChevronLeft fill="current"/>
+                            <IconChevronLeft fill="current"/>
                         </Button>
                     </div>
                 </div>

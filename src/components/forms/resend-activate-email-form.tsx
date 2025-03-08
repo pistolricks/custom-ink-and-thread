@@ -2,9 +2,10 @@ import {Component, createEffect, createMemo, Show} from "solid-js";
 import {useSubmission} from "@solidjs/router";
 import {resendActivateEmailHandler} from "~/lib/users";
 import {TextField, TextFieldErrorMessage, TextFieldInput} from "~/components/ui/field/text-field";
-import {Button} from "../../ui/button";
+import {Button} from "~/components/ui/button";
+import {IconChevronLeft} from "~/components/ui/svg";
 import {showToast} from "~/components/ui/toast";
-import {ChevronLeft} from "~/components/svg";
+
 
 type PROPS = {}
 
@@ -48,7 +49,7 @@ const ResendActivateEmailForm: Component<PROPS> = props => {
                         size={"icon"}
                         type={"button"}
                     >
-                        <ChevronLeft/>
+                        <IconChevronLeft/>
                     </Button>
                 </div>
             </form>

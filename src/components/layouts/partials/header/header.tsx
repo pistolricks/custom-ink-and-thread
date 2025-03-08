@@ -1,12 +1,13 @@
-import {Show, VoidComponent} from "solid-js";
+import {Component, Show, VoidComponent} from "solid-js";
 import {A} from "@solidjs/router";
 import Drawer from "@corvu/drawer";
 import {DrawerContent} from "~/components/ui/drawer";
-import ProfileMenu from "~/components/layouts/partials/side/profile-menu";
-import {useCurrentContext} from "~/context/current-provider";
+import {SessionUser} from "~/lib/session";
 
 
-const Header: VoidComponent = () => {
+const Header: Component<{
+    user: SessionUser;
+}> = () => {
 
 
     return (

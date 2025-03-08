@@ -1,5 +1,7 @@
 import {GeoJsonObject} from "geojson";
 import {createStore} from "solid-js/store";
+import {Component} from "solid-js";
+import {IconProps} from "~/components/ui/svg";
 
 export type USER = {
     id: number;
@@ -8,6 +10,14 @@ export type USER = {
     activated: boolean;
     created_at: string;
 }
+
+export type MenuItemType = {
+    title: string;
+    href: string;
+    description?: string;
+    icon?: Component<IconProps>;
+}
+
 
 export type MOVIE = {
     id: number

@@ -3,11 +3,11 @@ import {A} from "@solidjs/router";
 import Drawer from "@corvu/drawer";
 import {useLayoutContext} from "~/context/layout-provider";
 import {Dynamic} from "solid-js/web";
-import {handleInitials, handleUserName} from "~/lib/utils";
+import {handleUserName} from "~/lib/utils";
 
 import {SessionUser} from "~/lib/session";
 import {Avatar} from "~/components/ui/avatar/avatar-ui";
-import {AvatarFallback, AvatarImage} from "@ark-ui/solid";
+import {MenuItemType} from "~/lib/store";
 
 const LogoutUserForm = lazy(() => import("~/components/users/forms/logout-user-form"));
 type PROPS = {
@@ -23,6 +23,9 @@ const ProfileMenu: Component<PROPS> = props => {
 
     const active = (routePath: string) =>
         routePath == path() ? "border-gray-normal" : "border-transparent hover:border-gray-dim";
+
+
+
 
     const path = () => location.pathname;
     return (
@@ -45,13 +48,13 @@ const ProfileMenu: Component<PROPS> = props => {
 
                 <Show
                     fallback={
-                    <>
-                   {/* Add Falback info */}
+                        <>
+                            {/* Add Falback info */}
 
-                    </>
-                }
+                        </>
+                    }
                     when={user()?.id}>
-                     <LogoutUserForm />
+                    <LogoutUserForm/>
                 </Show>
             </div>
             <div aria-label="side navigation" class="flex-1 overflow-auto divide-y divide-slate-100">
@@ -61,7 +64,7 @@ const ProfileMenu: Component<PROPS> = props => {
                             {(item) => (
                                 <li class="px-3">
                                     <MenuItem contextId={'sd1'} {...item}>
-                                        <Dynamic component={item.icon} class={'fill-blue-8'}/>
+                                        <Dynamic component={item.icon}/>
                                     </MenuItem>
                                 </li>
                             )}
@@ -100,14 +103,8 @@ const ProfileMenu: Component<PROPS> = props => {
 export default ProfileMenu;
 
 
-type MenuItem = {
-    title: string;
-    href: string;
-    description?: string;
-    icon?: string;
-}
 
-export const MenuItem: Component<MenuItem & { contextId: string, children?: JSXElement }> = props => {
+export const MenuItem: Component<MenuItemType & { contextId: string, children?: JSXElement }> = props => {
 
     const title = () => props.title;
     const href = () => props.href;

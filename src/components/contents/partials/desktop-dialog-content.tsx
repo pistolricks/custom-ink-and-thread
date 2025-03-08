@@ -5,7 +5,7 @@ import Dialog from "@corvu/dialog";
 import {Button} from "~/components/ui/button";
 import {DialogContent} from "~/components/ui/dialogs/base-dialog";
 import ImageContent from "~/components/ui/image";
-import {PhotoIcon, XMark} from "~/components/ui/svg";
+import {IconPhoto, IconX} from "~/components/ui/svg";
 
 type PROPS = {
     content?: CONTENT
@@ -26,12 +26,12 @@ const DesktopDialogContent: Component<PROPS> = props => {
                 rootClass={'h-full max-h-[78dvh] w-full'}
                 fallbackClass={'animate pulse h-full w-full'}
             >
-                <PhotoIcon class={'w-full h-full'}/>
+                <IconPhoto class={'w-full h-full'}/>
             </ImageContent>
 
             <Dialog.Description class={'flex justify-end items-center mt-2'} contextId={contextId()}>
                 <Dialog.Close contextId={contextId()} as={Button<"button">} size={'icon'}>
-                    <XMark class={'stroke-sky-8 fill-sky-4'}/></Dialog.Close>
+                    <IconX class={'stroke-sky-8 fill-sky-4'}/></Dialog.Close>
             </Dialog.Description>
         </DialogContent>
     );

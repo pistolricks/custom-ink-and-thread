@@ -3,7 +3,7 @@ import {useSubmission} from "@solidjs/router";
 import {TextField, TextFieldErrorMessage, TextFieldInput} from "~/components/ui/field/text-field";
 import {Button} from "../../ui/button";
 import {showToast} from "~/components/ui/toast";
-import {BackspaceIcon, MagnifyingGlassCircle, MapPin, SpinnerIcon, XMark} from "~/components/ui/svg";
+import {IconChevronsLeft, IconSearch, IconMapPin, IconCircle, IconX} from "~/components/ui/svg";
 import {addressSearchHandler} from "~/lib/addresses";
 import {useLayoutContext} from "~/context/layout-provider";
 import Drawer from "@corvu/drawer";
@@ -63,7 +63,7 @@ const AddressSearchForm: Component<PROPS> = props => {
                         class={'absolute left-[1px] hover:text-red-5 inset-y-0 z-40 w-12 py-5 rounded-l rounded-r-none h-6 flex items-center'}
                         variant={'link'}
                         size="icon">
-                        <MapPin class={'stroke-green-11 size-8'}/>
+                        <IconMapPin class={'stroke-green-11 size-8'}/>
                     </Button>
                     <TextFieldInput onInput={handleSearch}
                                     value={getQuery()} class={"w-full pl-16 pr-24"} type="text"
@@ -88,9 +88,9 @@ const AddressSearchForm: Component<PROPS> = props => {
                         variant={'link'}
                         size="icon">
                         <Show
-                            fallback={<XMark class={"p-1.5 stroke-red-11 hover:stroke-red-12"}/>}
+                            fallback={<IconX class={"p-1.5 stroke-red-11 hover:stroke-red-12"}/>}
                             when={getQuery()?.length > 0}>
-                            <BackspaceIcon class={"p-1.5 stroke-red-8 hover:stroke-red-12"}/>
+                            <IconChevronsLeft class={"p-1.5 stroke-red-8 hover:stroke-red-12"}/>
                         </Show>
                     </Button>
 
@@ -100,9 +100,9 @@ const AddressSearchForm: Component<PROPS> = props => {
                             type={"submit"}
                             size="icon">
                         <Show
-                            fallback={<SpinnerIcon class={"p-0.5 stroke-red-8 hover:stroke-red-7 "}/>}
+                            fallback={<IconCircle class={"p-0.5 stroke-red-8 hover:stroke-red-7 "}/>}
                             when={!submission.pending}>
-                            <MagnifyingGlassCircle class={"p-0.5 stroke-red-8 hover:stroke-red-7 "}/>
+                            <IconSearch class={"p-0.5 stroke-red-8 hover:stroke-red-7 "}/>
                         </Show>
 
                     </Button>

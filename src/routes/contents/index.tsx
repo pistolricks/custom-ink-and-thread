@@ -10,9 +10,8 @@ import Drawer from "@corvu/drawer";
 import {useLayoutContext} from "~/context/layout-provider";
 
 import {updateCollection} from "~/lib/features";
-import {PhotoIcon} from "~/components/ui/svg";
-import {PlusIcon} from "lucide-solid";
 import {Feature} from "~/lib/store";
+import {IconPhoto, IconPlus} from "~/components/ui/svg";
 
 
 const ContentsList = lazy(() => import( "~/components/contents/list"));
@@ -40,10 +39,10 @@ export default function Contents() {
                 <DialogContent contextId={'albd1'}>
                     <FileUploader/>
                 </DialogContent>
-                <FooterMenu title={<PhotoIcon class={'size-full stroke-sky-11 p-0.5 fill-green-2'}/>} variant={'ghost'}
+                <FooterMenu title={<IconPhoto class={'size-full stroke-sky-11 p-0.5 fill-green-2'}/>} variant={'ghost'}
                             size={'icon'}>
                     <Button as={Drawer.Trigger} contextId={"albd1"} variant={"ghost"} size={'icon'}>
-                        <PlusIcon class={'size-full p-0.5 stroke-slate-11'}/>
+                        <IconPlus class={'size-full p-0.5 stroke-slate-11'}/>
                     </Button>
                 </FooterMenu>
             </BaseDialog>

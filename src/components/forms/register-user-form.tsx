@@ -1,10 +1,11 @@
 import {Component, createEffect, createMemo, Show} from "solid-js";
-import {redirect, useSubmission} from "@solidjs/router";
+import {useSubmission} from "@solidjs/router";
 import {registerUserHandler} from "~/lib/users";
 import {TextField, TextFieldErrorMessage, TextFieldInput} from "~/components/ui/field/text-field";
 import {Button} from "~/components/ui/button";
 import {showToast} from "~/components/ui/toast";
-import {ChevronLeft} from "lucide-solid";
+import {IconChevronLeft} from "~/components/ui/svg";
+
 
 type PROPS = {}
 
@@ -36,7 +37,8 @@ const RegisterUserForm: Component<PROPS> = props => {
         <>
             <form class={'space-y-4'} action={registerUserHandler} method="post">
                 <TextField>
-                    <TextFieldInput class={'capitalize'} type="text" required name="firstName" placeholder="First Name"/>
+                    <TextFieldInput class={'capitalize'} type="text" required name="firstName"
+                                    placeholder="First Name"/>
                     <Show when={results()?.error?.firstName}>
                         <TextFieldErrorMessage>
                             {results()?.error?.firstName}
@@ -77,7 +79,7 @@ const RegisterUserForm: Component<PROPS> = props => {
                         size={"icon"}
                         type={"button"}
                     >
-                        <ChevronLeft fill="current"/>
+                        <IconChevronLeft fill="current"/>
                     </Button>
                 </div>
             </form>

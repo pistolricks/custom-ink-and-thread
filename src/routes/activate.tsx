@@ -6,10 +6,10 @@ import {useLayoutContext} from "~/context/layout-provider";
 
 const Activate: Component<RouteSectionProps> = props => {
     const navigate = useNavigate();
-    const {storedCurrentUser} = useLayoutContext();
+    const {currentUser} = useLayoutContext();
 
     createEffect(() => {
-        if (storedCurrentUser?.activated) {
+        if (currentUser?.activated) {
             navigate('/')
         }
     })
@@ -17,10 +17,10 @@ const Activate: Component<RouteSectionProps> = props => {
     return (
         <FormLayout>
             <Switch>
-                <Match when={!storedCurrentUser?.activated}>
+                <Match when={!currentUser?.activated}>
                     <ActivateUserForm/>
                 </Match>
-                <Match when={!storedCurrentUser}>
+                <Match when={!currentUser}>
                     <ActivateUserForm/>
                 </Match>
             </Switch>

@@ -26,12 +26,12 @@ export const route = {
 
 
 const UserProfile: Component<Feature> = props => {
-    const {storedCurrentUser} = useLayoutContext();
+    const {currentUser} = useLayoutContext();
     const formFormats: AccessorWithLatest<CountryData | undefined> = createAsync(async () => getAddressFormFormats());
     const submission = useSubmission(addAddress);
 
     const [getFeatureCollection, setFeatureCollection] = createSignal<FeatureCollection>()
-    const name = () => storedCurrentUser?.name;
+    const name = () => currentUser?.name;
 
 
     const vendor = () => props.properties?.profile?.vendor;
@@ -84,7 +84,7 @@ const UserProfile: Component<Feature> = props => {
                 </TabsList>
                 <TabsContent value="profile"
                              class={'mx-auto  pb-6 h-full min-h-[67dvh] max-h-[67dvh] overflow-y-auto flex flex-col'}>
-                    <UserDetails {...storedCurrentUser}/>
+                    <UserDetails {...currentUser}/>
 
                 </TabsContent>
                 <TabsContent value="address"

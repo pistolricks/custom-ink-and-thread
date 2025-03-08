@@ -3,7 +3,6 @@ import {useSubmission} from "@solidjs/router";
 import {TextField, TextFieldErrorMessage, TextFieldInput} from "~/components/ui/field/text-field";
 import {Button} from "../../ui/button";
 import {showToast} from "~/components/ui/toast";
-import {ChevronLeft, MagnifyingGlass, XMark} from "~/components/ui/svg";
 import {addAddress, addressFieldNames} from "~/lib/addresses";
 import {AreaSelect, CountryData} from "~/lib/store";
 import {
@@ -21,6 +20,7 @@ import poi from './poi.json';
 import {useLayoutContext} from "~/context/layout-provider";
 import {getSessionLocation} from "~/lib/session";
 import Drawer from "@corvu/drawer";
+import {IconSearch, IconX} from "~/components/ui/svg";
 
 type PROPS = CountryData & { contextId?: string, hidePoi?: boolean };
 
@@ -203,9 +203,9 @@ const CreateAddressForm: Component<PROPS> = props => {
                         </Show>
                     </TextField>
                     <div class={'col-span-2 items-center flex flex-row-reverse space-x-2 space-x-reverse'}>
-                        <Button as={"button"} onClick={handleToggle} variant={'default'} type={"submit"} size="icon"><MagnifyingGlass/></Button>
+                        <Button as={"button"} onClick={handleToggle} variant={'default'} type={"submit"} size="icon"><IconSearch/></Button>
                         <Button<"button"> onClick={handleToggle} variant="outline" size="icon">
-                            <XMark/>
+                            <IconX/>
                         </Button>
                     </div>
                 </div>

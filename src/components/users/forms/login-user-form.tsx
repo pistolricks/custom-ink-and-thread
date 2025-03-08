@@ -4,7 +4,7 @@ import {loginUserHandler} from "~/lib/users";
 import {TextField, TextFieldErrorMessage, TextFieldInput} from "~/components/ui/field/text-field";
 import {Button} from "../../ui/button";
 import {showToast} from "~/components/ui/toast";
-import {ChevronLeft} from "~/components/ui/svg";
+import {IconChevronLeft} from "~/components/ui/svg";
 
 type PROPS = {}
 
@@ -67,7 +67,7 @@ const LoginUserForm: Component<PROPS> = props => {
                         size={"icon"}
                         type={"button"}
                     >
-                        <ChevronLeft/>
+                        <IconChevronLeft/>
                     </Button>
                 </div>
             </form>

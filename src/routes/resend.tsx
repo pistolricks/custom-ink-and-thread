@@ -13,12 +13,12 @@ const FormLayout = lazy(() => import("~/components/forms/partials/form-layout"))
 
 const Resend: Component<RouteSectionProps> = props => {
 
-    const {storedCurrentUser} = useLayoutContext();
+    const {currentUser} = useLayoutContext();
     const navigate = useNavigate();
 
     createEffect(() => {
 
-        if (storedCurrentUser?.activated) {
+        if (currentUser?.activated) {
             navigate('/', {replace: true});
         }
     })
@@ -27,8 +27,8 @@ const Resend: Component<RouteSectionProps> = props => {
         <FormLayout>
             <Show
                 fallback={<LoginUserForm/>}
-                when={!storedCurrentUser?.name}>
-                    <Show  when={!storedCurrentUser?.activated}>
+                when={!currentUser?.name}>
+                    <Show  when={!currentUser?.activated}>
                         <ResendActivateEmailForm/>
                     </Show>
             </Show>

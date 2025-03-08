@@ -1,28 +1,19 @@
-import {Accessor, Component, createContext, createSignal, JSX, onMount, Setter, useContext} from "solid-js";
-import {Feature, FeatureCollection} from "~/lib/store";
+import {Accessor, Component, createContext, createSignal, JSX, JSXElement, onMount, Setter, useContext} from "solid-js";
+import {Feature, FeatureCollection, MenuItemType} from "~/lib/store";
 
 import {createStore, SetStoreFunction, Store} from "solid-js/store";
 
-import ProfileIcon from '~/lib/icons/profile.svg'
-import VendorsIcon from '~/lib/icons/vendors.svg'
-import PlacesIcon from '~/lib/icons/places.svg'
-import ContentsIcon from '~/lib/icons/contents.svg'
-import CategoriesIcon from '~/lib/icons/categories.svg'
+
 import {SessionUser} from "~/lib/session";
 import {Extent} from "ol/extent";
+import {IconCategories, IconContents, IconPlaces, IconProfile, IconProps, IconVendors} from "~/components/ui/svg";
 
 
-export type MenuItem = {
-    title: string;
-    href: string;
-    description?: string;
-    icon?: string;
-}
 
 type POSITION = [number, number] | undefined
 
 type LayoutType = {
-    storedCurrentUser: Store<SessionUser>
+    currentUser: Store<SessionUser>
     setCurrentUser: SetStoreFunction<SessionUser>
     getStoreCollection: Store<FeatureCollection>
     setStoreCollection: SetStoreFunction<FeatureCollection>
@@ -36,8 +27,8 @@ type LayoutType = {
     getIsDesktop: Accessor<boolean>
     getQuery: Accessor<string>
     setQuery: Setter<string>
-    menu: MenuItem[]
-    apps: MenuItem[]
+    menu: MenuItemType[]
+    apps: MenuItemType[]
 }
 
 let headerHeight = import.meta.env.VITE_HEADER_HEIGHT
@@ -48,7 +39,7 @@ export const LayoutContext = createContext<LayoutType>();
 
 export function LayoutProvider(props: { children: JSX.Element }) {
 
-    const [storedCurrentUser, setCurrentUser] = createStore<SessionUser>()
+    const [currentUser, setCurrentUser] = createStore<SessionUser>()
     const [getMyLocation, setMyLocation] = createSignal<Feature | undefined>(undefined)
     const [getStoreCollection, setStoreCollection] = createStore<FeatureCollection>({
         type: "FeatureCollection",
@@ -72,15 +63,15 @@ export function LayoutProvider(props: { children: JSX.Element }) {
     const [getIsDesktop, setIsDesktop] = createSignal(false)
 
 
-    const menu: MenuItem[] = [
-        {title: "profile", href: "/profile", icon: ProfileIcon},
-        {title: "vendors", href: "/vendors", icon: VendorsIcon},
-        {title: "places", href: "/places", icon: PlacesIcon},
-        {title: "contents", href: "/contents", icon: ContentsIcon},
-        {title: "categories", href: "/categories", icon: CategoriesIcon}
+    const menu: MenuItemType[] = [
+        {title: "profile", href: "/profile", icon: IconProfile},
+        {title: "vendors", href: "/vendors", icon: IconVendors},
+        {title: "places", href: "/places", icon: IconPlaces},
+        {title: "contents", href: "/contents", icon: IconContents},
+        {title: "categories", href: "/categories", icon: IconCategories}
     ]
 
-    const apps: MenuItem[] = [
+    const apps: MenuItemType[] = [
         {title: "beauty", href: "/categories/beauty"},
         {title: "car wash", href: "/categories/car-wash"},
         {title: "cleaning", href: "/categories/cleaning"},
@@ -97,7 +88,7 @@ export function LayoutProvider(props: { children: JSX.Element }) {
 
     return (
         <LayoutContext.Provider value={{
-            storedCurrentUser,
+            currentUser,
             setCurrentUser,
             getStoreCollection,
             setStoreCollection,

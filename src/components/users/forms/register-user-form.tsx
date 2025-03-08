@@ -4,7 +4,8 @@ import {registerUserHandler} from "~/lib/users";
 import {TextField, TextFieldErrorMessage, TextFieldInput} from "~/components/ui/field/text-field";
 import {Button} from "~/components/ui/button";
 import {showToast} from "~/components/ui/toast";
-import {ChevronLeft} from "~/components/svg";
+import {IconMapPin} from "~/components/ui/svg";
+
 
 type PROPS = {}
 
@@ -77,7 +78,7 @@ const RegisterUserForm: Component<PROPS> = props => {
                         size={"icon"}
                         type={"button"}
                     >
-                        <ChevronLeft/>
+                    <IconMapPin/>
                     </Button>
                 </div>
             </form>

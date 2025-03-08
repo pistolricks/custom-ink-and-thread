@@ -76,4 +76,3 @@ export const logoutUserHandler = action(async () => {
     "use server";
     return await logout()
 })
-
