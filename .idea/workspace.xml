@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bddc89ca-a474-4ff4-a99a-c9fdc0360bc2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/layouts/partials/side/products-menu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/products/category-filters.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/products/product-list.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/products/product-view.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/new-arrivals.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/new-arrivals/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/header/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/side/profile-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/side/profile-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/avatar/avatar-ui.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/avatar/avatar-ui.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/layout-provider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/layout-provider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/dashboard/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/dashboard/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +125,7 @@
       <workItem from="1741324804960" duration="16216000" />
       <workItem from="1741399389259" duration="2247000" />
       <workItem from="1741407645212" duration="9357000" />
-      <workItem from="1741417395292" duration="21406000" />
+      <workItem from="1741417395292" duration="27002000" />
     </task>
     <servers />
   </component>

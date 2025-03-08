@@ -13,7 +13,7 @@ export const Avatar = (props: AvatarProps) => {
     return (
         <ArkAvatar.Root {...rootProps}>
             <ArkAvatar.Fallback>
-                <Show when={localProps.name} fallback={<IconProfile class={'size-full stroke-1 stroke-accent/50'} />}>
+                <Show when={localProps.name} fallback={<IconProfile class={'size-6 stroke-1 stroke-accent/50'} />}>
                     {getInitials(localProps.name)}
                 </Show>
             </ArkAvatar.Fallback>

@@ -32,13 +32,12 @@ const ProfileMenu: Component<PROPS> = props => {
 
     const path = () => location.pathname;
     return (
-        <aside id="nav-menu-1" aria-label="Side navigation"
-               class=" flex flex-col  border-r-slate-200">
-            <div class="flex flex-col items-center gap-4 p-6 border-b border-slate-200">
-                <div class="shrink-0">
+        <aside id="nav-menu-1" aria-label="Side navigation" class=" flex flex-col  border-r-slate-200">
+            <div class="flex justify-start items-center gap-4 p-6 border-b border-slate-200">
+                <div class="shrink-0 border border-gray-500 p-4 rounded-2xl bg-white">
                     <Avatar name={user()?.name}/>
                 </div>
-                <div class="flex flex-col gap-0 min-h-[2rem] items-start justify-center w-full min-w-0 text-center">
+                <div class="flex flex-col gap-0 min-h-[2rem] items-start justify-start min-w-0 text-center">
                     <h4 class="w-full text-base truncate text-slate-700">
                         {title()}
                     </h4>
@@ -70,7 +69,7 @@ const ProfileMenu: Component<PROPS> = props => {
                 </Show>
             </div>
 
-            <MenuSection list={menu} contextId={contextId()}/>
+
 
 
             {children()}

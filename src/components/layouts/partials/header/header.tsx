@@ -4,6 +4,7 @@ import Drawer from "@corvu/drawer";
 import {DrawerContent} from "~/components/ui/drawer";
 import {SessionUser} from "~/lib/session";
 import ProfileMenu from "~/components/layouts/partials/side/profile-menu";
+import ProductMenu from "~/components/layouts/partials/side/products-menu";
 
 
 const Header: Component<{
@@ -60,16 +61,16 @@ const Header: Component<{
                                 <div class="flex h-16 items-center justify-between">
 
                                     <div class="flex lg:flex-1 lg:items-center">
-                                        <a href="#">
+                                        <A href="/">
                                             <span class="sr-only"></span>
                                             <img
-                                                src="icons/icon180x180.png"
+                                                src="/icons/icon180x180.png"
                                                 width={50}
                                                 height={50}
                                                 alt="Custom Ink and Thread"
                                             />
 
-                                        </a>
+                                        </A>
                                     </div>
 
                                     <div class="hidden h-full lg:flex">
@@ -102,9 +103,10 @@ const Header: Component<{
                     </div>
                 </nav>
             </header>
-            <DrawerContent side={"right"} contextId={'sd1'}>
+            <DrawerContent side={"right"} contextId={'sd1'} class={'overflow-y-auto scrollbar-hide'}>
                 <>
                     <ProfileMenu user={user()} contextId={'sd1'}/>
+                    <ProductMenu contextId={'sd1'} />
                 </>
             </DrawerContent>
         </>

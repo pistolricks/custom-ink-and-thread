@@ -83,18 +83,19 @@ export function LayoutProvider(props: { children: JSX.Element }) {
 
 
     const menu: MenuItemType[] = [
-        {title: "exclusives", href: "/exclusives", icon: IconVendors},
+        {title: "New Arrivals", href: "/new-arrivals", icon: IconVendors},
         {title: "apparel", href: "/apparel", icon: IconVendors},
-        {title: "brands", href: "/vendors", icon: IconVendors},
+
     ]
 
     const apps: MenuItemType[] = [
-        {title: "beauty", href: "/categories/beauty"},
-        {title: "car wash", href: "/categories/car-wash"},
-        {title: "cleaning", href: "/categories/cleaning"},
-        {title: "entertainment", href: "/categories/entertainment"},
-        {title: "handyman", href: "/categories/handyman"},
-        {title: "homemade food", href: "/categories/homemade-food"},
+        {title: "reversibles", href: "/reversibles"},
+        {title: "schools", href: "/schools"},
+        {title: "activewear", href: "/activewear"},
+        {title: "outerware", href: "/outerware"},
+        {title: "workwear", href: "/workwear"},
+        {title: "uniforms", href: "/uniform"},
+        {title: "brands", href: "/vendors"},
     ]
 
 

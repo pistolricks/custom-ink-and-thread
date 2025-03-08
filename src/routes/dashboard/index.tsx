@@ -4,7 +4,7 @@ import { Grid } from "~/components/ui/grid"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs"
 import {Overview} from "~/components/dashboard/partials/overview";
 import { RecentSales } from "~/components/dashboard/partials/recent-sales";
-import { IconDownload } from "~/components/ui/svg";
+import {IconArchive, IconBell, IconDownload, IconFile} from "~/components/ui/svg";
 import {Component} from "solid-js";
 
 
@@ -19,24 +19,21 @@ const Dashboard: Component<{}> = props => {
                 <div class="space-y-4 p-5 pt-6">
                     <div class="flex items-center justify-between space-y-2">
                         <h2 class="text-3xl font-bold tracking-tight">Dashboard</h2>
-                        <div class="flex items-center space-x-2">
-                            <Button variant={'ghost'}>
-                                <IconDownload class="mr-2 size-4" />
-                                Download
-                            </Button>
-                        </div>
                     </div>
                     <Tabs defaultValue="overview" class="space-y-4">
-                        <TabsList>
+                        <TabsList class={'w-full flex justify-start items-center'}>
                             <TabsTrigger value="overview">Overview</TabsTrigger>
                             <TabsTrigger value="analytics" disabled>
-                                Analytics
+                                <IconArchive />
                             </TabsTrigger>
                             <TabsTrigger value="reports" disabled>
-                                Reports
+                                <IconFile/>
                             </TabsTrigger>
                             <TabsTrigger value="notifications" disabled>
-                                Notifications
+                               <IconBell/>
+                            </TabsTrigger>
+                            <TabsTrigger value="notifications" disabled>
+                                <IconDownload/>
                             </TabsTrigger>
                         </TabsList>
                         <TabsContent value="overview" class="space-y-4">
@@ -138,7 +135,7 @@ const Dashboard: Component<{}> = props => {
                                         <Overview />
                                     </CardContent>
                                 </Card>
-                                <Card class="col-span-3">
+                                <Card class="col-span-4">
                                     <CardHeader>
                                         <CardTitle>Recent Sales</CardTitle>
                                         <CardDescription>You made 265 sales this month.</CardDescription>
