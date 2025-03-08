@@ -1,27 +1,30 @@
-import {createContext, createEffect, JSXElement, useContext} from "solid-js";
+import {Accessor, createContext, createEffect, createMemo, createSignal, JSXElement, useContext} from "solid-js";
 import {USER} from "~/lib/db";
-import {AUTHENTICATION_TOKEN} from "~/lib";
 import {handleUserName} from "~/lib/utils";
 
 import {Feature, FeatureCollection} from "~/lib/store";
 import {createStore, Store} from "solid-js/store";
-import {SessionUser} from "~/lib/session";
+import {SessionUser, updateSessionData} from "~/lib/session";
+import {redirect} from "@solidjs/router";
 
 type CurrentContextType = {
-    current: [Store<SessionUser>, Store<Feature>,Store<FeatureCollection>, { handleUser: () => void },{ handleLocation: () => void }, { handleCollection: () => void }]
+    current: [Store<SessionUser>, Store<Feature>, Store<FeatureCollection>],
+    getStatus: Accessor<string>
 }
 
 export const CurrentContext = createContext<CurrentContextType>();
 
 export function CurrentProvider(
     props: {
-    user: SessionUser | undefined,
-    token: AUTHENTICATION_TOKEN | undefined,
-    folder: string | undefined,
-    location: Feature | undefined,
-    collection: FeatureCollection | undefined,
-    children: JSXElement;
-}) {
+        user: SessionUser | USER | undefined,
+        token: { token: string | undefined, expiry: string | undefined }
+        folder: string | undefined,
+        location: Feature | undefined,
+        collection: FeatureCollection | undefined,
+        children: JSXElement;
+    }) {
+
+    const [getStatus, setStatus] = createSignal("unauthenticated")
 
     const [currentUser, storeCurrentUser] = createStore<SessionUser>()
     const [currentLocation, storeLocation] = createStore<Feature>({
@@ -31,53 +34,62 @@ export function CurrentProvider(
         type: "FeatureCollection",
         features: []
     })
-    const user = () => props.user
-    const token = () => props.token
-    const folder = () => props.folder
-    const location = () => props.location
-    const collection = () => props.collection
+    const user = () => props.user ?? undefined;
+    const token = () => props.token ?? undefined;
+    const folder = () => props.folder ?? undefined;
+    const location = () => props.location ?? undefined;
+    const collection = () => props.collection ?? undefined;
 
 
-    const current: [Store<SessionUser>, Store<Feature>, Store<FeatureCollection>, { handleUser: () => void }, { handleLocation: () => void }, { handleCollection: () => void }] = [
+    const userData = createMemo(async () => {
+        storeCurrentUser({
+            id: user()?.id,
+            name: user()?.name,
+            email: user()?.email,
+            display_name: handleUserName(user()?.name),
+            activated: user()?.activated,
+            created_at: user()?.created_at,
+            token: token()?.token,
+            expiry: token()?.expiry,
+            folder: folder(),
+            current_location: location()
+        })
+        let session = await updateSessionData(currentUser)
+
+
+        return currentUser;
+    })
+
+    const locationData = createMemo(() => {
+        let l = location();
+        if (!l) return
+        storeLocation(l)
+        return currentLocation;
+    })
+
+
+    const collectionData = createMemo(() => {
+        let c = collection();
+        if (!c) return
+        storeCollection(c);
+        return currentCollection;
+    })
+
+
+    const current: [Store<SessionUser>, Store<Feature>, Store<FeatureCollection>, ] = [
         currentUser,
         currentLocation,
         currentCollection,
-        {
-            handleUser() {
-                storeCurrentUser({
-                    id: user()?.id,
-                    name: user()?.name,
-                    email: user()?.email,
-                    display_name: handleUserName(user()?.name),
-                    activated: user()?.activated,
-                    created_at: user()?.created_at,
-                    token: token()?.token,
-                    folder: folder(),
-                    current_location: location()
-                })
-            }
-        },
-        {
-            handleLocation() {
-                storeLocation(location()!);
-            }
-        },
-        {
-            handleCollection() {
-                let c = collection();
-                if(!c)return
-                storeCollection(c);
-            }
-        }
-    ]
 
+    ]
 
 
 
 
     return (
         <CurrentContext.Provider value={{
-            current
+            current,
+            getStatus,
         }}>
             {props.children}
         </CurrentContext.Provider>

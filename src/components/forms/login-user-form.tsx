@@ -1,7 +1,7 @@
 import {Component, createEffect, createMemo, Show} from "solid-js";
-import {useNavigate, useSubmission} from "@solidjs/router";
+import {redirect, useNavigate, useSubmission} from "@solidjs/router";
 import {loginUserHandler} from "~/lib/users";
-import {TextField, TextFieldErrorMessage, TextFieldInput} from "~/components/ui/text-field";
+import {TextField, TextFieldErrorMessage, TextFieldInput} from "~/components/ui/field/text-field";
 
 import {showToast} from "~/components/ui/toast";
 import {Button} from "~/components/ui/button";
@@ -19,7 +19,8 @@ const LoginUserForm: Component<PROPS> = props => {
     })
 
     const results = createMemo(() => {
-        return submission.result
+        let res = submission;
+        return res.result;
     })
 
     createEffect(() => {

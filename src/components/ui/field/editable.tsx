@@ -1,4 +1,4 @@
-import { Editable } from '@ark-ui/solid/editable'
+import {Editable, useEditable} from '@ark-ui/solid/editable'
 import { Field } from '@ark-ui/solid/field'
 import {Component, Show} from "solid-js";
 export const RootProvider = () => {
@@ -76,7 +76,7 @@ const Settings: Component<{}> = props => {
                 {/*...*/}
             </Editable.Root>
 
-            <Editable.Root placeholder="Placeholder" autoResize maxWidth="320px">
+            <Editable.Root placeholder="Placeholder" autoResize max-width="320px">
                 {/*...*/}
             </Editable.Root>
 

@@ -1,4 +1,4 @@
-
+import GeneralDetails from "~/components/profiles/general-details";
 
 
 export default function Home() {

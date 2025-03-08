@@ -12,7 +12,7 @@ const LogoutUserForm: Component<PROPS> = props => {
     const {storedCurrentUser, setCurrentUser} = useLayoutContext();
     createEffect(() => {
         if(submission.result) {
-           setCurrentUser()
+           console.log("test logout")
         }
 
         console.log(storedCurrentUser)
@@ -23,7 +23,7 @@ const LogoutUserForm: Component<PROPS> = props => {
         <>
             <form class={''} action={logoutUserHandler} method="post">
                 <Drawer.Trigger contextId={'sd1'} as={"div"}>
-                    <Button as={"button"} variant={"ghost"} size={"wd"} type={"submit"}>LOGOUT</Button>
+                    <Button as={"button"} variant={"ghost"} size={"lg"} type={"submit"}>LOGOUT</Button>
                 </Drawer.Trigger>
             </form>
         </>

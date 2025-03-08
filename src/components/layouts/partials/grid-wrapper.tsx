@@ -10,9 +10,7 @@ const GridWrapper: Component<PROPS> = props => {
 
     return (
         <ul
-            style={{
-                height: getHeight() + 'px'
-            }}
+
             role="list"
             class="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8 p-4 overflow-y-auto scrollbar-hide container">
             {children()}

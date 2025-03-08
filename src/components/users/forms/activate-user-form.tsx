@@ -1,6 +1,6 @@
 import {Component, createEffect, createMemo, createSignal, JSX, Show} from "solid-js";
 import {activateUserHandler} from "~/lib/users";
-import {TextField, TextFieldErrorMessage, TextFieldInput} from "~/components/ui/text-field";
+import {TextField, TextFieldErrorMessage, TextFieldInput} from "~/components/ui/field/text-field";
 import {Button} from "../../ui/button";
 import {showToast} from "~/components/ui/toast";
 import {ChevronLeft} from "~/components/svg";

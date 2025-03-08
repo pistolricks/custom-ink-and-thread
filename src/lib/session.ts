@@ -3,6 +3,7 @@ import {USER} from "~/lib/db";
 import {AUTHENTICATION_TOKEN} from "~/lib/index";
 import {handleUserName} from "~/lib/utils";
 import {Feature} from "~/lib/store";
+import {redirect} from "@solidjs/router";
 
 
 export type SessionUser = {
@@ -25,6 +26,30 @@ export function getSession() {
         password: import.meta.env.VITE_SESSION_SECRET ?? "areallylongsecretthatyoushouldreplace"
     });
 }
+
+export async function updateSessionData(user: SessionUser) {
+    "use server";
+    try {
+        const session = await getSession();
+        await session.update((d: SessionUser) => {
+            d.id = user?.id;
+            d.name = user?.name;
+            d.email = user?.email;
+            d.display_name = handleUserName(user?.name)
+            d.activated = user?.activated;
+            d.created_at = user?.created_at;
+            d.token = user?.token;
+            d.expiry = user?.expiry;
+            d.folder = user?.folder;
+            d.current_location = user?.current_location
+        });
+
+        return session.data;
+    } catch (err) {
+        return err as Error;
+    }
+}
+
 
 export async function updateSessionUser(user: USER, authentication_token: AUTHENTICATION_TOKEN, folder: string) {
     "use server";

@@ -1,0 +1,10 @@
+{
+  "framework": "tailwind",
+  "configPath": "src/app.css",
+  "outputPath": "../src/components/ui-animated",
+  "tailwind": {
+    "aliases": {
+      "utils": "~/lib/ui"
+    }
+  }
+}

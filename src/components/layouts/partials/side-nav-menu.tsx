@@ -1,14 +1,13 @@
 import {Component, For, JSXElement, lazy} from "solid-js";
 import {A} from "@solidjs/router";
 import Drawer from "@corvu/drawer";
-import {USER} from "~/lib/store";
 import {useLayoutContext} from "~/context/layout-provider";
 import {Dynamic} from "solid-js/web";
 import {handleInitials, handleUserName} from "~/lib/utils";
-import {Button} from "~/components/ui/button";
-import {UserCircle} from "~/components/svg";
-import {Avatar, AvatarFallback, AvatarImage} from "~/components/ui/avatar";
+
 import {SessionUser} from "~/lib/session";
+import {Avatar} from "~/components/ui/avatar/avatar-ui";
+import {AvatarFallback, AvatarImage} from "@ark-ui/solid";
 
 const LogoutUserForm = lazy(() => import("~/components/users/forms/logout-user-form"));
 type PROPS = {
@@ -45,7 +44,7 @@ const SideNavMenu: Component<PROPS> = props => {
             </div>
             <div class="p-3 border-b border-slate-200 flex justify-between items-center w-full">
 
-            <div></div>
+                <div></div>
                 <LogoutUserForm/>
             </div>
             <div aria-label="side navigation" class="flex-1 overflow-auto divide-y divide-slate-100">

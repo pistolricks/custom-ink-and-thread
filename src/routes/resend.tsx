@@ -8,7 +8,7 @@ import {SessionUser} from "~/lib/session";
 
 const ResendActivateEmailForm = lazy(() => import( "~/components/users/forms/resend-activate-email-form"));
 const LoginUserForm = lazy(() => import('~/components/users/forms/login-user-form'));
-const FormLayout = lazy(() => import("~/components/layouts/form-layout"));
+const FormLayout = lazy(() => import("~/components/forms/partials/form-layout"));
 
 
 const Resend: Component<RouteSectionProps> = props => {
@@ -27,14 +27,10 @@ const Resend: Component<RouteSectionProps> = props => {
         <FormLayout>
             <Show
                 fallback={<LoginUserForm/>}
-                when={storedCurrentUser?.name} keyed>
-                {(user: SessionUser) => (
-                    <Show
-                        fallback={<ResendActivateEmailForm/>}
-                        when={user?.activated}>
-                        <>TEST</>
+                when={!storedCurrentUser?.name}>
+                    <Show  when={!storedCurrentUser?.activated}>
+                        <ResendActivateEmailForm/>
                     </Show>
-                )}
             </Show>
 
         </FormLayout>
