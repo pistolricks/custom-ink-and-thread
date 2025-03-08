@@ -1,6 +1,7 @@
-import {IconCircle, IconCreditCard, IconStar} from "~/components/ui/svg";
-import {Component, createSignal, For} from "solid-js";
+import {IconCircle, IconCreditCard, IconStar, IconX} from "~/components/ui/svg";
+import {Component, createSelector, createSignal, For} from "solid-js";
 import {RadioGroup, RadioGroupItem} from "~/components/ui/radio-group/radio-group";
+import Drawer from "@corvu/drawer";
 
 
 const policies = [
@@ -73,12 +74,18 @@ const ProductView: Component<ProductDetailType> = props => {
 
 
     const [selectedColor, setSelectedColor] = createSignal(colors()[0])
+
+
     const [selectedSize, setSelectedSize] = createSignal(sizes()[2])
 
+
+
+
     return (
-        <div class="bg-white rounded-xl overflow-y-auto scrollbar-hide">
+        <div class="relative bg-white rounded-xl overflow-y-auto scrollbar-hide">
             <div class="pb-16 pt-6 sm:pb-24">
                 <div class="mx-auto mt-8 max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+
                     <div class="lg:grid lg:auto-rows-min lg:grid-cols-12 lg:gap-x-8">
                         <div class="lg:col-span-5 lg:col-start-8">
                             <div class="flex justify-between">
@@ -108,7 +115,7 @@ const ProductView: Component<ProductDetailType> = props => {
                                         ·
                                     </div>
                                     <div class="ml-4 flex">
-                                        <a href="#" class="text-sm font-medium text-indigo-600 hover:text-indigo-500">
+                                        <a href="#" class="text-sm font-medium text-accent/80 hover:text-accent/30">
                                             See all {reviewCount()} reviews
                                         </a>
                                     </div>
@@ -143,7 +150,8 @@ const ProductView: Component<ProductDetailType> = props => {
                                     <h2 class="text-sm font-medium text-gray-900">Color</h2>
 
                                     <fieldset aria-label="Choose a color" class="mt-2">
-                                        <RadioGroup  onChange={setSelectedColor}
+                                        <RadioGroup
+                                            onChange={setSelectedColor}
                                                     class="flex items-center gap-x-3">
                                             {colors().map((color) => (
                                                 <RadioGroupItem
@@ -168,12 +176,12 @@ const ProductView: Component<ProductDetailType> = props => {
                                 <div class="mt-8">
                                     <div class="flex items-center justify-between">
                                         <h2 class="text-sm font-medium text-gray-900">Size</h2>
-                                        <a href="#" class="text-sm font-medium text-indigo-600 hover:text-indigo-500">
+                                        <a href="#" class="text-sm font-medium text-accent/80 hover:text-accent/50">
                                             See sizing chart
                                         </a>
                                     </div>
 
-                                    <fieldset aria-label="Choose a size" class="mt-2">
+                                    <fieldset aria-label="Choose a size" class="mt-4">
                                         <RadioGroup
                                             value={selectedSize?.name}
                                             onChange={setSelectedSize}
@@ -186,7 +194,7 @@ const ProductView: Component<ProductDetailType> = props => {
                                                     disabled={!size.inStock}
                                                     class={classNames(
                                                         size.inStock ? 'cursor-pointer focus:outline-none' : 'cursor-not-allowed opacity-25',
-                                                        'flex items-center justify-center rounded-md border border-gray-200 bg-white px-3 py-3 text-sm font-medium uppercase text-gray-900 hover:bg-gray-50 data-[checked]:border-transparent data-[checked]:bg-indigo-600 data-[checked]:text-white data-[focus]:ring-2 data-[focus]:ring-indigo-500 data-[focus]:ring-offset-2 data-[checked]:hover:bg-indigo-700 sm:flex-1',
+                                                        'relative flex cursor-pointer items-center justify-center rounded-full p-3 focus:outline-none data-[checked]:ring-2 data-[focus]:data-[checked]:ring data-[focus]:data-[checked]:ring-offset-1',
                                                     )}
                                                 >
                                                     {size.name}
@@ -196,13 +204,11 @@ const ProductView: Component<ProductDetailType> = props => {
                                         </RadioGroup>
                                     </fieldset>
                                 </div>
-
-                                <button
-                                    type="submit"
-                                    class="mt-8 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                                >
+                                <Drawer.Trigger
+                                    contextId={'product-preview-1'}
+                                    class="mt-8 flex w-full items-center justify-center rounded-md border border-transparent bg-accent/80 px-8 py-3 text-base font-medium text-white hover:bg-accent/60 focus:outline-none focus:ring-2 focus:ring-accent/80 focus:ring-offset-2">
                                     Add to cart
-                                </button>
+                                </Drawer.Trigger>
                             </form>
 
                             {/* Product details */}

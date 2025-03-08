@@ -3,15 +3,7 @@ import SideDrawer from "~/components/ui/drawer/side-drawer";
 import {CONTENT} from "~/lib/store";
 import {Drawer, DrawerContent} from "~/components/ui/drawer";
 import ProductView, {ProductDetailType} from "~/components/products/product-view";
-
-export type Product = {
-    id: string,
-    name: string,
-    href: string,
-    src: string,
-    price?: string,
-    color?: string,
-}
+import {IconX} from "~/components/ui/svg";
 
 
 type PROPS = {
@@ -44,8 +36,15 @@ const ProductList: Component<PROPS> = props => {
         <SideDrawer side={'bottom'} contextId={'product-preview-1'}>
             <div class="bg-white">
 
-                <DrawerContent side={"bottom"} contextId={'product-preview-1'} class={'px-3 bg-white'}>
+                <DrawerContent side={"bottom"} contextId={'product-preview-1'} class={'px-2 bg-white overflow-y-hidden'}>
                     <>
+
+                        <Drawer.Trigger
+                            contextId={'product-preview-1'}
+                            class="absolute p-1 top-1 right-1 z-50 border border-gray-400 rounded-full hover:border-accent/80 backdrop-blur-2xl">
+                            <IconX class={'size-8 hover:stroke-accent/50'}/>
+                        </Drawer.Trigger>
+
                         <ProductView {...getSelected()}/>
                     </>
                 </DrawerContent>

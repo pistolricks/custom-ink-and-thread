@@ -49,7 +49,7 @@
       },
       {
         "name": "S",
-        "inStock": true
+        "inStock": false
       },
       {
         "name": "M",
