@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "./css/keyframes.css";
 @import "./css/drawer.css";
+@plugin "tailwind-scrollbar-hide";
 :root {
     --color-cerulean-blue-50: hsl(203, 100%, 96%);
     --color-cerulean-blue-100: hsl(206, 100%, 92%);
@@ -74,7 +75,7 @@ body {
     --color-card: var(--color-glacier-200);
     --color-card-foreground: var(--color-glacier-400);
 
-    --color-primary: var(--color-cerulean-blue-200);
+    --color-primary: var(--color-cerulean-blue-800);
     --color-primary-foreground: var(--color-cerulean-blue-950);
 
     --color-secondary: var(--color-glacier-300);

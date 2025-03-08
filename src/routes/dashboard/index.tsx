@@ -13,29 +13,14 @@ const Dashboard: Component<{}> = props => {
 
     return (
         <>
-            <div class="md:hidden">
-                <img
-                    src="/examples/dashboard-light.png"
-                    width={1280}
-                    height={866}
-                    alt="Dashboard"
-                    class="block dark:hidden"
-                />
-                <img
-                    src="/examples/dashboard-dark.png"
-                    width={1280}
-                    height={866}
-                    alt="Dashboard"
-                    class="hidden dark:block"
-                />
-            </div>
-            <div class="hidden flex-col md:flex">
 
-                <div class="flex-1 space-y-4 p-8 pt-6">
+            <div class=" flex-col w-full md:flex">
+
+                <div class="space-y-4 p-5 pt-6">
                     <div class="flex items-center justify-between space-y-2">
                         <h2 class="text-3xl font-bold tracking-tight">Dashboard</h2>
                         <div class="flex items-center space-x-2">
-                            <Button>
+                            <Button variant={'ghost'}>
                                 <IconDownload class="mr-2 size-4" />
                                 Download
                             </Button>

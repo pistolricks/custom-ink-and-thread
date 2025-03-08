@@ -6,30 +6,9 @@ import {SetStoreFunction} from "solid-js/store";
 
 export const getUser = query(async () => {
     "use server";
-    let userData = (await getSessionUser()) as SessionUser | undefined;
-    console.log("getUser", userData)
-    if(!userData) return;
-    return console.log("user", userData);
-}, "user")
-
-export const getCurrentUser = query(async (setCurrentUser: SetStoreFunction<SessionUser>) => {
     let userData = (await getSessionUser()) as SessionUser;
-    if(!userData?.id) {
-        setCurrentUser({
-            id: undefined,
-            name: undefined,
-            email: undefined,
-            display_name: undefined,
-            activated: undefined,
-            created_at: undefined,
-            token: undefined,
-            expiry: undefined,
-            folder: undefined,
-            current_location: undefined,
-        })
-    } else {
-       setCurrentUser(userData)
-    }
+    console.log("getUser", userData)
+
     return userData;
 }, "user")
 

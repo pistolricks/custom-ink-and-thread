@@ -1,13 +1,22 @@
-import {Component, ParentProps} from "solid-js";
+import {Component, createEffect, ParentProps} from "solid-js";
+import {useNavigate} from "@solidjs/router";
+import {useLayoutContext} from "~/context/layout-provider";
 
 
 const AddressesLayout: Component<ParentProps> = props => {
+    const navigate = useNavigate();
+    const {currentUser} = useLayoutContext();
 
-    return (
-        <div class={'h-full w-full relative'}>
-            {props.children}
-        </div>
-    );
+
+    createEffect(() => {
+        console.log(currentUser)
+        if (!currentUser?.id) {
+            navigate('/', {replace: true});
+        }
+    })
+    const children = () => props.children;
+
+    return children()
 };
 
 export default AddressesLayout;

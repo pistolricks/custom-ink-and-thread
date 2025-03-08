@@ -9,17 +9,13 @@ const ProfileLayout: Component<ParentProps> = props => {
 
     createEffect(() => {
         console.log(currentUser)
-        if (currentUser?.id) {
+        if (!currentUser?.id) {
             navigate('/', {replace: true});
         }
     })
     const children = () => props.children;
 
-    return (
-        <div class={'h-full w-full relative'}>
-            {children()}
-        </div>
-    );
+    return children()
 };
 
 export default ProfileLayout;

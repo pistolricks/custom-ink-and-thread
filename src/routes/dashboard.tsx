@@ -8,7 +8,7 @@ const DashboardLayout: Component<ParentProps> = props => {
 
     createEffect(() => {
         console.log(currentUser)
-        if (currentUser?.id) {
+        if (!currentUser?.id) {
             navigate('/', {replace: true});
         }
     })

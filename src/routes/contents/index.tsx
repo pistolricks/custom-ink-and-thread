@@ -3,7 +3,7 @@ import {lazy, onMount} from "solid-js";
 import {getContents} from "~/lib/contents";
 import FooterMenu from "~/components/layouts/partials/footer/footer-menu";
 import {Button} from "~/components/ui/button";
-import {FileUploader} from "~/components/ui/file/file-uploader";
+import FileUploader from "~/components/ui/file/file-uploader";
 import BaseDialog, {DialogContent} from "~/components/ui/dialogs/base-dialog";
 
 import Drawer from "@corvu/drawer";

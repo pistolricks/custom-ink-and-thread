@@ -4,13 +4,13 @@ import {getVendors} from "~/lib/vendors";
 import FooterMenu from "~/components/layouts/partials/footer/footer-menu";
 import {Button} from "~/components/ui/button";
 import BaseDialog, {DialogContent} from "~/components/ui/dialogs/base-dialog";
-import {BuildingOffice2Icon, PlusIcon} from "~/components/ui/svg";
 import Drawer from "@corvu/drawer";
 import FormLayout from "~/components/forms/partials/form-layout";
 import CreateVendorForm from "~/components/vendors/forms/create-vendor-form";
 import {useLayoutContext} from "~/context/layout-provider";
 import {Feature} from "~/lib/store";
 import {updateCollection} from "~/lib/features";
+import {IconCircle, IconPlus} from "~/components/ui/svg";
 
 const VendorsList = lazy(() => import( "~/components/vendors/list"));
 
@@ -51,11 +51,11 @@ export default function Vendors() {
                     </FormLayout>
                 </DialogContent>
 
-                <FooterMenu title={<BuildingOffice2Icon class={'size-full stroke-sky-11 p-0.5 fill-green-2'}/>}
+                <FooterMenu title={<IconCircle class={'size-full stroke-sky-11 p-0.5 fill-green-2'}/>}
                             variant={'ghost'}
                             size={'icon'}>
                     <Button as={Drawer.Trigger} type={"button"} contextId={"albd1"} variant={"ghost"} size={'icon'}>
-                        <PlusIcon class={'size-full p-0.5 stroke-slate-11'}/>
+                        <IconPlus class={'size-full p-0.5 stroke-slate-11'}/>
                     </Button>
                 </FooterMenu>
 

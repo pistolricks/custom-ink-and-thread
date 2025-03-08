@@ -106,7 +106,7 @@ const Header: Component<{
             </header>
             <DrawerContent side={"right"} contextId={'sd1'}>
                 <>
-                    <ProfileMenu user={user()}/>
+                    <ProfileMenu user={user()} contextId={'sd1'}/>
                 </>
             </DrawerContent>
         </>

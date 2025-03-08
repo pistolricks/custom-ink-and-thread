@@ -6,7 +6,15 @@ import {createStore, SetStoreFunction, Store} from "solid-js/store";
 
 import {SessionUser} from "~/lib/session";
 import {Extent} from "ol/extent";
-import {IconCategories, IconContents, IconPlaces, IconProfile, IconVendors} from "~/components/ui/svg";
+import {
+    IconCategories,
+    IconCircleCheck,
+    IconContents,
+    IconMail,
+    IconPlaces,
+    IconProfile,
+    IconVendors
+} from "~/components/ui/svg";
 
 
 
@@ -75,11 +83,9 @@ export function LayoutProvider(props: { children: JSX.Element }) {
 
 
     const menu: MenuItemType[] = [
-        {title: "profile", href: "/profile", icon: IconProfile},
-        {title: "vendors", href: "/vendors", icon: IconVendors},
-        {title: "places", href: "/places", icon: IconPlaces},
-        {title: "contents", href: "/contents", icon: IconContents},
-        {title: "categories", href: "/categories", icon: IconCategories}
+        {title: "exclusives", href: "/exclusives", icon: IconVendors},
+        {title: "apparel", href: "/apparel", icon: IconVendors},
+        {title: "brands", href: "/vendors", icon: IconVendors},
     ]
 
     const apps: MenuItemType[] = [

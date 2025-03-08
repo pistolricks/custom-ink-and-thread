@@ -21,7 +21,7 @@ import {
   IconReply,
   IconReplyAll,
   IconTrash
-} from "../icons"
+} from "~/components/ui/svg";
 import { mails } from "./data"
 import { mail } from "./use-mail"
 
