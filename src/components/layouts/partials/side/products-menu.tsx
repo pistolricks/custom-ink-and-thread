@@ -71,30 +71,30 @@ const ProductMenu: Component<PROPS> = props => {
 
             <div class="space-y-6 border-t border-gray-200 px-4 py-6">
                 <div class="flow-root">
-                    <a href="#" class="-m-2 block p-2 font-medium text-gray-900">Company</a>
+                    <Drawer.Trigger contextId={contextId()} as={A} href={"/company"} class="-m-2 block p-2 font-medium text-gray-900">
+                        Company
+                    </Drawer.Trigger>
                 </div>
                 <div class="flow-root">
-                    <a href="#" class="-m-2 block p-2 font-medium text-gray-900">Stores</a>
+                    <Drawer.Trigger contextId={contextId()} as={A} href={"/wholesale"} class="-m-2 block p-2 font-medium text-gray-900">
+                        Wholesale
+                    </Drawer.Trigger>
                 </div>
             </div>
 
             <div class="space-y-6 border-t border-gray-200 px-4 py-6">
                 <div class="flow-root">
-                    <a href="#" class="-m-2 block p-2 font-medium text-gray-900">Sign in</a>
+                    <Drawer.Trigger contextId={contextId()} as={A} href={"/login"} class="-m-2 block p-2 font-medium text-gray-900">
+                        Login
+                    </Drawer.Trigger>
                 </div>
                 <div class="flow-root">
-                    <a href="#" class="-m-2 block p-2 font-medium text-gray-900">Create account</a>
+                    <Drawer.Trigger contextId={contextId()} as={A} href={"/register"} class="-m-2 block p-2 font-medium text-gray-900">
+                        Register
+                    </Drawer.Trigger>
                 </div>
             </div>
 
-            <div class="border-t border-gray-200 px-4 py-6">
-                <a href="#" class="-m-2 flex items-center p-2">
-                    <img src="https://tailwindcss.com/plus-assets/img/flags/flag-canada.svg" alt=""
-                         class="block h-auto w-5 shrink-0"/>
-                    <span class="ml-3 block text-base font-medium text-gray-900">CAD</span>
-                    <span class="sr-only">, change currency</span>
-                </a>
-            </div>
         </div>
     );
 };

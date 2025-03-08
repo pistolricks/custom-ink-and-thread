@@ -1,13 +1,8 @@
-import GeneralDetails from "~/components/profiles/general-details";
+import Promo from "~/components/sections/promo";
+import {RouteSectionProps} from "@solidjs/router";
 
 
-export default function Home() {
-  return (
-    <main class="text-center mx-auto text-gray-700 p-4">
+export default function Home(props: RouteSectionProps) {
 
-
-
-
-    </main>
-  );
+    return (<Promo/>);
 }

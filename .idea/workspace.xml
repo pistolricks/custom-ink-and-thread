@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bddc89ca-a474-4ff4-a99a-c9fdc0360bc2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/sections/promo.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/design-lab.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/wholesale.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/products/product-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/products/product-list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/products/product-view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/products/product-view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/radio-group/radio-group.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/radio-group/radio-group.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/data/products.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/data/products.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/apparel/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/apparel/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/side/products-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/side/products-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/layout-provider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/layout-provider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/wholesale/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/wholesale/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +128,7 @@
       <workItem from="1741399389259" duration="2247000" />
       <workItem from="1741407645212" duration="9357000" />
       <workItem from="1741417395292" duration="31468000" />
-      <workItem from="1741450202344" duration="7519000" />
+      <workItem from="1741450202344" duration="9103000" />
     </task>
     <servers />
   </component>

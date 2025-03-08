@@ -85,6 +85,7 @@ export function LayoutProvider(props: { children: JSX.Element }) {
     const menu: MenuItemType[] = [
         {title: "New Arrivals", href: "/new-arrivals", icon: IconVendors},
         {title: "apparel", href: "/apparel", icon: IconVendors},
+        {title: "Design Lab", href: "/design-lab", icon: IconVendors},
 
     ]
 
