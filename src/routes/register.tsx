@@ -1,6 +1,7 @@
 import {Component, createEffect, lazy} from "solid-js";
 import {AccessorWithLatest, createAsync, RouteSectionProps, useNavigate} from "@solidjs/router";
 import {AUTHENTICATION_TOKEN, getUserToken} from "~/lib";
+import {useLayoutContext} from "~/context/layout-provider";
 
 const RegisterUserForm = lazy(() => import('~/components/forms/register-user-form'));
 const FormLayout = lazy(() => import("~/components/forms/partials/form-layout"));
@@ -9,14 +10,16 @@ type PROPS = {}
 
 const Register: Component<RouteSectionProps> = props => {
     const navigate = useNavigate();
-    const token: AccessorWithLatest<AUTHENTICATION_TOKEN | undefined> = createAsync(async () => getUserToken());
+   const {currentUser} = useLayoutContext();
 
 
     createEffect(() => {
-        if (token()) {
+        console.log(currentUser)
+        if (currentUser?.id) {
             navigate('/', {replace: true});
         }
     })
+
     return (
         <FormLayout title={'Register'}>
             <RegisterUserForm/>

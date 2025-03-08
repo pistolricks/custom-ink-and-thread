@@ -48,7 +48,7 @@ const ProfileMenu: Component<PROPS> = props => {
                 <Show
                     fallback={
                         <>
-                            {/* Add Falback info */}
+
 
                         </>
                     }

@@ -5,7 +5,7 @@ import {CountryData} from "~/lib/store";
 import {getAddressFormFormats} from "~/lib/addresses";
 import {getVendors} from "~/lib/vendors";
 
-const FormLayout = lazy(() => import( "~/components/layouts/form-layout"));
+const FormLayout = lazy(() => import( "~/components/forms/partials/form-layout"));
 
 export const route = {
     preload() {

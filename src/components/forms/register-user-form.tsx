@@ -79,7 +79,7 @@ const RegisterUserForm: Component<PROPS> = props => {
                         size={"icon"}
                         type={"button"}
                     >
-                        <IconChevronLeft fill="current"/>
+                        <IconChevronLeft />
                     </Button>
                 </div>
             </form>

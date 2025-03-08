@@ -11,7 +11,7 @@ import FooterMenu from "~/components/layouts/partials/footer/footer-menu";
 
 import AddressSearchForm from "~/components/addresses/forms/address-search-form";
 import {CountryData, LookupResult, OsmOutput} from "~/lib/store";
-import {MagnifyingGlass, MapIcon} from "~/components/ui/svg";
+import {IconSearch, IconMapPin} from "~/components/ui/svg";
 import GeoMap from "~/components/addresses/partials/geo-map";
 import {useLayoutContext} from "~/context/layout-provider";
 import DrawerPrimitive from "@corvu/drawer";
@@ -104,7 +104,7 @@ export default function Addresses() {
 
                 <FooterMenu childClass={'relative w-full sm:max-w-sm'}
                             sectionClass={'flex justify-between items-center w-full space-x-4'}
-                            title={<MapIcon class={'size-full stroke-mint-11 p-0.5 fill-green-2'}/>}
+                            title={<IconMapPin class={'size-full stroke-mint-11 p-0.5 fill-green-2'}/>}
                             variant={'ghost'} size={'icon'}>
 
 
@@ -129,7 +129,7 @@ export default function Addresses() {
                     <Show when={!getToggleGeo()}>
                         <button class={'absolute right-0 bottom-0 justify-center py-4 items-center size-8'}
                                 onClick={handleToggleGeolocation}>
-                            <MagnifyingGlass class={'stroke-red-11 size-8'}/>
+                            <IconSearch class={'stroke-red-11 size-8'}/>
                         </button>
                     </Show>
 
