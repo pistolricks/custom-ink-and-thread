@@ -81,8 +81,6 @@ const Header: Component<{
                                         </div>
                                     </div>
                                     <div class="flex flex-1 items-center justify-end">
-                                        <A href="#"
-                                           class="hidden text-sm font-medium text-secondary-foreground lg:block">Search</A>
 
                                         <div class="flex items-center lg:ml-8">
 
