@@ -1,6 +1,6 @@
 import {Component, JSXElement} from "solid-js";
 import {NavigationMenu} from "@kobalte/core/navigation-menu";
-import style from "~/components/layouts/partials/header/nav.module.css";
+import style from "~/components/layouts/partials/header/navigation.module.css";
 
 
 

@@ -6,19 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="bddc89ca-a474-4ff4-a99a-c9fdc0360bc2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/forms/activate-user-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/activate-user-form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/forms/login-user-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/login-user-form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/forms/partials/form-layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/partials/form-layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/forms/register-user-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/register-user-form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/side/profile-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/side/profile-menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/contents.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/contents.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/dashboard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/inbox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/inbox.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/places/create.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/places/create.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/places/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/places/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/profile.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/register.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/app-layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/app-layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/footer/footer-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/footer/footer-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/header/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/header/nav.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/header/navigation.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/partials/header/navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/partials/header/navigation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/navigation/navigation-items.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/navigation/navigation-items.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/navigation/navigation-menu-content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/navigation/navigation-menu-content.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/navigation/navigation-menu-item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/navigation/navigation-menu-item.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/navigation/navigation-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/navigation/navigation-menu.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +123,7 @@
       <workItem from="1741324804960" duration="16216000" />
       <workItem from="1741399389259" duration="2247000" />
       <workItem from="1741407645212" duration="9357000" />
-      <workItem from="1741417395292" duration="7553000" />
+      <workItem from="1741417395292" duration="7828000" />
     </task>
     <servers />
   </component>

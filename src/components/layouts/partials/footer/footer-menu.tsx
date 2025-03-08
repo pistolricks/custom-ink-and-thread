@@ -45,7 +45,7 @@ const FooterMenu: Component<PROPS> = props => {
     return (
         <ResponsiveNav title={splitPath()?.[1]}>
             <footer
-                class={'bg-slate-ui fixed  inset-x-0 bottom-0 w-screen mx-auto px-4 rounded-none border-gray-normal h-16 flex items-center'}>
+                class={'bg-slate-ui fixed  inset-x-0 bottom-0 w-screen mx-auto px-4 rounded-none h-16 flex items-center'}>
                 <div class={sectionClass()}>
                     <Popover.Trigger
                         as={Button<"button">}

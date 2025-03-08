@@ -40,14 +40,14 @@ const AppLayout: Component<PROPS> = (props) => {
                     <Header user={currentUser}/>
                     <div class={'flex-1 flex flex-row overflow-y-hidden'}>
                         <main
-                            class={'flex-1 bg-background border-l border-r border-b border-muted text-xs p-2 overflow-y-auto'}
+                            class={'flex-1 bg-background border-l border-r border-muted/50 text-xs p-2 overflow-y-auto'}
                         >
                             {children()}
                         </main>
                     </div>
 
-                    <footer class={'p-1'}>
-                        <div class="border-t">
+                    <footer class={'bg-muted/50'}>
+                        <div class="">
                             <div class="flex h-16 items-center px-4">
 
                             </div>

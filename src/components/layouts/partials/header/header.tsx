@@ -19,7 +19,7 @@ const Header: Component<{
             <header class="h-[104px]">
                 <nav class={''} aria-label="Top">
                     <div
-                        class="relative isolate flex items-center gap-x-6 overflow-hidden bg-muted-foreground px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+                        class="relative isolate flex items-center gap-x-6 overflow-hidden bg-muted-foreground/50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
                         <div
                             class="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
                             aria-hidden="true">
