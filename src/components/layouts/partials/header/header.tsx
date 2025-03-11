@@ -5,6 +5,7 @@ import {DrawerContent} from "~/components/ui/drawer";
 import {SessionUser} from "~/lib/session";
 import ProfileMenu from "~/components/layouts/partials/side/profile-menu";
 import ProductMenu from "~/components/layouts/partials/side/products-menu";
+import Navigation from "~/components/layouts/partials/header/navigation";
 
 
 const Header: Component<{
@@ -78,6 +79,7 @@ const Header: Component<{
 
                                         <div class="flex h-full justify-center items-center space-x-8 p-2">
 
+                                            <Navigation />
 
                                         </div>
                                     </div>

@@ -5,27 +5,24 @@ import rawProducts from "~/lib/data/products.json";
 import {ProductSizesType} from "~/components/products/product-view";
 import {createAsync, RouteSectionProps} from "@solidjs/router";
 import {getCategory} from "~/lib/category";
+import {Feature} from "~/lib/store";
+import {getVendor} from "~/lib/vendors";
 
 
 type PROPS = RouteSectionProps;
-const Apparel: Component<ParentProps> = props => {
+const Apparel: Component<PROPS> = props => {
+
+    const categoryData: () => Feature = createAsync(async () => getCategory(props.params.category))
 
 
-    const products = rawProducts.map(product => ({
-        ...product,
-        sizes: product.sizes?.map(size => ({
-            ...size,
-            name: size.name as ProductSizesType, // Ensure correct type for 'name'
-        })),
-    }));
 
-    console.log("apparel", products)
+    console.log("apparel", categoryData())
 
     return (
         <>
 
             <CategoryFilters name={'New Arrivals'}>
-                <ProductList list={products}/>
+                <ProductList list={[]}/>
             </CategoryFilters>
 
         </>

@@ -19,12 +19,12 @@ const CategoryFilters: Component<PROPS> = props => {
                 <div>
                     <DrawerContent side={"right"} contextId={'filter1'} class={'overflow-y-auto scrollbar-hide'}>
 
-                        <div class="relative z-40 w-full lg:hidden" role="dialog" aria-modal="true">
+                        <div class="relative  w-full lg:hidden" role="dialog" aria-modal="true">
 
 
                             <div class="fixed inset-0  w-full bg-black/25" aria-hidden="true"></div>
 
-                            <div class="fixed inset-0 bg-white z-40 flex">
+                            <div class="fixed inset-0 bg-white flex">
 
                                 <div
                                     class="relative mx-auto flex size-full max-w-xs flex-col overflow-y-auto scrollbar-hide bg-white py-4 pb-12 shadow-xl">

@@ -182,6 +182,7 @@
 
 .navigation-menu__content[data-expanded] {
     pointer-events: auto;
+    z-index: 1000;
 }
 
 .navigation-menu__content[data-motion="from-start"] {
@@ -211,7 +212,7 @@
 }
 
 .navigation-menu__content.content-1 {
-    width: 100dvw;
+    width: 90dvw;
     /*  // width: min(500px, 90dvw);
       grid-template-columns: 0.75fr 1fr; */
 }

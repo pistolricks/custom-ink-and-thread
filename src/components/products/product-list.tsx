@@ -58,7 +58,8 @@ const ProductList: Component<PROPS> = props => {
                                 <Drawer.Trigger
                                     contextId={'product-preview-1'}
                                     onClick={[handler, product]}
-                                    class="group relative">
+                                    class="">
+                                    <div class={' '}>
                                     <img
                                         alt={product.name}
                                         src={product.src}
@@ -68,12 +69,12 @@ const ProductList: Component<PROPS> = props => {
                                         <div>
                                             <h3 class="text-sm text-gray-700">
 
-                                                    <span aria-hidden="true" class="absolute inset-0"/>
                                                     {product.name}
 
                                             </h3>
                                         </div>
                                         <p class="text-sm font-medium text-gray-900">{product.price}</p>
+                                    </div>
                                     </div>
                                 </Drawer.Trigger>
                             )}
