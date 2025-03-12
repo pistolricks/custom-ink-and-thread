@@ -1,5 +1,5 @@
 import {Component, type ComponentProps, splitProps} from "solid-js";
-import {cn} from "~/lib/utils";
+import {cn} from "~/lib/ui";
 
 
 export type IconProps = ComponentProps<"svg">

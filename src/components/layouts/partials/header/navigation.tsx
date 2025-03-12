@@ -1,13 +1,29 @@
 import {NavigationMenu, type Orientation,} from "@kobalte/core/navigation-menu";
-import {Component, createSignal, For, JSXElement} from "solid-js";
+import {Component, createEffect, createSignal, For, JSXElement} from "solid-js";
 import style from "~/components/layouts/partials/header/navigation.module.css";
-import {A} from "@solidjs/router";
+import {A, useIsRouting} from "@solidjs/router";
 import {MenuItemType} from "~/lib/store";
 import {useLayoutContext} from "~/context/layout-provider";
 
 export function Navigation() {
     const {category1, category2, category3, brand1, brand2, brand3, brand4} = useLayoutContext();
     const [orientation, setOrientation] = createSignal<Orientation>("horizontal");
+
+    const isRouting = useIsRouting();
+
+
+    const [get1Open,set1Open] = createSignal(false);
+    const [get2Open,set2Open] = createSignal(false);
+    const [get3Open,set3Open] = createSignal(false);
+
+    createEffect(() => {
+
+        if(isRouting()){
+            set1Open(false);
+            set2Open(false);
+            set3Open(false);
+        }
+    })
 
 
     return (
@@ -16,7 +32,10 @@ export function Navigation() {
                 class={`grid grid-cols-3 ${style["navigation-menu__root"]}`} orientation={orientation()}>
 
 
-                <NavigationMenu.Menu>
+                <NavigationMenu.Menu
+                    open={get1Open()}
+                    onOpenChange={set1Open}
+                >
                     <div class="flex">
                         <div class="relative flex bg-transparent">
                             <NavigationMenu.Trigger
@@ -39,7 +58,10 @@ export function Navigation() {
                     </div>
                 </NavigationMenu.Menu>
 
-                <NavigationMenu.Menu>
+                <NavigationMenu.Menu
+                    open={get2Open()}
+                    onOpenChange={set2Open}
+                >
                     <div class="flex">
                         <div class="relative flex bg-transparent">
                             <NavigationMenu.Trigger
@@ -62,7 +84,10 @@ export function Navigation() {
                 </NavigationMenu.Menu>
 
 
-                <NavigationMenu.Menu>
+                <NavigationMenu.Menu
+                    open={get3Open()}
+                    onOpenChange={set3Open}
+                >
                     <div class="flex">
                         <div class="relative flex bg-transparent">
                             <NavigationMenu.Trigger
@@ -129,9 +154,13 @@ const MenuLink: Component<{ title: string, href: string, src: string }> = props 
                  class="aspect-square w-2/3 rounded-md bg-gray-100 object-cover group-hover:opacity-75"/>
             <A href={href()} class="mt-4 block font-medium text-gray-900">
                 <span aria-hidden="true"></span>
+
                 {title()}
+                <p aria-hidden="true" class="mt-1">Shop now</p>
+
             </A>
-            <p aria-hidden="true" class="mt-1">Shop now</p>
+
+
         </div>
     );
 }
@@ -146,7 +175,9 @@ const MenuTextLinks: Component<{ path?: string; list: MenuItemType[] }> = props 
             <For each={list()}>
                 {(item) => (
                     <li class="flow-root">
+
                         <A href={path() ? `/${path()}/${item.href}` :  `/${item.href}`} class="-m-2 block p-2 text-gray-500">{item.title}</A>
+
                     </li>
                 )}
 

@@ -5,6 +5,7 @@ import rawProducts from "~/lib/data/products.json";
 import {ProductSizesType} from "~/components/products/product-view";
 import {createAsync, RouteSectionProps} from "@solidjs/router";
 import {getCategory} from "~/lib/category";
+import {TypingAnimation} from "~/components/ui-animated/typing-animation";
 
 
 type PROPS = RouteSectionProps;
@@ -23,6 +24,8 @@ const Apparel: Component<ParentProps> = props => {
 
     return (
         <>
+
+            <TypingAnimation text={"CustomINK and Thread"}/>
 
             <CategoryFilters name={'New Arrivals'}>
                 <ProductList list={products}/>

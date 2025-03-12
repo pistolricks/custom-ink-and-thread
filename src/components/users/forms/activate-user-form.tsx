@@ -1,10 +1,11 @@
-import {Component, createEffect, createMemo, createSignal, JSX, Show} from "solid-js";
+import {Component, createMemo, createSignal, JSX} from "solid-js";
 import {activateUserHandler} from "~/lib/users";
-import {TextField, TextFieldErrorMessage, TextFieldInput} from "~/components/ui/field/text-field";
-import {Button} from "../../ui/button";
+import {TextField, TextFieldInput} from "~/components/ui/field/text-field";
 import {showToast} from "~/components/ui/toast";
-import {ChevronLeft} from "~/components/svg";
 import {useNavigate} from "@solidjs/router";
+import {Button} from "~/components/ui/button";
+import {IconChevronLeft} from "~/components/ui/svg";
+
 
 type PROPS = {}
 
@@ -71,7 +72,7 @@ const ActivateUserForm: Component<PROPS> = props => {
                             size={"icon"}
                             type={"button"}
                         >
-                            <ChevronLeft/>
+                            <IconChevronLeft/>
                         </Button>
                     </div>
                 </div>

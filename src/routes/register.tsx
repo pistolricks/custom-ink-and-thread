@@ -1,16 +1,15 @@
 import {Component, createEffect, lazy} from "solid-js";
-import {AccessorWithLatest, createAsync, RouteSectionProps, useNavigate} from "@solidjs/router";
-import {AUTHENTICATION_TOKEN, getUserToken} from "~/lib";
+import {RouteSectionProps, useNavigate} from "@solidjs/router";
 import {useLayoutContext} from "~/context/layout-provider";
 
-const RegisterUserForm = lazy(() => import('~/components/forms/register-user-form'));
+const RegisterUserForm = lazy(() => import('~/components/users/forms/register-user-form'));
 const FormLayout = lazy(() => import("~/components/forms/partials/form-layout"));
 
 type PROPS = {}
 
 const Register: Component<RouteSectionProps> = props => {
     const navigate = useNavigate();
-   const {currentUser} = useLayoutContext();
+    const {currentUser} = useLayoutContext();
 
 
     createEffect(() => {
