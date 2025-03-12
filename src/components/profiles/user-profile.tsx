@@ -48,7 +48,7 @@ const UserProfile: Component<PROPS> = props => {
                 </div>
 
                 {/* Header */}
-                <header class="text-center sm:text-left mb-6">
+                <div class="text-center sm:text-left mb-6">
                     {/* Name */}
                     <div class="inline-flex items-start mb-2">
                         <h1 class="text-2xl text-gray-800 dark:text-gray-100 font-bold">
@@ -83,7 +83,7 @@ const UserProfile: Component<PROPS> = props => {
                             </div>
                         </div>
                     </div>
-                </header>
+                </div>
 
 
                 {/* Profile content */}

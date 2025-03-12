@@ -99,7 +99,7 @@ export function Navigation() {
                             <NavigationMenu.Content
                                 class={`${style["navigation-menu__content"]} ${style["content-1"]}`}>
                                 <MenuLayout>
-                                    <></>
+
                                 </MenuLayout>
                             </NavigationMenu.Content>
                         </NavigationMenu.Portal>
